@@ -1,7 +1,13 @@
 import { Move } from "@/types/move";
 import Image from "next/image";
 
-export default function MoveCard({ move }: { move: Move }) {
+export default function MoveCard({
+  move,
+  dMonst,
+}: {
+  move: Move;
+  dMonst: string;
+}) {
   return (
     <div
       key={move.name}
@@ -27,7 +33,9 @@ export default function MoveCard({ move }: { move: Move }) {
         <div>{move.category}</div>
         <div>
           {move.damage.dieNumber}
-          {move.damage.die}
+          {move.damage.die === "dM"
+            ? `d${dMonst.split("d")[1]}(dM)`
+            : move.damage.die}
         </div>
         <div>{move.frequency}</div>
       </div>

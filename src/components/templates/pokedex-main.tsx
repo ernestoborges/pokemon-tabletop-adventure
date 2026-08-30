@@ -21,12 +21,12 @@ export default function PokedexMain() {
   const [selectedTab, setSelectedTab] = useState<number>(0);
 
   return (
-    <main className="flex gap-4 w-full h-dvh flex-col items-center justify-between pt-16 pb-8 px-16 bg-background text-primary">
+    <main className="flex gap-4 w-full h-dvh flex-col items-center justify-start pt-16 pb-8 px-16 bg-background text-primary">
       <PokemonSearchBar
         searchResults={searchResults}
         onSearch={(results) => setSearchResults(results)}
       />
-      <div className="flex gap-4 w-full min-h-0 rounded-lg">
+      <div className="flex-1 flex gap-4 w-full min-h-0 rounded-lg">
         <PokemonList
           pokemons={searchResults}
           selectedPokemon={selectedPokemon}

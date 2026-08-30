@@ -35,7 +35,7 @@ export default function PokemonPanel({ pokemon }: { pokemon: Pokemon }) {
             </div>
           </div>
         </div>
-        <div className="flex gap-2 justify-between">
+        <div className="flex gap-2 justify-between flex-col-reverse md:flex-row">
           <div className="flex flex-col gap-2">
             <div className="flex gap-2">
               <div>
@@ -52,6 +52,9 @@ export default function PokemonPanel({ pokemon }: { pokemon: Pokemon }) {
               </div>
             </div>
             <div className="flex flex-col gap-0">
+              <LabeledText label="Monster dice (dM)" uppercase>
+                {pokemon.dMonst}
+              </LabeledText>
               <LabeledText label="Size" uppercase>
                 {pokemon.size}
               </LabeledText>
@@ -64,10 +67,28 @@ export default function PokemonPanel({ pokemon }: { pokemon: Pokemon }) {
               <LabeledText label="Diet" uppercase>
                 {pokemon.diet}
               </LabeledText>
+              <LabeledText label="Family" uppercase>
+                {pokemon.evolution.family.join(" / ")}
+              </LabeledText>
+              <LabeledText label="Habitats" uppercase>
+                {pokemon.habitats.join(" / ")}
+              </LabeledText>
+              <LabeledText label="Egg group" uppercase>
+                {pokemon.breeding.eggGroups.join(" / ")}
+              </LabeledText>
+              <LabeledText label="Hatch rate" uppercase>
+                {pokemon.breeding.hatchRate}
+              </LabeledText>
+              <LabeledText label="Signature Move" uppercase>
+                {pokemon.signatureMove || "None"}
+              </LabeledText>
+              <LabeledText label="Proficiencies" uppercase>
+                {pokemon.proficiencies.join(", ")}
+              </LabeledText>
             </div>
           </div>
 
-          <div className="relative w-64 h-64 bg-white">
+          <div className="relative h-64 bg-white w-full sm:w-64">
             {pokemon.id ? (
               <Image
                 src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png`}
@@ -79,26 +100,6 @@ export default function PokemonPanel({ pokemon }: { pokemon: Pokemon }) {
               <PokeballDefaultToken size={256} />
             )}
           </div>
-        </div>
-        <div className="flex flex-col gap-0">
-          <LabeledText label="Family" uppercase>
-            {pokemon.evolution.family.join(" / ")}
-          </LabeledText>
-          <LabeledText label="Habitats" uppercase>
-            {pokemon.habitats.join(" / ")}
-          </LabeledText>
-          <LabeledText label="Egg group" uppercase>
-            {pokemon.breeding.eggGroups.join(" / ")}
-          </LabeledText>
-          <LabeledText label="Hatch rate" uppercase>
-            {pokemon.breeding.hatchRate}
-          </LabeledText>
-          <LabeledText label="Signature Move" uppercase>
-            {pokemon.signatureMove}
-          </LabeledText>
-          <LabeledText label="Proficiencies" uppercase>
-            {pokemon.proficiencies.join(", ")}
-          </LabeledText>
         </div>
         <div>
           <div className="font-bold text-xl">PASSIVES</div>
@@ -124,7 +125,7 @@ export default function PokemonPanel({ pokemon }: { pokemon: Pokemon }) {
           <div className="font-bold text-xl">MOVES</div>
           <div className="flex flex-col gap-4">
             {pokemon.moves.map((move) => (
-              <MoveCard key={move.name} move={move} />
+              <MoveCard key={move.name} move={move} dMonst={pokemon.dMonst} />
             ))}
           </div>
         </div>
