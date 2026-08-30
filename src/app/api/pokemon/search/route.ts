@@ -6,7 +6,11 @@ export async function GET(request: Request) {
 
   const query = searchParams.get("q")?.toLowerCase() ?? "";
   const limit = Number(searchParams.get("limit") ?? 10);
-  const types = searchParams.get("types")?.toLowerCase().split(",") ?? [];
+  const types =
+    searchParams
+      .get("types")
+      ?.split(",")
+      .filter((v): v is string => !!v) ?? [];
   let typeFilter = searchParams.get("typeFilter")?.toLowerCase() as
     | "any"
     | "all"
