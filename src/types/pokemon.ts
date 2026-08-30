@@ -3,12 +3,13 @@ import { Move } from "./move";
 export type Pokemon = {
   id: number | null;
   name: string;
+  dMonst: string;
   stats: {
     hp: number;
-    attack: number;
-    defense: number;
-    specialAttack: number;
-    specialDefense: number;
+    atk: number;
+    def: number;
+    spatk: number;
+    spdef: number;
     speed: number;
   };
   types: string[];
@@ -38,6 +39,12 @@ export type Pokemon = {
     evolvesInto: string | null;
     familyStarter: string | null;
     family: string[];
+  };
+  page: string;
+  captureStage: number;
+  special: {
+    gigantamax: string | null;
+    gigantamaxMove: string | null;
   };
 };
 

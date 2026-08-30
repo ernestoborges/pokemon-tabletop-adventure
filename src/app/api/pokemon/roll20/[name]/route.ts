@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import pokemons from "@/db/pokemons.json";
-import { transformPokemonToRoll20 } from "@/lib/pokemon/transform-to-roll20";
+import { getPokemonByName } from "@/lib/pokemon/services";
+import { pokemonToRoll20Export } from "@/lib/roll20/services";
 
 export async function GET(
   request: Request,
@@ -10,13 +10,12 @@ export async function GET(
 
   console.log("Fetching Pokémon:", name);
 
-  const pokemon = pokemons.find(
-    (pokemon) => pokemon["Pokemon"].toLowerCase() === name.toLowerCase(),
-  );
-
+  const pokemon = getPokemonByName(name);
   if (!pokemon) {
     return NextResponse.json({ error: "Pokémon not found" }, { status: 404 });
   }
 
-  return NextResponse.json(transformPokemonToRoll20(pokemon));
+  const roll20Data = pokemonToRoll20Export(pokemon);
+
+  return NextResponse.json(roll20Data);
 }

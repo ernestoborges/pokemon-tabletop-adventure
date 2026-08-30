@@ -1,132 +1,122 @@
 [
   {
-    "Stat Passives": "Power Up",
-    "Hp": "0",
-    "Attack": "1",
-    "Defense": "0",
-    "Special Attack": "0",
-    "Special Defense": "0",
-    "Speed": "0",
-    "Fake?": "0",
-    "Text (if applicable)": "",
-    "Real:": "1",
-    "Grants Skill?": "--"
+    "name": "Power Up",
+    "description": "+1 Attack",
+    "bonus": {
+      "atk": 1,
+      "def": 0,
+      "spatk": 0,
+      "spdef": 0,
+      "hp": 0,
+      "speed": 0
+    }
   },
   {
-    "Stat Passives": "Thick Hide",
-    "Hp": "0",
-    "Attack": "0",
-    "Defense": "1",
-    "Special Attack": "0",
-    "Special Defense": "0",
-    "Speed": "0",
-    "Fake?": "0",
-    "Text (if applicable)": "",
-    "Real:": "1",
-    "Grants Skill?": "--"
+    "name": "Thick Hide",
+    "description": "+1 Defense",
+    "bonus": {
+      "atk": 0,
+      "def": 1,
+      "spatk": 0,
+      "spdef": 0,
+      "hp": 0,
+      "speed": 0
+    }
   },
   {
-    "Stat Passives": "Focused",
-    "Hp": "0",
-    "Attack": "0",
-    "Defense": "0",
-    "Special Attack": "1",
-    "Special Defense": "0",
-    "Speed": "0",
-    "Fake?": "0",
-    "Text (if applicable)": "",
-    "Real:": "1",
-    "Grants Skill?": "--"
+    "name": "Focused",
+    "description": "+1 Special Attack",
+    "bonus": {
+      "atk": 0,
+      "def": 0,
+      "spatk": 1,
+      "spdef": 0,
+      "hp": 0,
+      "speed": 0
+    }
   },
   {
-    "Stat Passives": "Vigilant",
-    "Hp": "0",
-    "Attack": "0",
-    "Defense": "0",
-    "Special Attack": "0",
-    "Special Defense": "1",
-    "Speed": "0",
-    "Fake?": "0",
-    "Text (if applicable)": "",
-    "Real:": "1",
-    "Grants Skill?": "--"
+    "name": "Vigilant",
+    "description": "+1 Special Defense",
+    "bonus": {
+      "atk": 0,
+      "def": 0,
+      "spatk": 0,
+      "spdef": 1,
+      "hp": 0,
+      "speed": 0
+    }
   },
   {
-    "Stat Passives": "Nimble",
-    "Hp": "0",
-    "Attack": "0",
-    "Defense": "0",
-    "Special Attack": "0",
-    "Special Defense": "0",
-    "Speed": "1",
-    "Fake?": "0",
-    "Text (if applicable)": "",
-    "Real:": "1",
-    "Grants Skill?": "--"
+    "name": "Nimble",
+    "description": "+1 Speed",
+    "bonus": {
+      "atk": 0,
+      "def": 0,
+      "spatk": 0,
+      "spdef": 0,
+      "hp": 0,
+      "speed": 1
+    }
   },
   {
-    "Stat Passives": "Mighty",
-    "Hp": "0",
-    "Attack": "2",
-    "Defense": "0",
-    "Special Attack": "0",
-    "Special Defense": "0",
-    "Speed": "0",
-    "Fake?": "0",
-    "Text (if applicable)": "",
-    "Real:": "1",
-    "Grants Skill?": "--"
+    "name": "Mighty",
+    "description": "+2 Attack",
+    "bonus": {
+      "atk": 2,
+      "def": 0,
+      "spatk": 0,
+      "spdef": 0,
+      "hp": 0,
+      "speed": 0
+    }
   },
   {
-    "Stat Passives": "Fortified",
-    "Hp": "0",
-    "Attack": "0",
-    "Defense": "2",
-    "Special Attack": "0",
-    "Special Defense": "0",
-    "Speed": "0",
-    "Fake?": "0",
-    "Text (if applicable)": "",
-    "Real:": "1",
-    "Grants Skill?": "--"
+    "name": "Fortified",
+    "description": "+2 Defense",
+    "bonus": {
+      "atk": 0,
+      "def": 2,
+      "spatk": 0,
+      "spdef": 0,
+      "hp": 0,
+      "speed": 0
+    }
   },
   {
-    "Stat Passives": "Amplified",
-    "Hp": "0",
-    "Attack": "0",
-    "Defense": "0",
-    "Special Attack": "2",
-    "Special Defense": "0",
-    "Speed": "0",
-    "Fake?": "0",
-    "Text (if applicable)": "",
-    "Real:": "1",
-    "Grants Skill?": "--"
+    "name": "Amplified",
+    "description": "+2 Special Attack",
+    "bonus": {
+      "atk": 0,
+      "def": 0,
+      "spatk": 2,
+      "spdef": 0,
+      "hp": 0,
+      "speed": 0
+    }
   },
   {
-    "Stat Passives": "Invulnerable",
-    "Hp": "0",
-    "Attack": "0",
-    "Defense": "0",
-    "Special Attack": "0",
-    "Special Defense": "2",
-    "Speed": "0",
-    "Fake?": "0",
-    "Text (if applicable)": "",
-    "Real:": "1",
-    "Grants Skill?": "--"
+    "name": "Invulnerable",
+    "description": "+2 Special Defense",
+    "bonus": {
+      "atk": 0,
+      "def": 0,
+      "spatk": 0,
+      "spdef": 2,
+      "hp": 0,
+      "speed": 0
+    }
   },
   {
-    "Stat Passives": "Volant",
-    "Hp": "0",
-    "Attack": "0",
-    "Defense": "0",
-    "Special Attack": "0",
-    "Special Defense": "0",
-    "Speed": "2",
-    "Fake?": "0",
-    "Text (if applicable)": "",
-    "Real:": "1",
-    "Grants Skill?": "--"
+    "name": "Volant",
+    "description": "+2 Speed",
+    "bonus": {
+      "atk": 0,
+      "def": 0,
+      "spatk": 0,
+      "spdef": 0,
+      "hp": 0,
+      "speed": 2
+    }
   }
 ]

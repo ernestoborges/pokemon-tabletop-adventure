@@ -1,6 +1,5 @@
+import { getPokemonList } from "@/lib/pokemon/services";
 import { NextResponse } from "next/server";
-import pokemons from "@/db/pokemons.json";
-import { transformPokemon } from "@/lib/pokemon/transform-pokemon";
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
@@ -8,10 +7,7 @@ export async function GET(request: Request) {
   const query = searchParams.get("q")?.toLowerCase() ?? "";
   const limit = Number(searchParams.get("limit") ?? 10);
 
-  const results = pokemons
-    .filter((pokemon) => pokemon["Pokemon"].toLowerCase().includes(query))
-    .slice(0, limit)
-    .map(transformPokemon);
+  const results = getPokemonList({ query, limit });
 
   return NextResponse.json(results);
 }
