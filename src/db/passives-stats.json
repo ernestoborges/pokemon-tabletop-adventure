@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Power Up",
+    "stats": {
+      "ATK": 1
+    }
+  },
+  {
+    "name": "Thick Hide",
+    "stats": {
+      "DEF": 1
+    }
+  },
+  {
+    "name": "Focused",
+    "stats": {
+      "SPATK": 1
+    }
+  },
+  {
+    "name": "Vigilant",
+    "stats": {
+      "SPDEF": 1
+    }
+  },
+  {
+    "name": "Nimble",
+    "stats": {
+      "SPD": 1
+    }
+  },
+  {
+    "name": "Mighty",
+    "stats": {
+      "ATK": 2
+    }
+  },
+  {
+    "name": "Fortified",
+    "stats": {
+      "DEF": 2
+    }
+  },
+  {
+    "name": "Amplified",
+    "stats": {
+      "SPATK": 2
+    }
+  },
+  {
+    "name": "Invulnerable",
+    "stats": {
+      "SPDEF": 2
+    }
+  },
+  {
+    "name": "Volant",
+    "stats": {
+      "SPD": 2
+    }
+  }
+]

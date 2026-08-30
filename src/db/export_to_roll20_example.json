@@ -1,0 +1,112 @@
+{
+  "Source": "Pokelicious_Cherrygrove",
+  "Stat_Passives": ["Power Up(+1 Attack)"],
+  "Moves": [
+    {
+      "Name": "Struggle",
+      "Frequency": "At-Will",
+      "Range": "Melee",
+      "Type": "Typeless",
+      "move_class": "Physical",
+      "num_dice": "2",
+      "die_size": "d6",
+      "Effect": "Struggle has no type. After using Struggle, you lose 1d6 HP."
+    },
+    {
+      "Name": "Shadow Ball",
+      "Frequency": "3/day",
+      "Range": "Ranged(20ft)",
+      "Type": "Ghost",
+      "move_class": "Special",
+      "num_dice": "3",
+      "die_size": "d10",
+      "Effect": "On hit, the target gets SpDefense▼."
+    },
+    {
+      "Name": "Dream Eater",
+      "Frequency": "1/day",
+      "Range": "Melee",
+      "Type": "Psychic",
+      "move_class": "Special",
+      "num_dice": "4",
+      "die_size": "d10",
+      "Effect": "Dream Eater can only hit Drowsy targets. Heal equal to half the damage dealt."
+    },
+    {
+      "Name": "Dark Pulse",
+      "Frequency": "3/day",
+      "Range": "Ranged(10ft)",
+      "Type": "Dark",
+      "move_class": "Special",
+      "num_dice": "3",
+      "die_size": "d10",
+      "Effect": "On hit, 16 or higher during AC inflicts Dazed. Aura."
+    },
+    {
+      "Name": "",
+      "Frequency": "",
+      "Range": "",
+      "Type": "",
+      "move_class": "",
+      "num_dice": "",
+      "die_size": "",
+      "Effect": ""
+    },
+    {
+      "Name": "",
+      "Frequency": "",
+      "Range": "",
+      "Type": "",
+      "move_class": "",
+      "num_dice": "",
+      "die_size": "",
+      "Effect": ""
+    },
+    {
+      "Name": "",
+      "Frequency": "",
+      "Range": "",
+      "Type": "",
+      "move_class": "",
+      "num_dice": "",
+      "die_size": "",
+      "Effect": ""
+    }
+  ],
+  "Skills": ["Flight", "Invisibility", "Phasing"],
+  "Stats": {
+    "Max_HP": 40,
+    "ATK": 8,
+    "DEF": 6,
+    "SPATK": 13,
+    "SPDEF": 8,
+    "SPD": 11,
+    "dMonst": "1d10"
+  },
+  "Attributes": {
+    "Nickname": "",
+    "Species": "Gengar",
+    "Gender": "",
+    "Nature": "Hardy[+ATK, -ATK]",
+    "Size": "Medium",
+    "Weight": "Medium",
+    "Egg1": "Amorphous",
+    "Egg2": "",
+    "Hatch_Time": "10 Days",
+    "Diet": "Nullivore / Psiotroph",
+    "Likes": "None",
+    "Dislikes": "None",
+    "Move_Speed": 55,
+    "Held_Item": "",
+    "Loyalty": 2
+  },
+  "Non-Stat_Passives": [
+    "Cursed Body(When you are hit by a foe’s melee attack, Disable that attack until you are hit by a different melee attack. That newest attack is Disabled.)",
+    "()",
+    "()",
+    "()",
+    "()",
+    "()",
+    "()"
+  ]
+}

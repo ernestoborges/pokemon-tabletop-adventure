@@ -1,0 +1,239 @@
+Passive Name	Passive Effect
+Power Up	+1 Attack
+Thick Hide	+1 Defense
+Focused	+1 Special Attack
+Vigilant	+1 Special Defense
+Nimble	+1 Speed
+Mighty	+2 Attack
+Fortified	+2 Defense
+Amplified	+2 Special Attack
+Invulnerable	+2 Special Defense
+Volant	+2 Speed
+Adaptability	Your moves that are the same type as you deal +4 damage.
+Aerilate	Normal-type moves performed by you are treated as Flying-type moves.
+Aftermath	When knocked out by a melee attack, the attacker loses 1d20 HP.
+Analytic	When attacking a foe who has already acted this round, deal +4 damage.
+Anger Point	When hit by a critical hit, you get Attack▲ (Max▲▲).
+Anger Shell	While you are below 15 HP, your attacks deal +4 damage.
+Armor Tail	You are immune to damage from Priority attacks that are used out of turn order during combat.
+Aroma Veil	You and your allies within 10ft of you are immune to the effects of the moves Heal Block, Taunt, Encore, and Disable and the passive Cursed Body.
+Battery	Allies within 15ft of you deal +4 damage with Special moves.
+Battle Armor	Critical hits are treated as normal hits against you.
+Berserk	While below half HP, your Special moves deal +4 damage.
+Big Pecks	Foes cannot give you Defense▼.
+"
+Blaze"	When you are below 20 HP, your Fire-type attacks deal +4 damage.
+Cheek Pouch	Whenever you consume a berry, you recover 10 HP in addition to any other effects.
+Chlorophyll	While in Sunny Weather , you get Speed▲ at the start of your turn.
+Clear Body	Foes cannot give you ▼.
+Cloud Nine	As a free action you may deplete one use of Defog and use Defog.
+Color Change	After you are attacked, gain a Type Coat  of the attacking move's type.
+Comatose	You are always Drowsy but can still act as if you aren’t. You are immune to other afflictions.
+Commander	Tatsugiri can enter or leave an adjacent allied Dondozo's mouth as a free action to enter Stance: While inside a Dondozo’s mouth, Tatsugiri is completely removed from play and cannot act. Dondozo may use any of the Tatsugiri’s moves. Dondozo chooses and gets two of the following at the beginning of Dondozo’s turn: Attack▲, SpAttack▲, Defense▲, SpDefense▲, or Speed▲. When Dondozo is knocked out, leaves this Stance or put into a Poké Ball, Tatsugiri is released adjacent. If Tatsugiri leaves Dondozo, Dondozo loses all of its ▲, regardless of source.
+Competitive	If a foe gives you any ▼, you get SpAttack▲▲.
+Compound Eyes	Add +1 Accuracy whenever you use a ranged attack.
+Corrosion	You can inflict Poisoned and  Toxified to Steel-types and Poison-types.
+Costar	The first time an ally gets ▲ during combat, copy that ▲.
+Cud Chew	When you consume a berry, its effect will activate a second time at the start of your next turn.
+Curious Medicine	Foes cannot give you and your adjacent allies ▼.
+Cursed Body	When you are hit by a foe’s melee attack, Disable that attack until you are hit by a different melee attack. That newest attack is Disabled.
+Cute Charm	Whenever you are hit with a melee attack, roll 1d4. On 4, Entrance the attacker.
+Damp	Chloroblast, Explosion, Misty Explosion, and Self- Destruct fail to do anything if used within 50ft of you.
+Dazzling	You may not be targeted by Priority moves that are being used out of turn order.
+Defeatist	When you have 15 HP or less, you get Attack▼ and SpAttack▼.
+Defiant	If a foe gives you any ▼, you get Attack▲▲.
+Disguise	The first time you are hit with an attack each encounter, the attack is negated.
+Download	When you hit an enemy with a move, you may Download them. You have +2 Accuracy against your most recently Downloaded enemy.
+Drizzle	As a free action you may deplete one use of Rain Dance and use Rain Dance.
+Drought	As a free action you may deplete one use of Sunny Day and use Sunny Day.
+Dry Skin	In Sunny Weather, you lose 4 HP at the end of your turn. In Rainy Weather, you recover 4 HP at the end of your turn. You are immune to Water-type moves.
+Early Bird	At the end of your turn, if you’re  Drowsy, cure yourself of Drowsy.
+Earth Eater	When you are hit by a Ground-type attack, halve the damage, then you heal that much HP instead of taking damage.
+Effect Spore	Whenever you are hit with a melee attack, roll 1d4. On 4, the attacker is randomly afflicted with Paralysis, Drowsy, or Poisoned.
+Electric Surge	As a free action you may deplete one use of Electric Terrain and use Electric Terrain.
+Electromorphosis	When hit by an attack that deals damage, you may use the move Charge as a free action
+Emergency Exit	You cannot fight when first damaged below 20 HP. You will want to run away or return to a Poké Ball for 2 rounds. During those two rounds, your Speed is doubled.
+Exposed	When you move or use an attack, you have –8 Defense and –8 Special Defense until your next turn. You also deal –8 damage with all attacks.
+Filter	Super-effective attacks against you deal –4 damage.
+Flame Body	Whenever you are hit with a melee attack, roll 1d4. On 4, Burn the attacker.
+Flare Boost	While  Burned, your Special moves have +8 power.
+Flash Fire	You are immune to Fire-type attacks. If you would be hit by a Fire-type attack, your Fire type attacks have +4 power for the remainder of the encounter.
+Flower Gift	While Cherrim is in Sunny Weather, Cherrim gets Attack▲▲ and SpDefense▲▲ at the start of its turn.
+Flower Veil	You and your allied Grass-types within 25ft of you cannot get ▼.
+Fluffy	If hit by a melee attack, you only take half the damage. If hit by a Fire-type attack, you take twice the damage.
+Forecast	Your appearance and type changes with the Weather. In Hailing, Hazy, Misty, or Snowing Weather, Castform is Ice-type. In Raining Weather, Castform is Water-type. In Sandstorming Weather, Castform is Rock- type. In Sunny or Pyroclastic Weather, Castform is Fire- type.
+Friend Guard	Allies within 10ft that do not have Friend Guard take -4 damage when attacked.
+Fur Coat	If hit by a Physical attack, you only take half the damage you would take.
+Gale Wings	If you use a Flying-type Move during your turn, you get Speed▲.
+Galvanize	Normal-type moves performed by you are treated as Electric-type moves.
+Good as Gold	You are immune to Effect moves). Grass Pelt (While in Grassy Terrain , you get Defense▲ (Max▲▲) at the start of your turn.
+Grassy Surge	As a free action you may deplete one use of Grassy Terrain and use Grassy Terrain.
+Guard Dog	If a foe’s effect would cause you to flee or be moved, instead you get Attack▲.
+Gulp Missile	Whenever Cramorant goes underwater, it gathers waste in its mouth. When hit by an attack within 30ft while Cramorant has waste, Cramorant ejects the waste at the offender, dealing 4 damage or 8 damage if Cramorant has less than 20 HP . Waste can be held for up to 5 mins.
+Guts	While afflicted, you get Attack▲ (Max▲▲) at the start of your turn.
+Harvest	When using a Berry, you only eat half of it while still gaining its full effects. You can only use half of a Berry if you have Harvest.
+Healer	After acting, you may roll 1d20. On 16 or higher, any adjacent allies are cured of all afflictions.
+Heatproof	Fire-type attacks are resisted by you. If you are already resistant to Fire-type, remove an additional damage die.
+Hospitality	The first time you move adjacent to an ally per encounter, they get 12 temporary HP.
+Hunger Switch	Whenever Morpeko acts, it changes from Full Belly mode to Hangry mode or back into Full Belly mode from Hangry mode. Aura Wheel is Electric-type in Full Belly mode, Aura Wheel is Dark-type in Hangry mode.
+Hustle	If you miss an attack, you get Attack▲▲.
+Hydration	While in Raining Weather , you are cured of any afflictions.
+Hyper Cutter	Foes cannot give you Attack▼.
+Ice Body	If in Hailing Weather, you recover 4 HP after you act and you don’t take damage from Hailing weather .
+Ice Face	The first time Eiscue is hit with a melee attack each encounter; the attack is negated and you change to No Ice Face Form. Ice Face is reset whenever it starts Hailing or Snowing while you are within its area of effect.
+Ice Scales	If hit by a Special attack, you only take half the damage you would take.
+Illusion	As a free action, you may change your appearance to look like any Pokémon you have interacted with within the past hour. You may not appear as a Pokémon more than twice your size and the illusion is dropped when you are hit by an attack.
+Immunity	You are immune to getting  Poisoned and Toxified.
+Imposter	As a free action you may use Transform.
+Infiltrator	Hindering terrain and  Hazards do not affect your accuracy during attacks.
+Innards Out	When you are knocked out by a melee attack, deal damage to the attacker equal to the damage you just took.
+Inner Focus	You are immune to being  Dazed.
+Insomnia	You are immune to being  Drowsy.
+Iron Barbs	Whenever you are hit with a melee attack, the attacker loses 4 HP.
+Iron Fist	Your punching attacks have +4 power.
+Justified	When a foe hits you with a Dark-type attack, you get Attack▲ (Max▲▲).
+Keen Eye	Your accuracy checks cannot be negatively affected by foes.
+Leaf Guard	While in Sunny Weather, you are cured of any afflictions or negative lingering effects of moves.
+Levitate	You are immune to Ground-type moves while you are airborne.
+Libero	When you make an attack, you may change your type to the same type as the attack you are making.
+Lightning Rod	When a foe uses an Electric attack, if you are in the range or area of the attack, you may negate that move to gain SpAttack▲▲.
+Limber	You are immune to being Paralyzed.
+Lingering Aroma	When you are hit by a foe’s melee attack, disable all of the foe’s ability passives, then they gain Lingering Aroma.
+Liquid Ooze	If you are hit by an attack that damages you and heals the attacker, the attacker is dealt damage equal to what they would have healed, instead of healing.
+Liquid Voice	Sound moves made by you are Water-type.
+Lucky Charm	You may have more than one Style on your move list.
+Magic Bounce	If you are hit by an attack that does not deal damage, the attacker is instead affected by the effects of their own attack.
+Magic Guard	Foes can only deal damage to you with attacks that deal damage. You are unaffected by damage from afflictions, Coats, Hazards, Weather or any passives given by foes.
+Magician	When hitting with a melee attack, you steal the target’s held item, if any.
+Magma Armor	You are immune to getting  Frostbite.
+Marvel Scale	While afflicted, you get Defense▲ at the start of your turn.
+Mega Launcher	Your pulse attacks deal +4 damage.
+Merciless	On hit, your attacks are critical hits if the target is Poisoned or Toxified.
+Mimicry	After acting, your type changes to reflect your current surroundings. If you are in a grassy field, Grass type; if you are in water, Water type; if you are on a mountain, Rock type; etc.
+Minus	If at least one ally has Plus or Minus within 10ft of you, your Special attacks have +4 power.
+Mirror Armor	If a foe would give you a ▼, instead that foe gets the ▼ they tried to give you.
+Misty Surge	As a free action you may deplete one use of Misty Terrain and use Misty Terrain.
+Mold Breaker	Your attacks ignore any passives that would redirect, negate or lower the power of your attacks.
+Motor Drive	Any Electric-type attack that hits you is negated and you get Speed▲ (Max▲▲).
+Multiscale	When you are at Max HP, you take –8 damage from all attacks.
+Mummy	When you are hit by a foe’s melee attack, disable all of the foe’s ability passives, then they gain Mummy.
+Mycelium Might	When using an attack that can cause afflictions, ignore any immunities that foes may have when applying the affliction.
+Natural Cure	If you do not move or attack anyone for one round, you are cured of any afflictions.
+Neutralizing Gas	Passives other than Neutralizing Gas do not work within 10ft of you.
+No Guard	You cannot miss your attacks, and attacks made against you cannot miss.
+Normalize	Attacks performed by you are treated as Normal-type attacks.
+"
+Oblivious"	You are immune to Entranced.
+Opportunist	Whenever an adjacent foe gains a ▲, you gain the same ▲.
+Overcoat	You are immune to damage from Weather.
+Overgrow	When you are below 20 HP, your Grass-type attacks deal +4 damage
+Own Tempo	You are immune to being Confused.
+Pastel Veil	You and your allies within 10ft of you are immune to being Poisoned or Toxified.
+Perish Body	When you are hit by a melee attack, you and the offender receives the Perish Song affliction. Pokemon with Perish Song take 5 damage at the end of their turn, then increase this by 5. Perish Song fades after dealing damage four times, and cannot otherwise be removed.
+Pickpocket	When you are hit by a melee attack, you steal the offender’s held item, if any.
+Pixilate	Normal-type moves performed by you are treated as Fairy-type moves.
+Plus	If at least one ally has Plus or Minus within 10ft of you, your Physical attacks have +4 power.
+Poison Heal	While afflicted with Poisoned or Toxified, you are healed instead of damaged by those afflictions. You are cured of Poisoned or Toxified once you are at Max HP.
+Poison Point	Whenever you are hit with a melee attack, roll 1d4. On 4, Poison the attacker.
+Poison Touch	Whenever you hit with a melee attack, you may roll 1d6. On 6, Poison the target.
+Power of Alchemy	When an ally is knocked out within 10ft of you, choose and gain one of your ally’s passives.
+Power Spot	Attacks made within 10ft of you deal +4 damage, regardless if the attacker is friend or foe.
+Prankster	Your attacks that do not have power dice have Priority.
+Pressure	If you are hit by a 3/day attack, the attacker can’t use that attack for the remainder of combat.
+Propeller Tail	Your attacks cannot be redirected by passives or any other effect (except by interception), instead only hitting a target your attack was directed at.
+Protean	When you make an attack, you may change your type to the same type as the attack you are making.
+Psychic Surge	As a free action you may deplete one use of Psychic Terrain and use Psychic Terrain.
+Punk Rock	Your Sound attacks deal +4 damage. You take -4 damage from Sound attacks.
+Purifying Salt	You are immune to afflictions. You are resistant to Ghost-type attacks.
+Queenly Majesty	You may not be targeted by Priority moves that are being used out of turn order.
+Quick Draw	If you acted last during the last round of combat, you may give one of your moves Priority this round.
+Quick Feet	While afflicted, you get Speed▲ at the start of your turn.
+Rain Dish	If in Raining Weather , you regain 4 HP after you act.
+Rattled	When a foe hits you with a Bug-type, Ghost-type, or Dark-type attack, you get Speed▲ (Max▲▲).
+Receiver	When an ally is knocked out within 10ft of you, choose and gain one of your ally’s passives.
+Reckless	Your attacks that damage yourself on hit, deal +8 damage.
+Refrigerate	Normal-type moves performed by you are treated as Ice-type moves.
+Regenerator	When returned to a Poké Ball, you recover to Max HP after being stored for 1 hour.
+Ripen	When you consume a Berry, double any effects it has.
+Rock Head	Your attacks that damage yourself on hit do not damage yourself.
+Rocky Payload	Your Rock-type attacks deal +4 damage.
+Rough Skin	Whenever you are hit with a melee attack, the attacker takes 4 damage.
+Sand Force	While in Sandstorming Weather, your Rock- type and Ground-type attacks deal +4 damage and you don’t take damage from Sandstorming Weather .
+Sand Rush	While in Sandstorming Weather, you get Speed▲ at the start of your turn and you don’t take damage from Sandstorming weather .
+Sand Spit	When you are hit by a melee attack, as a free action you may deplete one use of Sandstorm and use Sandstorm immediately.
+Sand Stream	As a free action you may deplete one use of Sandstorm and use Sandstorm.
+Sand Veil	While in Sandstorming Weather, your foes have -2 Accuracy made against you and you don’t take damage from Sandstorming Weather .
+Sap Sipper	You are immune to Grass-type attacks. If you would be hit by a Grass-type attack, you get Attack▲. If you already have Attack▲, you get Attack▲▲.
+Schooling	When Wishiwashi is at half its HP or higher, it is in its School form. In its School form, Wishiwashi summons hundreds of fish-shaped balls of water and surrounds itself making it appear larger and making it stronger. When Wishiwashi is below half of its max hit points, Wishiwashi is in its Single form, dropping its façade and appearing much smaller on its own.
+Scrappy	Your Normal-type and Fighting-type attacks can hit Ghost-type targets.
+Screen Cleaner	Whenever you move through a  Hazard, destroy it before any effect takes place.
+Seed Sower	When you are hit by an attack that damaged you, as a free action you may deplete one use of Grassy Terrain and use Grassy Terrain immediately.
+Sharpness	Your slashing attacks deal +4 damage.
+Shed Skin	After acting, you may roll 1d4. On 4, you are cured of any afflictions.
+Sheer Force	Your attacks that have additional effects that affect the target may deal +4 damage, but will not have those additional effects.
+Shell Armor	Critical hits are treated as normal hits against you.
+Shields Down	When Minior’s HP is at or below half of its max hit points, its form changes to Core Revealed. While Minior is not in its Core Revealed form, it is immune to afflictions.
+Shield Dust	You are unaffected by additional effects from attacks that have power dice.
+Skill Link	Your scatter moves have +2 during AC.
+Slush Rush	While in Hailing or Snowing Weather, you get Speed▲ at the start of your turn and you don’t take damage from Hailing Weather .
+Sniper	When you land a critical hit, you deal an additional 8 damage.
+Snow Cloak	While in Hailing or Snowing Weather, your foes have -2 Accuracy made against you and you don’t take damage from Hailing weather .
+Snow Warning	As a free action you may deplete one use of Hail and use Hail.
+Solar Power	While in Sunny Weather, you deal an additional +4 damage while attacking. After acting in Sunny Weather, you lose 4 HP.
+Solid Rock	Super-effective attacks against you deal –4 damage.
+Soundproof	You are immune to  Sound attacks.
+Stakeout	When you attack a target who has just joined the encounter since your last turn, you deal +4 damage.
+Stalwart	Your attacks cannot be redirected by passives or any other effect (except by interception), instead only hitting a target your attack was directed at.
+Stance Change	Aegislash has two forms it constantly changes between. When you attack a foe, before making your accuracy check change into your Sword Form. When using a Reaction move such as King’s Shield or Protect, or a protective move like Safeguard or Light Screen, immediately change to Shield Form.
+Static	Whenever you are hit with a melee attack, roll 1d4. On 4, Paralyze the attacker.
+Steadfast	When you are  Dazed, you get Speed▲.
+Steam Engine	When a foe hits you with a Fire-type or Water-type attack, you get Speed▲ (Max▲▲).
+Steelworker	Your Steel-type attacks deal +4 damage.
+Steely Spirit	Steel-type attacks used within 10ft of you by yourself or allies deal +4 damage.
+Stench	Whenever you are hit with a melee attack, roll 1d4. On 4, Daze the attacker.
+Sticky Hold	You cannot drop held items or have held items stolen from you.
+Storm Drain	Any foe’s ranged Water-type attacks within 25ft or any adjacent foe’s Water-type attacks are negated and drawn to you. Whenever you negate an Water-type attack, you get SpAttack▲▲.
+Strong Jaw	Your  Latched attacks deal +4 damage.
+Sturdy	If you would be brought from Max HP to 0 or below, you are instead brought to 1 HP.
+Suction Cups	You cannot be moved by a foe’s attacks.
+Supreme Overlord	When you join combat, you may choose one for every ally that has been knocked out this combat: Attack▲, SpAttack▲, Speed▲.
+Surge Surfer	While in Electrified Terrain , you get Speed▲ at the start of your turn.
+Swarm	When you are below 20 HP, your Bug-type attacks deal +4 damage
+Sweet Veil	You and your allies within 10ft of you are immune to Drowsy.
+Swift Swim	While in Raining Weather  or in water, you get Speed▲ at the start of your turn.
+Symbiosis	You can pass held items to allies within 10ft as a free action.
+Synchronize	When you are given an affliction, the offender is also given the same affliction.
+Tangled Feet	While you are Confused, your foes have -2 Accuracy made against you.
+Technician	When rolling damage, replace any rolled 1s or 2s with 3.
+Telepathy	Your allies within 25ft do not harm you when the ally is using attacks that have an area of effect.
+Thermal Exchange	You are immune to being Burned. When you are hit by a Fire-type attack, you get Attack▲.
+Thick Fat	You take -4 damage from Fire-type attacks and Ice-type attacks.
+Tinted Lens	Your resisted attacks deal +4 damage.
+Too Pure	All attacks made against you are treated as if they are at least super-effective unless you are immune to the source of damage.
+Torrent	When you are below 20 HP, your Water-type attacks deal +4 damage
+Tough Claws	Your slashing attacks deal +4 damage.
+Toxic Boost	If you would have been Poisoned, or Toxified, you are not and you get Attack▲.
+Toxic Debris	When you are hit by an attack that dealt damage, as a free action you may deplete one use of Toxic Spikes and use Toxic Spikes immediately.
+Triage	Any moves you know that can heal HP or afflictions have Reaction[When a foe is being targeted by an attack].
+Truant	All your moves must Recharge. All of your attacks with power get +1d . Truant cannot be removed, ignored, or disabled by any means.
+Unnerve	Foes within 25ft of you cannot consume food.
+Vital Spirit	You are immune to  Drowsy.
+Volt Absorb	When you are hit by an Electric-type attack, halve the damage, then you heal that much HP instead of taking damage.
+Wandering Spirit	Whenever you are hit with a melee attack, you gain all of the offender’s ability passives and lose Wandering Spirit, then they gain Wandering Spirit and lose all of their ability Passives.
+Water Absorb	When you are hit by a Water-type attack, halve the damage, then you heal that much HP instead of taking damage.
+Water Bubble	You take -4 damage from Fire-type attacks. You add +4 damage to Water-type attacks. You are immune to being Burned.
+Water Compaction	When a foe hits you with a Water-type attack, you get Defense▲.
+Water Veil	You are immune to being  Burned.
+Weak Armor	When you are hit by a melee attack, you get Defense▼▼ and Speed▲▲▲.
+Well-Baked Body	You are immune to Fire-type attacks. When you are hit by Fire-type attacks, you get Defense▲▲.
+White Smoke	Foes cannot give you ▼.
+"
+Wind Power"	When hit by a Wind attack, you may use the move Charge as a free action.
+Wind Rider	When hit by a Wind attack, you get Attack▲. (Max▲▲).
+Wonder Guard	Shedinja is immune to attacks that are not super-effective or extremely-effective. Wonder Guard cannot be removed, ignored, or disabled by any means.
+Wonder Skin	Foes cannot give you ▼.
+Zen Mode	Darmanitan changes to its Zen Mode when it is at or below half of its max HP.
+Zero to Hero	When Palafin is reduced to 20 or less HP or if an ally is knocked out within 30ft of Palafin, you change from your Zero form to your Hero form.)
+Ancient Resistance 	Rock-type attacks are resisted by you. If you are already resistant to Rock-type, remove an additional damage die.
+Hazard Immunity	When you gain Hazard Immunity, choose three types of Hazard. You are unaffected by those three types of Hazard.
+Terrain Master	Ignore penalties while moving through hindering or difficult terrain
