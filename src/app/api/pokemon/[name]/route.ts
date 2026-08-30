@@ -16,17 +16,23 @@ export async function GET(
   if (!pokemon) {
     return NextResponse.json({ error: "Pokémon not found" }, { status: 404 });
   }
-  const pokemonMoves = pokemon.moves.map((move: string) => {
-    return getMoveByName(move);
-  });
+  const pokemonMoves = pokemon.moves
+    .map((move: string) => {
+      return getMoveByName(move);
+    })
+    .filter((move) => !!move);
 
-  const pokemonSkills = pokemon.skills.map((skill: string) => {
-    return getSkillByName(skill);
-  });
+  const pokemonSkills = pokemon.skills
+    .map((skill: string) => {
+      return getSkillByName(skill);
+    })
+    .filter((skill) => !!skill);
 
-  const pokemonPassives = pokemon.passives.map((passive: string) => {
-    return getPassiveByName(passive);
-  });
+  const pokemonPassives = pokemon.passives
+    .map((passive: string) => {
+      return getPassiveByName(passive);
+    })
+    .filter((passive) => !!passive);
 
   const response = {
     ...pokemon,
