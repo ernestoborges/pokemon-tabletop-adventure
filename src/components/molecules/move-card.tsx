@@ -13,7 +13,7 @@ export default function MoveCard({ move }: { move: Move }) {
         </div>
         <div>
           <Image
-            src={`/icons/types/${move.type}.png`}
+            src={`/icons/types/${move.type.toLocaleLowerCase()}.png`}
             width={32}
             height={32}
             alt={move.type}

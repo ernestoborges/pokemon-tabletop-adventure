@@ -13,7 +13,7 @@ export default function PokemonPanel({ pokemon }: { pokemon: Pokemon }) {
           <div className="flex gap-2">
             <div>
               <Image
-                src={`/icons/types/${pokemon.types[0]}.png`}
+                src={`/icons/types/${pokemon.types[0].toLocaleLowerCase()}.png`}
                 width={32}
                 height={32}
                 alt={pokemon.types[0]}
@@ -24,7 +24,7 @@ export default function PokemonPanel({ pokemon }: { pokemon: Pokemon }) {
               {pokemon.types[1] && (
                 <>
                   <Image
-                    src={`/icons/types/${pokemon.types[1]}.png`}
+                    src={`/icons/types/${pokemon.types[1].toLocaleLowerCase()}.png`}
                     width={32}
                     height={32}
                     alt={pokemon.types[1]}
