@@ -32,13 +32,35 @@ export function getPokemonList(options?: {
   query?: string;
   sort?: "id" | "name";
   limit?: number;
+  types?: string[];
+  typeFilter?: "any" | "all";
 }) {
-  let results = pokemons;
+  let results: Pokemon[] = pokemons;
 
   if (options?.query)
     results = results.filter((pokemon) =>
       pokemon.name.toLowerCase().includes(options.query!.toLowerCase()),
     );
+
+  if (options?.types && options.types.length > 0) {
+    const types = options.types.map((type) => type.toLowerCase());
+
+    if (options.typeFilter === "any") {
+      results = results.filter((pokemon) =>
+        pokemon.types.some((type) => types.includes(type.toLowerCase())),
+      );
+    }
+
+    if (options.typeFilter === "all") {
+      results = results.filter((pokemon) =>
+        types.every((selectedType) =>
+          pokemon.types.some(
+            (pokemonType) => pokemonType.toLowerCase() === selectedType,
+          ),
+        ),
+      );
+    }
+  }
 
   if (options?.sort)
     results = results.sort((a, b) => {

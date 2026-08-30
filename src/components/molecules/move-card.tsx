@@ -24,6 +24,7 @@ export default function MoveCard({
             height={32}
             alt={move.type}
             title={move.type}
+            unoptimized
           />
         </div>
         {/* <div>{move.rangeCategory}</div> */}

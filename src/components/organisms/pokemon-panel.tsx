@@ -18,6 +18,7 @@ export default function PokemonPanel({ pokemon }: { pokemon: Pokemon }) {
                 height={32}
                 alt={pokemon.types[0]}
                 title={pokemon.types[0]}
+                unoptimized
               />
             </div>
             <div>
@@ -29,6 +30,7 @@ export default function PokemonPanel({ pokemon }: { pokemon: Pokemon }) {
                     height={32}
                     alt={pokemon.types[1]}
                     title={pokemon.types[1]}
+                    unoptimized
                   />
                 </>
               )}
