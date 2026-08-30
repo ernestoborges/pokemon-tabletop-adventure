@@ -43,16 +43,12 @@ export default function PokemonPanel({ pokemon }: { pokemon: Pokemon }) {
                 <LabeledText label="SPD">{pokemon.stats.speed}</LabeledText>
               </div>
               <div>
-                <LabeledText label="DEF">{pokemon.stats.defense}</LabeledText>
-                <LabeledText label="ATK">{pokemon.stats.attack}</LabeledText>
+                <LabeledText label="DEF">{pokemon.stats.def}</LabeledText>
+                <LabeledText label="ATK">{pokemon.stats.atk}</LabeledText>
               </div>
               <div>
-                <LabeledText label="SDEF">
-                  {pokemon.stats.specialDefense}
-                </LabeledText>
-                <LabeledText label="SATK">
-                  {pokemon.stats.specialAttack}
-                </LabeledText>
+                <LabeledText label="SDEF">{pokemon.stats.spdef}</LabeledText>
+                <LabeledText label="SATK">{pokemon.stats.spatk}</LabeledText>
               </div>
             </div>
             <div className="flex flex-col gap-0">
