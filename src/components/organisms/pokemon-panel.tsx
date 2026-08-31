@@ -1,8 +1,9 @@
 import { Pokemon } from "@/types/pokemon";
 import Image from "next/image";
-import LabeledText from "@/components/labeled-text";
-import PokeballDefaultToken from "@/components/pokeball-default-token";
+import LabeledText from "@/components/atoms/labeled-text";
+import PokeballDefaultToken from "@/components/atoms/pokeball-default-token";
 import MoveCard from "../molecules/move-card";
+import EvolutionLineMenu from "../molecules/evolution-line-menu";
 
 export default function PokemonPanel({ pokemon }: { pokemon: Pokemon }) {
   return (
@@ -102,6 +103,10 @@ export default function PokemonPanel({ pokemon }: { pokemon: Pokemon }) {
               <PokeballDefaultToken size={256} />
             )}
           </div>
+        </div>
+        <div>
+          <div className="font-bold text-xl">EVOLUTION LINE</div>
+          <EvolutionLineMenu pokemon={pokemon} />
         </div>
         <div>
           <div className="font-bold text-xl">PASSIVES</div>

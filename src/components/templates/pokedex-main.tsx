@@ -1,6 +1,7 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Pokemon, PokemonSearchData } from "@/types/pokemon";
+import { usePokemon } from "@/contexts/PokemonContext";
 import PokemonList from "@/components/molecules/pokemon-list";
 import Tabs from "@/components/molecules/tabs";
 import PokemonPanel from "@/components/organisms/pokemon-panel";
@@ -13,26 +14,25 @@ const TABS = [
 ];
 
 export default function PokedexMain() {
+  const { selectedPokemon } = usePokemon();
+
   const [searchResults, setSearchResults] = useState<PokemonSearchData[]>([]);
-  const [selectedPokemon, setSelectedPokemon] =
-    useState<PokemonSearchData | null>(null);
   const [selectedPokemonData, setSelectedPokemonData] =
     useState<Pokemon | null>(null);
   const [selectedTab, setSelectedTab] = useState<number>(0);
 
+  useEffect(() => {
+    fetch(`/api/pokemon/${selectedPokemon.name}`)
+      .then((res) => res.json())
+      .then((data) => {
+        setSelectedPokemonData(data);
+      });
+  }, [selectedPokemon]);
   return (
     <main className="flex gap-4 w-full h-dvh flex-col items-center justify-start pt-16 pb-8 px-16 bg-background text-primary">
-      <PokemonSearchBar
-        searchResults={searchResults}
-        onSearch={(results) => setSearchResults(results)}
-      />
+      <PokemonSearchBar onSearch={(results) => setSearchResults(results)} />
       <div className="flex-1 flex gap-4 w-full min-h-0 rounded-lg">
-        <PokemonList
-          pokemons={searchResults}
-          selectedPokemon={selectedPokemon}
-          onSelectPokemon={setSelectedPokemon}
-          onSelectPokemonData={setSelectedPokemonData}
-        />
+        <PokemonList pokemons={searchResults} />
         <div className="flex-1 flex flex-col gap-4">
           <Tabs
             selectedTab={selectedTab}

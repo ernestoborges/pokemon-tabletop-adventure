@@ -52,11 +52,18 @@ export interface PokemonBreeding {
 export interface PokemonEvolution {
   stage: number;
   family: string[];
+  familyStructure: EvolutionNode;
   familyStarter: string;
   prevEvolutionIndex: number;
   evolutionaryStage: number;
   evolvesFrom: string | null;
-  evolvesInto: string | null;
+  evolvesInto: { id: number; name: string }[];
+}
+
+export interface EvolutionNode {
+  id: number | null;
+  name: string;
+  evolutions: EvolutionNode[];
 }
 
 export interface PokemonSpecial {

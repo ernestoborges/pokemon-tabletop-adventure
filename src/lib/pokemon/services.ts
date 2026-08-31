@@ -2,7 +2,13 @@ import pokemons from "@/db/pokemons.json";
 import moves from "@/db/moves.json";
 import passives from "@/db/passives.json";
 import skills from "@/db/skills.json";
-import { Pokemon, Passive, Move, Skill } from "@/lib/pokemon/types";
+import {
+  Pokemon,
+  Passive,
+  Move,
+  Skill,
+  EvolutionNode,
+} from "@/lib/pokemon/types";
 
 export function getMoveByName(name: string): Move | undefined {
   return moves.find(
@@ -22,10 +28,109 @@ export function getSkillByName(name: string): Skill | undefined {
   );
 }
 
-export function getPokemonByName(name: string): Pokemon | undefined {
+function _getPokemonByName(name: string) {
   return pokemons.find(
-    (pokemon: Pokemon) => pokemon.name.toLowerCase() === name.toLowerCase(),
+    (pokemon) => pokemon.name.toLowerCase() === name.toLowerCase(),
   );
+}
+
+function buildEvolutionTree(
+  id: number | null,
+  name: string,
+  evolutionInto: string | null,
+): EvolutionNode {
+  const node: EvolutionNode = {
+    id: id,
+    name: name,
+    evolutions: [],
+  };
+  if (!evolutionInto || evolutionInto.length === 0) return node;
+
+  const evolvesIntoList = evolutionInto
+    .split("/")
+    .map((name: string) => name.trim());
+  node.evolutions = evolvesIntoList
+    .map((name: string) => {
+      const nextPokemon = _getPokemonByName(name);
+
+      if (!nextPokemon) return null;
+
+      return buildEvolutionTree(
+        nextPokemon.id,
+        nextPokemon.name,
+        nextPokemon.evolution.evolvesInto,
+      );
+    })
+    .filter((p) => !!p);
+  return node;
+}
+
+export function getPokemonByName(name: string): Pokemon | undefined {
+  const pokemon = _getPokemonByName(name);
+
+  const pokemonFamily: { id: number; name: string }[] = pokemon.evolution.family
+    .map((familyMember: string) => {
+      const p = _getPokemonByName(familyMember);
+      if (!p) return null;
+      return {
+        id: p.id,
+        name: p.name,
+      };
+    })
+    .filter(Boolean);
+
+  const familyStarter =
+    pokemon.evolution.familyStarter && pokemonFamily.length > 0
+      ? pokemons.find(
+          (p) =>
+            p.name.toLowerCase() ===
+            pokemon.evolution.familyStarter.toLowerCase(),
+        )
+      : null;
+
+  const evolvesFrom =
+    pokemon.evolution.evolvesFrom && pokemonFamily.length > 1
+      ? pokemonFamily.find(
+          (p) =>
+            p.name.toLowerCase() ===
+            pokemon.evolution.evolvesFrom.toLowerCase(),
+        )
+      : null;
+
+  let evolvesInto = [];
+  if (pokemon.evolution.evolvesInto && pokemonFamily.length > 1) {
+    const evolvesIntoList = pokemon.evolution.evolvesInto
+      .split("/")
+      .map((name: string) => name.trim());
+    evolvesInto = evolvesIntoList
+      .map((name: string) => {
+        return pokemonFamily.find(
+          (p) => p.name.toLowerCase() === name.toLowerCase(),
+        );
+      })
+      .filter(Boolean);
+  }
+
+  const familyStarterEvolvesInto = _getPokemonByName(familyStarter.name)
+    .evolution.evolvesInto;
+
+  const familyStructure = buildEvolutionTree(
+    familyStarter.id,
+    familyStarter.name,
+    familyStarterEvolvesInto,
+  );
+
+  return {
+    ...pokemon,
+    evolution: {
+      ...pokemon.evolution,
+      family: pokemonFamily,
+      familyStructure: familyStructure,
+      familyStarter: familyStarter,
+      evolvesFrom: evolvesFrom,
+      evolvesInto: evolvesInto,
+    },
+  };
 }
 
 export function getPokemonList(options?: {

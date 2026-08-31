@@ -1,5 +1,10 @@
 import PokedexMain from "@/components/templates/pokedex-main";
+import { PokemonProvider } from "@/contexts/PokemonContext";
 
 export default function Home() {
-  return <PokedexMain />;
+  return (
+    <PokemonProvider>
+      <PokedexMain />;
+    </PokemonProvider>
+  );
 }

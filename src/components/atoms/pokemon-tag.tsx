@@ -1,5 +1,5 @@
 import Image from "next/image";
-import PokeballDefaultToken from "../pokeball-default-token";
+import PokeballDefaultToken from "./pokeball-default-token";
 
 export default function PokemonTag({
   id,

@@ -35,10 +35,11 @@ export type Pokemon = {
   rarity: string | null;
   evolution: {
     stage: number | null;
-    evolvesFrom: string | null;
-    evolvesInto: string | null;
-    familyStarter: string | null;
-    family: string[];
+    evolvesFrom: PokemonSearchData | null;
+    evolvesInto: PokemonSearchData[];
+    familyStarter: PokemonSearchData | null;
+    familyStructure: PokemonFamilyNode;
+    family: PokemonSearchData[];
   };
   page: string;
   captureStage: number;
@@ -46,6 +47,12 @@ export type Pokemon = {
     gigantamax: string | null;
     gigantamaxMove: string | null;
   };
+};
+
+export type PokemonFamilyNode = {
+  id: number | null;
+  name: string;
+  evolutions: PokemonFamilyNode[];
 };
 
 export type PokemonSearchData = {

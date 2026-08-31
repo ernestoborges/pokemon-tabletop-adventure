@@ -1,24 +1,16 @@
-import { Pokemon, PokemonSearchData } from "@/types/pokemon";
+import { PokemonSearchData } from "@/types/pokemon";
 import PokemonTag from "../atoms/pokemon-tag";
+import { usePokemon } from "@/contexts/PokemonContext";
 
 export default function PokemonList({
   pokemons,
-  selectedPokemon,
-  onSelectPokemon,
-  onSelectPokemonData,
 }: {
   pokemons: PokemonSearchData[];
-  selectedPokemon: PokemonSearchData | null;
-  onSelectPokemon: (pokemon: PokemonSearchData) => void;
-  onSelectPokemonData: (pokemon: Pokemon) => void;
 }) {
-  function handleSelectPokemon(name: string) {
-    fetch(`/api/pokemon/${name}`)
-      .then((res) => res.json())
-      .then((data) => {
-        onSelectPokemon({ name: data.name, id: data.id });
-        onSelectPokemonData(data);
-      });
+  const { selectedPokemon, selectPokemon } = usePokemon();
+
+  function handleSelectPokemon(id: number | null, name: string) {
+    selectPokemon(id, name);
   }
 
   return (
@@ -29,8 +21,8 @@ export default function PokemonList({
             key={pokemon.name}
             id={pokemon.id}
             name={pokemon.name}
-            onClick={() => handleSelectPokemon(pokemon.name)}
-            selected={selectedPokemon?.name === pokemon.name}
+            onClick={() => handleSelectPokemon(pokemon.id, pokemon.name)}
+            selected={selectedPokemon.name === pokemon.name}
           />
         ))}
       </div>
