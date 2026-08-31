@@ -71,7 +71,7 @@ export default function PokemonPanel({ pokemon }: { pokemon: Pokemon }) {
                 {pokemon.diet}
               </LabeledText>
               <LabeledText label="Family" uppercase>
-                {pokemon.evolution.family.join(" / ")}
+                {pokemon.evolution.family.map((f) => f.name).join(" / ")}
               </LabeledText>
               <LabeledText label="Habitats" uppercase>
                 {pokemon.habitats.join(" / ")}

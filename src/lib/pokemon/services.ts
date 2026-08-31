@@ -79,14 +79,13 @@ export function getPokemonByName(name: string): Pokemon | undefined {
     })
     .filter(Boolean);
 
-  const familyStarter =
-    pokemon.evolution.familyStarter && pokemonFamily.length > 0
-      ? pokemons.find(
-          (p) =>
-            p.name.toLowerCase() ===
-            pokemon.evolution.familyStarter.toLowerCase(),
-        )
-      : null;
+  let familyStarter = pokemonFamily.find(
+    (p) =>
+      p.name.toLowerCase() === pokemon.evolution.familyStarter.toLowerCase(),
+  );
+  if (!familyStarter) {
+    familyStarter = { id: pokemon.id, name: pokemon.name };
+  }
 
   const evolvesFrom =
     pokemon.evolution.evolvesFrom && pokemonFamily.length > 1
