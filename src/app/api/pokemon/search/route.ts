@@ -17,7 +17,18 @@ export async function GET(request: Request) {
     | null;
   typeFilter = typeFilter === "all" ? "all" : "any";
 
-  const results = getPokemonList({ query, limit, types, typeFilter });
+  const rarityFilter = searchParams.get("rarityFilter")?.toLowerCase();
+
+  const habitatFilter = searchParams.get("habitatFilter")?.toLowerCase();
+
+  const results = getPokemonList({
+    query,
+    limit,
+    types,
+    typeFilter,
+    rarityFilter,
+    habitatFilter,
+  });
 
   return NextResponse.json(results);
 }

@@ -2,6 +2,7 @@ import pokemons from "@/db/pokemons.json";
 import moves from "@/db/moves.json";
 import passives from "@/db/passives.json";
 import skills from "@/db/skills.json";
+import habitats from "@/db/habitats.json";
 import {
   Pokemon,
   Passive,
@@ -26,6 +27,10 @@ export function getSkillByName(name: string): Skill | undefined {
   return skills.find(
     (skill: Skill) => skill.name.toLowerCase() === name.toLowerCase(),
   );
+}
+
+export function getHabitats(): { name: string }[] {
+  return habitats.sort((a, b) => a.name.localeCompare(b.name));
 }
 
 function _getPokemonByName(name: string) {
@@ -139,6 +144,8 @@ export function getPokemonList(options?: {
   limit?: number;
   types?: string[];
   typeFilter?: "any" | "all";
+  rarityFilter?: string;
+  habitatFilter?: string;
 }) {
   let results: Pokemon[] = pokemons;
 
@@ -165,6 +172,22 @@ export function getPokemonList(options?: {
         ),
       );
     }
+  }
+
+  if (options?.rarityFilter) {
+    results = results.filter(
+      (pokemon) =>
+        pokemon.rarity.toLowerCase() === options.rarityFilter!.toLowerCase(),
+    );
+  }
+
+  if (options?.habitatFilter) {
+    results = results.filter((pokemon) =>
+      pokemon.habitats.some(
+        (habitat) =>
+          habitat.toLowerCase() === options.habitatFilter!.toLowerCase(),
+      ),
+    );
   }
 
   if (options?.sort)
