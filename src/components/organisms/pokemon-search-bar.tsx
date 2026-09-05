@@ -1,10 +1,9 @@
 import { PokemonSearchData } from "@/types/pokemon";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import Select from "../atoms/input-select";
+import SelectField from "../molecules/field-select";
 
 const RARITY_OPTIONS = [
-  { label: "Rarity", value: "" },
   { label: "Common", value: "common" },
   { label: "Uncommon", value: "uncommon" },
   { label: "Rare", value: "rare" },
@@ -114,7 +113,8 @@ export default function PokemonSearchBar({
         className={`transition-all duration-300 overflow-hidden ${isFiltersVisible ? "max-h-96" : "max-h-0"}`}
       >
         <div className="flex gap-2 items-center py-2">
-          <Select
+          <SelectField
+            placeholder="Rarity"
             options={RARITY_OPTIONS.map(({ label, value }) => ({
               label,
               value,
@@ -122,14 +122,12 @@ export default function PokemonSearchBar({
             value={rarityFilter ?? ""}
             onChange={setRarityFilter}
           />
-          <Select
-            options={[
-              { label: "Habitat", value: "" },
-              ...habitats.map(({ name }) => ({
-                label: name,
-                value: name,
-              })),
-            ]}
+          <SelectField
+            placeholder="Habitat"
+            options={habitats.map(({ name }) => ({
+              label: name,
+              value: name,
+            }))}
             value={habitatFilter ?? ""}
             onChange={setHabitatFilter}
           />
