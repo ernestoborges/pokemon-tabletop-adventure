@@ -10,6 +10,7 @@ import {
   Skill,
   EvolutionNode,
 } from "@/lib/pokemon/types";
+import { compareValues } from "../utils";
 
 export function getMoveByName(name: string): Move | undefined {
   return moves.find(
@@ -140,7 +141,8 @@ export function getPokemonByName(name: string): Pokemon | undefined {
 
 export function getPokemonList(options?: {
   query?: string;
-  sort?: "id" | "name";
+  orderBy?: "id" | "name";
+  orderDirection?: "asc" | "desc";
   limit?: number;
   types?: string[];
   typeFilter?: "any" | "all";
@@ -190,13 +192,18 @@ export function getPokemonList(options?: {
     );
   }
 
-  if (options?.sort)
-    results = results.sort((a, b) => {
-      if (options.sort === "id") return a.id - b.id;
-      if (options.sort === "name") return a.name.localeCompare(b.name);
-      return 0;
-    });
+  if (options?.orderBy) {
+    const orderBy = options?.orderBy ?? "id";
 
+    results = results
+      .filter((pokemon) => pokemon[orderBy] != null)
+      .sort((a, b) => {
+        const valueA = a[orderBy];
+        const valueB = b[orderBy];
+
+        return compareValues(valueA, valueB, options?.orderDirection);
+      });
+  }
   if (options?.limit) results = results.slice(0, options.limit);
 
   return results.map((pokemon) => ({

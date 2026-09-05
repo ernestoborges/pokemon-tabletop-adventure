@@ -1,7 +1,7 @@
-import { PokemonSearchData } from "@/types/pokemon";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import SelectField from "../molecules/field-select";
+import { usePokemonList } from "@/contexts/PokemonListContext";
 
 const RARITY_OPTIONS = [
   { label: "Common", value: "common" },
@@ -18,54 +18,32 @@ const RARITY_OPTIONS = [
   { label: "Gods", value: "gods" },
 ];
 
-export default function PokemonSearchBar({
-  onSearch,
-}: {
-  onSearch: (results: PokemonSearchData[]) => void;
-}) {
-  const [selectedTypes, setSelectedTypes] = useState<Record<string, boolean>>({
-    normal: false,
-    fire: false,
-    water: false,
-    grass: false,
-    electric: false,
-    ice: false,
-    fighting: false,
-    poison: false,
-    ground: false,
-    flying: false,
-    psychic: false,
-    bug: false,
-    rock: false,
-    ghost: false,
-    dark: false,
-    dragon: false,
-    steel: false,
-    fairy: false,
-  });
-  const [searchQuery, setSearchQuery] = useState<string>("");
+const TYPE_OPTIONS = [
+  { label: "Normal", value: "normal" },
+  { label: "Fire", value: "fire" },
+  { label: "Water", value: "water" },
+  { label: "Grass", value: "grass" },
+  { label: "Electric", value: "electric" },
+  { label: "Ice", value: "ice" },
+  { label: "Fighting", value: "fighting" },
+  { label: "Poison", value: "poison" },
+  { label: "Ground", value: "ground" },
+  { label: "Flying", value: "flying" },
+  { label: "Psychic", value: "psychic" },
+  { label: "Bug", value: "bug" },
+  { label: "Rock", value: "rock" },
+  { label: "Ghost", value: "ghost" },
+  { label: "Dark", value: "dark" },
+  { label: "Dragon", value: "dragon" },
+  { label: "Steel", value: "steel" },
+  { label: "Fairy", value: "fairy" },
+];
+
+export default function PokemonSearchBar() {
+  const { searchQuery, setSearchQuery, filters, setFilters } = usePokemonList();
+
   const [isFiltersVisible, setIsFiltersVisible] = useState<boolean>(false);
-  const [typeFilter, setTypeFilter] = useState<"any" | "all">("any");
-  const [rarityFilter, setRarityFilter] = useState<string>("");
-
   const [habitats, setHabitats] = useState<{ name: string }[]>([]);
-  const [habitatFilter, setHabitatFilter] = useState<string | null>(null);
-
-  function handleSearchPokemon(name: string) {
-    const limit = 100;
-    const types = Object.entries(selectedTypes)
-      .filter(([_, isSelected]) => isSelected)
-      .map(([type]) => type)
-      .join(",");
-
-    fetch(
-      `/api/pokemon/search?q=${name}&limit=${limit}&types=${types}&typeFilter=${typeFilter}&rarityFilter=${rarityFilter}&habitatFilter=${habitatFilter}`,
-    )
-      .then((res) => res.json())
-      .then((data) => {
-        onSearch(data);
-      });
-  }
 
   function fetchHabitats() {
     fetch(`/api/habitats`)
@@ -74,10 +52,6 @@ export default function PokemonSearchBar({
         setHabitats(data);
       });
   }
-
-  useEffect(() => {
-    handleSearchPokemon(searchQuery);
-  }, [searchQuery, typeFilter, selectedTypes, rarityFilter, habitatFilter]);
 
   useEffect(() => {
     fetchHabitats();
@@ -119,8 +93,9 @@ export default function PokemonSearchBar({
               label,
               value,
             }))}
-            value={rarityFilter ?? ""}
-            onChange={setRarityFilter}
+            value={filters.rarity ?? ""}
+            onChange={(value) => setFilters({ ...filters, rarity: value })}
+            clearable
           />
           <SelectField
             placeholder="Habitat"
@@ -128,50 +103,56 @@ export default function PokemonSearchBar({
               label: name,
               value: name,
             }))}
-            value={habitatFilter ?? ""}
-            onChange={setHabitatFilter}
+            value={filters.habitat ?? ""}
+            onChange={(value) => setFilters({ ...filters, habitat: value })}
+            clearable
           />
         </div>
       </div>
       <div className="flex gap-2 mt-2 items-center">
         <button
-          className={`bg-card w-12 h-8 rounded-md p-2 cursor-pointer transition-colors shadow-md ${typeFilter === "any" ? "bg-primary text-white" : "hover:bg-background-hover"}`}
+          className={`bg-card w-12 h-8 rounded-md p-2 cursor-pointer transition-colors shadow-md ${filters.typeFilter === "any" ? "bg-primary text-white" : "hover:bg-background-hover"}`}
           onClick={() => {
-            setTypeFilter("any");
+            setFilters({ ...filters, typeFilter: "any" });
           }}
         >
           Any
         </button>
         <button
-          className={`bg-card w-12 h-8 rounded-md p-2 cursor-pointer transition-colors shadow-md ${typeFilter === "all" ? "bg-primary text-white" : "hover:bg-background-hover"}`}
+          className={`bg-card w-12 h-8 rounded-md p-2 cursor-pointer transition-colors shadow-md ${filters.typeFilter === "all" ? "bg-primary text-white" : "hover:bg-background-hover"}`}
           onClick={() => {
-            setTypeFilter("all");
+            setFilters({ ...filters, typeFilter: "all" });
           }}
         >
           All
         </button>
         <div className="flex gap-2 flex-wrap">
-          {Object.entries(selectedTypes).map(([type, isSelected]) => (
-            <button
-              key={type}
-              className={`bg-card rounded-md p-2 cursor-pointer transition-colors shadow-md ${isSelected ? "bg-primary text-white" : "hover:bg-background-hover"}`}
-              onClick={() => {
-                setSelectedTypes({
-                  ...selectedTypes,
-                  [type]: !isSelected,
-                });
-              }}
-            >
-              <Image
-                src={`/icons/types/${type.toLowerCase()}.png`}
-                alt={type}
-                width={24}
-                height={24}
-                title={`${type} type`}
-                unoptimized
-              />
-            </button>
-          ))}
+          {TYPE_OPTIONS.map(({ value: type }) => {
+            const isSelected = filters.types.includes(type);
+            return (
+              <button
+                key={type}
+                className={`bg-card rounded-md p-2 cursor-pointer transition-colors shadow-md ${isSelected ? "bg-primary text-white" : "hover:bg-background-hover"}`}
+                onClick={() => {
+                  setFilters({
+                    ...filters,
+                    types: filters.types.includes(type)
+                      ? filters.types.filter((t) => t !== type)
+                      : [...filters.types, type],
+                  });
+                }}
+              >
+                <Image
+                  src={`/icons/types/${type.toLowerCase()}.png`}
+                  alt={type}
+                  width={24}
+                  height={24}
+                  title={`${type} type`}
+                  unoptimized
+                />
+              </button>
+            );
+          })}
         </div>
       </div>
     </div>

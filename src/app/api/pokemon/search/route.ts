@@ -6,11 +6,24 @@ export async function GET(request: Request) {
 
   const query = searchParams.get("q")?.toLowerCase() ?? "";
   const limit = Number(searchParams.get("limit") ?? 10);
+  let orderBy = searchParams.get("orderBy")?.toLowerCase() as
+    | "id"
+    | "name"
+    | null;
+  orderBy = !!orderBy ? orderBy : "id";
+
+  let orderDirection = searchParams.get("orderDirection")?.toLowerCase() as
+    | "asc"
+    | "desc"
+    | null;
+  orderDirection = orderDirection === "asc" ? "asc" : "desc";
+
   const types =
     searchParams
       .get("types")
       ?.split(",")
       .filter((v): v is string => !!v) ?? [];
+
   let typeFilter = searchParams.get("typeFilter")?.toLowerCase() as
     | "any"
     | "all"
@@ -24,6 +37,8 @@ export async function GET(request: Request) {
   const results = getPokemonList({
     query,
     limit,
+    orderBy,
+    orderDirection,
     types,
     typeFilter,
     rarityFilter,

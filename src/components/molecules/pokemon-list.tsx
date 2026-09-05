@@ -1,24 +1,47 @@
-import { PokemonSearchData } from "@/types/pokemon";
 import PokemonTag from "../atoms/pokemon-tag";
 import { usePokemon } from "@/contexts/PokemonContext";
+import SelectField from "./field-select";
+import SortIcon from "../atoms/sort-icon";
+import { usePokemonList } from "@/contexts/PokemonListContext";
 
-export default function PokemonList({
-  pokemons,
-}: {
-  pokemons: PokemonSearchData[];
-}) {
+export default function PokemonList() {
   const { selectedPokemon, selectPokemon } = usePokemon();
+  const { pokemonList, filters, setFilters } = usePokemonList();
 
   function handleSelectPokemon(id: number | null, name: string) {
     selectPokemon(id, name);
   }
 
-  const isSelected = (name: string) => (!!selectedPokemon && selectedPokemon.name === name); 
+  const isSelected = (name: string) =>
+    !!selectedPokemon && selectedPokemon.name === name;
 
   return (
-    <div className="bg-card p-4 rounded-lg shadow-md min-w-64 sm:min-w-80 overflow-y-auto">
+    <div className="flex flex-col gap-2 bg-card p-4 rounded-lg shadow-md min-w-64 sm:min-w-80 overflow-y-auto">
+      <div className="flex gap-2">
+        <SelectField
+          options={[
+            { label: "ID", value: "id" },
+            { label: "Name", value: "name" },
+          ]}
+          value={filters.orderBy}
+          onChange={(value) =>
+            setFilters({ ...filters, orderBy: value as "id" | "name" })
+          }
+        />
+        <div
+          className="cursor-pointer bg-card rounded-md shadow-md"
+          onClick={() =>
+            setFilters({
+              ...filters,
+              orderDirection: filters.orderDirection === "asc" ? "desc" : "asc",
+            })
+          }
+        >
+          <SortIcon direction={filters.orderDirection} />
+        </div>
+      </div>
       <div className="flex flex-col gap-2 overflow-y-auto">
-        {pokemons.map((pokemon) => (
+        {pokemonList.map((pokemon) => (
           <PokemonTag
             key={pokemon.name}
             id={pokemon.id}
