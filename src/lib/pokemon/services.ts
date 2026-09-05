@@ -67,6 +67,7 @@ function buildEvolutionTree(
 
 export function getPokemonByName(name: string): Pokemon | undefined {
   const pokemon = _getPokemonByName(name);
+  if (!pokemon) return undefined;
 
   const pokemonFamily: { id: number; name: string }[] = pokemon.evolution.family
     .map((familyMember: string) => {

@@ -22,6 +22,8 @@ export default function PokedexMain() {
   const [selectedTab, setSelectedTab] = useState<number>(0);
 
   useEffect(() => {
+    if (!selectedPokemon) return;
+
     fetch(`/api/pokemon/${selectedPokemon.name}`)
       .then((res) => res.json())
       .then((data) => {

@@ -6,7 +6,7 @@ interface PokemonContextValue {
   selectedPokemon: {
     id: number | null;
     name: string;
-  };
+  } | null;
   selectPokemon: (id: number | null, name: string) => void;
 }
 
@@ -16,10 +16,7 @@ export function PokemonProvider({ children }: { children: ReactNode }) {
   const [selectedPokemon, setSelectedPokemon] = useState<{
     id: number | null;
     name: string;
-  }>({
-    id: 1,
-    name: "Bulbassaur",
-  });
+  } | null>(null);
 
   function selectPokemon(id: number | null, name: string) {
     setSelectedPokemon({ id, name });

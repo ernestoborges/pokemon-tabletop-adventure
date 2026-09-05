@@ -13,6 +13,8 @@ export default function PokemonList({
     selectPokemon(id, name);
   }
 
+  const isSelected = (name: string) => (!!selectedPokemon && selectedPokemon.name === name); 
+
   return (
     <div className="bg-card p-4 rounded-lg shadow-md min-w-64 sm:min-w-80 overflow-y-auto">
       <div className="flex flex-col gap-2 overflow-y-auto">
@@ -22,7 +24,7 @@ export default function PokemonList({
             id={pokemon.id}
             name={pokemon.name}
             onClick={() => handleSelectPokemon(pokemon.id, pokemon.name)}
-            selected={selectedPokemon.name === pokemon.name}
+            selected={isSelected(pokemon.name)}
           />
         ))}
       </div>
