@@ -46,7 +46,9 @@ export default function PokemonPanel() {
           <div className="flex flex-col gap-2">
             <div className="flex gap-2">
               <div>
-                <LabeledText label="HP">{pokemon.stats.hp}</LabeledText>
+                <LabeledText label="HP">
+                  {pokemon.stats.hp.toFixed(0)}
+                </LabeledText>
                 <LabeledText label="SPD">{pokemon.stats.speed}</LabeledText>
               </div>
               <div>
@@ -135,7 +137,9 @@ export default function PokemonPanel() {
         <div>
           <div className="font-bold text-xl">MOVES</div>
           <div className="flex flex-col gap-4">
-            {pokemon.moves.map((move) => (
+            {Array.from(
+              new Map(pokemon.moves.map((move) => [move.name, move])).values(),
+            ).map((move) => (
               <MoveCard key={move.name} move={move} dMonst={pokemon.dMonst} />
             ))}
           </div>

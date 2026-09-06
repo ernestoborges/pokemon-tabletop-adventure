@@ -9,8 +9,10 @@ import {
   Move,
   Skill,
   EvolutionNode,
+  OrderBy,
 } from "@/lib/pokemon/types";
 import { compareValues } from "../utils";
+import { orderByGetters } from "./utils";
 
 export function getMoveByName(name: string): Move | undefined {
   return moves.find(
@@ -193,16 +195,19 @@ export function getPokemonList(options?: {
   }
 
   if (options?.orderBy) {
-    const orderBy = options?.orderBy ?? "id";
+    const orderBy = options.orderBy as OrderBy;
+    const getValue = orderByGetters[orderBy];
 
-    results = results
-      .filter((pokemon) => pokemon[orderBy] != null)
-      .sort((a, b) => {
-        const valueA = a[orderBy];
-        const valueB = b[orderBy];
+    if (getValue) {
+      results = results
+        .filter((pokemon) => getValue(pokemon) != null)
+        .sort((a, b) => {
+          const valueA = getValue(a);
+          const valueB = getValue(b);
 
-        return compareValues(valueA, valueB, options?.orderDirection);
-      });
+          return compareValues(valueA, valueB, options.orderDirection);
+        });
+    }
   }
   if (options?.limit) results = results.slice(0, options.limit);
 

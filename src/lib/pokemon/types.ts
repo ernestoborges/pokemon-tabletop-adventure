@@ -1,3 +1,13 @@
+export type OrderBy =
+  | "id"
+  | "name"
+  | "hp"
+  | "atk"
+  | "def"
+  | "spatk"
+  | "spdef"
+  | "speed";
+
 export interface Pokemon {
   id: number;
   name: string;

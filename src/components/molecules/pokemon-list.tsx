@@ -4,6 +4,17 @@ import SelectField from "./field-select";
 import SortIcon from "../atoms/sort-icon";
 import { usePokemonList } from "@/contexts/PokemonListContext";
 
+const ORDER_BY_OPTIONS = [
+  { label: "ID", value: "id" },
+  { label: "Name", value: "name" },
+  { label: "HP", value: "hp" },
+  { label: "Attack", value: "atk" },
+  { label: "Defense", value: "def" },
+  { label: "Special Attack", value: "spatk" },
+  { label: "Special Defense", value: "spdef" },
+  { label: "Speed", value: "speed" },
+];
+
 export default function PokemonList() {
   const { selectedPokemon, selectPokemon } = usePokemon();
   const { pokemonList, filters, setFilters } = usePokemonList();
@@ -19,10 +30,7 @@ export default function PokemonList() {
     <div className="flex flex-col gap-2 bg-card p-4 rounded-lg shadow-md min-w-64 sm:min-w-80 overflow-y-auto">
       <div className="flex gap-2">
         <SelectField
-          options={[
-            { label: "ID", value: "id" },
-            { label: "Name", value: "name" },
-          ]}
+          options={ORDER_BY_OPTIONS}
           value={filters.orderBy}
           onChange={(value) =>
             setFilters({ ...filters, orderBy: value as "id" | "name" })
