@@ -1,19 +1,21 @@
 import { useState, useEffect } from "react";
 import { FaCheck } from "react-icons/fa";
 import { MdOutlineContentCopy } from "react-icons/md";
-import { Pokemon } from "@/types/pokemon";
+import { usePokemon } from "@/contexts/PokemonContext";
 
-export default function Roll20Panel({ pokemon }: { pokemon: Pokemon }) {
+export default function Roll20Panel() {
+  const { selectedPokemonData: pokemon } = usePokemon();
+
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [roll20Export, setRoll20Export] = useState<string | null>(null);
   const [isRoll20ExportCopied, setIsRoll20ExportCopied] =
     useState<boolean>(false);
 
   useEffect(() => {
-    async function getPokemonToRoll20() {
+    async function getPokemonToRoll20(name: string) {
       setIsLoading(true);
       try {
-        const res = await fetch(`/api/pokemon/roll20/${pokemon.name}`);
+        const res = await fetch(`/api/pokemon/roll20/${name}`);
 
         if (!res.ok) {
           throw new Error("Failed to fetch Roll20 data");
@@ -28,8 +30,10 @@ export default function Roll20Panel({ pokemon }: { pokemon: Pokemon }) {
         setIsLoading(false);
       }
     }
-    getPokemonToRoll20();
-  }, [pokemon.name]);
+    if (!pokemon) return;
+
+    getPokemonToRoll20(pokemon.name);
+  }, [pokemon]);
 
   return (
     <div className="flex flex-col gap-6 w-full h-full">

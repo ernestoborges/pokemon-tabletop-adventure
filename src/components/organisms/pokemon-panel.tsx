@@ -1,11 +1,15 @@
-import { Pokemon } from "@/types/pokemon";
+import { usePokemon } from "@/contexts/PokemonContext";
 import Image from "next/image";
 import LabeledText from "@/components/atoms/labeled-text";
 import PokeballDefaultToken from "@/components/atoms/pokeball-default-token";
 import MoveCard from "../molecules/move-card";
 import EvolutionLineMenu from "../molecules/evolution-line-menu";
 
-export default function PokemonPanel({ pokemon }: { pokemon: Pokemon }) {
+export default function PokemonPanel() {
+  const { selectedPokemonData: pokemon } = usePokemon();
+
+  if (!pokemon) return null;
+
   return (
     <>
       <div className="flex flex-col gap-6">
@@ -82,8 +86,8 @@ export default function PokemonPanel({ pokemon }: { pokemon: Pokemon }) {
               <LabeledText label="Hatch rate" uppercase>
                 {pokemon.breeding.hatchRate}
               </LabeledText>
-              <LabeledText label="Signature Move" uppercase>
-                {pokemon.signatureMove || "None"}
+              <LabeledText label="Signature Moves" uppercase>
+                {pokemon.signatureMoves.join(", ") || "None"}
               </LabeledText>
               <LabeledText label="Proficiencies" uppercase>
                 {pokemon.proficiencies.join(", ")}

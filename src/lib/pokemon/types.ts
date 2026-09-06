@@ -51,7 +51,7 @@ export interface PokemonBreeding {
 
 export interface PokemonEvolution {
   stage: number;
-  family: string[];
+  family: { id: number; name: string }[];
   familyStructure: EvolutionNode;
   familyStarter: string;
   prevEvolutionIndex: number;

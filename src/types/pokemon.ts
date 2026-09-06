@@ -25,7 +25,7 @@ export type Pokemon = {
     description: string;
   }[];
   proficiencies: string[];
-  signatureMove: string | null;
+  signatureMoves: string[];
   breeding: {
     eggGroups: string[];
     hatchRate: string | null;
