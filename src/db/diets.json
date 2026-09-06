@@ -1,0 +1,41 @@
+[
+  {
+    "name": "Phototroph"
+  },
+  {
+    "name": "Omnivore"
+  },
+  {
+    "name": "Herbivore"
+  },
+  {
+    "name": "Carnivore"
+  },
+  {
+    "name": "Saprophyte"
+  },
+  {
+    "name": "Ergovore"
+  },
+  {
+    "name": "Pollutivore"
+  },
+  {
+    "name": "Psiotroph"
+  },
+  {
+    "name": "Terravore"
+  },
+  {
+    "name": "Nullivore"
+  },
+  {
+    "name": "Glacievore"
+  },
+  {
+    "name": "Variable"
+  },
+  {
+    "name": "Aurumvore"
+  }
+]

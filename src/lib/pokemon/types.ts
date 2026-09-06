@@ -29,7 +29,7 @@ export interface Pokemon {
   breeding: PokemonBreeding;
 
   habitats: string[];
-  diet: string;
+  diet: string[];
   rarity: string;
 
   rememberedMoves: string[];

@@ -14,6 +14,11 @@ interface PokemonSearchFilters {
   types: string[];
   rarity: string;
   habitat: string;
+  eggGroup: string;
+  size: string;
+  weight: string;
+  proficiency: string;
+  diet: string;
   limit: number;
   orderBy: string;
   orderDirection: "asc" | "desc";
@@ -36,6 +41,11 @@ export function PokemonListProvider({ children }: { children: ReactNode }) {
     types: [],
     rarity: "",
     habitat: "",
+    eggGroup: "",
+    size: "",
+    weight: "",
+    proficiency: "",
+    diet: "",
     limit: 100,
     orderBy: "id",
     orderDirection: "asc",
@@ -48,6 +58,11 @@ export function PokemonListProvider({ children }: { children: ReactNode }) {
       types,
       rarity,
       habitat,
+      eggGroup,
+      size,
+      weight,
+      proficiency,
+      diet,
       orderBy,
       orderDirection,
     } = filters;
@@ -55,7 +70,7 @@ export function PokemonListProvider({ children }: { children: ReactNode }) {
     const _types = types.join(",");
 
     fetch(
-      `/api/pokemon/search?q=${searchQuery}&limit=${limit}&types=${_types}&typeFilter=${typeFilter}&rarityFilter=${rarity}&habitatFilter=${habitat}&orderBy=${orderBy}&orderDirection=${orderDirection}`,
+      `/api/pokemon/search?q=${searchQuery}&limit=${limit}&types=${_types}&typeFilter=${typeFilter}&rarityFilter=${rarity}&habitatFilter=${habitat}&eggGroupFilter=${eggGroup}&sizeFilter=${size}&weightFilter=${weight}&proficiencyFilter=${proficiency}&dietFilter=${diet}&orderBy=${orderBy}&orderDirection=${orderDirection}`,
     )
       .then((res) => res.json())
       .then((data) => {

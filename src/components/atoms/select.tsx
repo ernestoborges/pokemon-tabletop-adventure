@@ -11,7 +11,7 @@ export default function Select({
 }) {
   return (
     <select
-      className={`p-2 text-lg outline-none cursor-pointer`}
+      className={`w-full min-w-0 p-2 text-lg outline-none cursor-pointer`}
       value={value}
       onChange={(e) => onChange(e.currentTarget.value)}
     >

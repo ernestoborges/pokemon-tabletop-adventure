@@ -1,0 +1,332 @@
+[
+  {
+    "name": "Grass"
+  },
+  {
+    "name": "Poison"
+  },
+  {
+    "name": "Floral"
+  },
+  {
+    "name": "Stampeding"
+  },
+  {
+    "name": "Healer"
+  },
+  {
+    "name": "Slashing"
+  },
+  {
+    "name": "Draconian"
+  },
+  {
+    "name": "Ground"
+  },
+  {
+    "name": "Poison (Melee Attacks)"
+  },
+  {
+    "name": "Fighting"
+  },
+  {
+    "name": "Prickly"
+  },
+  {
+    "name": "Bruiser"
+  },
+  {
+    "name": "Martial (No Punches/Kicks)"
+  },
+  {
+    "name": "Flying"
+  },
+  {
+    "name": "Avian"
+  },
+  {
+    "name": "Winged"
+  },
+  {
+    "name": "Ghost"
+  },
+  {
+    "name": "Sound"
+  },
+  {
+    "name": "Dark"
+  },
+  {
+    "name": "Weird"
+  },
+  {
+    "name": "Fire"
+  },
+  {
+    "name": "Martial (No Electric or Ice-type moves)"
+  },
+  {
+    "name": "Martial (No Ice-type moves)"
+  },
+  {
+    "name": "Psychic"
+  },
+  {
+    "name": "Hexwork"
+  },
+  {
+    "name": "Spellcraft"
+  },
+  {
+    "name": "Munition"
+  },
+  {
+    "name": "Ice"
+  },
+  {
+    "name": "Water"
+  },
+  {
+    "name": "Pulse"
+  },
+  {
+    "name": "Ice (Melee attacks)"
+  },
+  {
+    "name": "Fangs (No electric-type moves)"
+  },
+  {
+    "name": "Steel"
+  },
+  {
+    "name": "Ice (Melee Attacks)"
+  },
+  {
+    "name": "Tricky"
+  },
+  {
+    "name": "Fairy"
+  },
+  {
+    "name": "Cutesy"
+  },
+  {
+    "name": "Martial (Kicks)"
+  },
+  {
+    "name": "Electric"
+  },
+  {
+    "name": "Bug"
+  },
+  {
+    "name": "Lepidopteran"
+  },
+  {
+    "name": "Horned"
+  },
+  {
+    "name": "Grass (Ranged attacks)"
+  },
+  {
+    "name": "Psychic (Ranged attacks)"
+  },
+  {
+    "name": "Energy Blast"
+  },
+  {
+    "name": "Rock"
+  },
+  {
+    "name": "Punches"
+  },
+  {
+    "name": "Psychic (Effects only)"
+  },
+  {
+    "name": "Dark (Melee attacks)"
+  },
+  {
+    "name": "Kicks"
+  },
+  {
+    "name": "Parasitic"
+  },
+  {
+    "name": "Fangs"
+  },
+  {
+    "name": "Dragon"
+  },
+  {
+    "name": "Elemental Attacks"
+  },
+  {
+    "name": "Psychic (Effect Only)"
+  },
+  {
+    "name": "Normal Block"
+  },
+  {
+    "name": "Elemental Attacks I"
+  },
+  {
+    "name": "Elemental Attacks EF"
+  },
+  {
+    "name": "Elemental Attacks E"
+  },
+  {
+    "name": "Elemental Attacks F"
+  },
+  {
+    "name": "Grass (Melee Attacks)"
+  },
+  {
+    "name": "Weather"
+  },
+  {
+    "name": "Elemental Attack"
+  },
+  {
+    "name": "Martial"
+  },
+  {
+    "name": "Magnetism"
+  },
+  {
+    "name": "Glutton"
+  },
+  {
+    "name": "Grass (Ranged Special Attacks)"
+  },
+  {
+    "name": "Water (Ranged Attacks)"
+  },
+  {
+    "name": "Variable Type Lists"
+  },
+  {
+    "name": "No moves from Any"
+  },
+  {
+    "name": "Grass (Ranged Attacks)"
+  },
+  {
+    "name": "Elemental Attacks (F)"
+  },
+  {
+    "name": "Martial (No Kicks)"
+  },
+  {
+    "name": "Fighting-type moves"
+  },
+  {
+    "name": "Ghost (Melee Attacks)"
+  },
+  {
+    "name": "Fighing"
+  },
+  {
+    "name": "Poison (Melee)"
+  },
+  {
+    "name": "Claws"
+  },
+  {
+    "name": "Fangs(no Ice/Electric)"
+  },
+  {
+    "name": "Dark (Melee Attacks)"
+  },
+  {
+    "name": "Ground (Special Attacks)"
+  },
+  {
+    "name": "Fang"
+  },
+  {
+    "name": "Elemental Attacks FI"
+  },
+  {
+    "name": "Elemental Attack EI"
+  },
+  {
+    "name": "Martial (Kicks"
+  },
+  {
+    "name": "Scatter Only)"
+  },
+  {
+    "name": "Elemental attacks"
+  },
+  {
+    "name": "Elemental Attack EF"
+  },
+  {
+    "name": "Elemental Attacks EI"
+  },
+  {
+    "name": "Normal Block (No Attack stat moves)"
+  },
+  {
+    "name": "Psychic (Attacks)"
+  },
+  {
+    "name": "No Moves from Any"
+  },
+  {
+    "name": "Elemental Attack E"
+  },
+  {
+    "name": "Piscian"
+  },
+  {
+    "name": "Fire (Attacks)"
+  },
+  {
+    "name": "None"
+  },
+  {
+    "name": "Ghost (Attacks Only)"
+  },
+  {
+    "name": "Wave Crash"
+  },
+  {
+    "name": "Poison (No attacks)"
+  },
+  {
+    "name": "Water (No attacks)"
+  },
+  {
+    "name": "Prickly (No attacks)"
+  },
+  {
+    "name": "Melee Attacks"
+  },
+  {
+    "name": "Moves that lower opponent’s stats temporarily"
+  },
+  {
+    "name": "Any"
+  },
+  {
+    "name": "Martial (No Punches)"
+  },
+  {
+    "name": "Dark (Melee)"
+  },
+  {
+    "name": "Fire (Melee)"
+  },
+  {
+    "name": "Rock (Melee)"
+  },
+  {
+    "name": "Water (Melee)"
+  },
+  {
+    "name": "Arceus can know any move"
+  }
+]

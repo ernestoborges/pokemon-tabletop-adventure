@@ -34,6 +34,14 @@ export async function GET(request: Request) {
 
   const habitatFilter = searchParams.get("habitatFilter")?.toLowerCase();
 
+  const eggGroupFilter = searchParams.get("eggGroupFilter")?.toLowerCase();
+  const sizeFilter = searchParams.get("sizeFilter")?.toLowerCase();
+  const weightFilter = searchParams.get("weightFilter")?.toLowerCase();
+  const proficiencyFilter = searchParams
+    .get("proficiencyFilter")
+    ?.toLowerCase();
+  const dietFilter = searchParams.get("dietFilter")?.toLowerCase();
+
   const results = getPokemonList({
     query,
     limit,
@@ -43,6 +51,11 @@ export async function GET(request: Request) {
     typeFilter,
     rarityFilter,
     habitatFilter,
+    eggGroupFilter,
+    sizeFilter,
+    weightFilter,
+    proficiencyFilter,
+    dietFilter,
   });
 
   return NextResponse.json(results);

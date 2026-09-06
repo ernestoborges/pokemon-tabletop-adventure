@@ -36,6 +36,26 @@ export function getHabitats(): { name: string }[] {
   return habitats.sort((a, b) => a.name.localeCompare(b.name));
 }
 
+export function getPokemonMetadata(field: string) {
+  const optionGetters = {
+    passives: (pokemon: Pokemon) => pokemon.passives,
+    weights: (pokemon: Pokemon) => pokemon.weight,
+    sizes: (pokemon: Pokemon) => pokemon.size,
+    proficiencies: (pokemon: Pokemon) => pokemon.proficiencies,
+    egg_groups: (pokemon: Pokemon) => pokemon.breeding.eggGroups,
+    diets: (pokemon: Pokemon) => pokemon.diet,
+  } as const;
+
+  const getter = optionGetters[field as keyof typeof optionGetters];
+  if (!getter) return [];
+
+  const values = pokemons.flatMap(getter);
+  const uniqueValues = [...new Set(values)]
+    .sort((a, b) => a.localeCompare(b))
+    .map((value) => ({ name: value }));
+  return uniqueValues;
+}
+
 function _getPokemonByName(name: string) {
   return pokemons.find(
     (pokemon) => pokemon.name.toLowerCase() === name.toLowerCase(),
@@ -150,6 +170,11 @@ export function getPokemonList(options?: {
   typeFilter?: "any" | "all";
   rarityFilter?: string;
   habitatFilter?: string;
+  eggGroupFilter?: string;
+  sizeFilter?: string;
+  weightFilter?: string;
+  proficiencyFilter?: string;
+  dietFilter?: string;
 }) {
   let results: Pokemon[] = pokemons;
 
@@ -190,6 +215,46 @@ export function getPokemonList(options?: {
       pokemon.habitats.some(
         (habitat) =>
           habitat.toLowerCase() === options.habitatFilter!.toLowerCase(),
+      ),
+    );
+  }
+  if (options?.eggGroupFilter) {
+    results = results.filter((pokemon) =>
+      pokemon.breeding.eggGroups.some(
+        (eggGroup) =>
+          eggGroup.toLowerCase() === options.eggGroupFilter!.toLowerCase(),
+      ),
+    );
+  }
+
+  if (options?.sizeFilter) {
+    results = results.filter(
+      (pokemon) =>
+        pokemon.size.toLowerCase() === options.sizeFilter!.toLowerCase(),
+    );
+  }
+
+  if (options?.weightFilter) {
+    results = results.filter(
+      (pokemon) =>
+        pokemon.weight.toLowerCase() === options.weightFilter!.toLowerCase(),
+    );
+  }
+
+  if (options?.proficiencyFilter) {
+    results = results.filter((pokemon) =>
+      pokemon.proficiencies.some(
+        (proficiency) =>
+          proficiency.toLowerCase() ===
+          options.proficiencyFilter!.toLowerCase(),
+      ),
+    );
+  }
+
+  if (options?.dietFilter) {
+    results = results.filter((pokemon) =>
+      pokemon.diet.some(
+        (diet) => diet.toLowerCase() === options.dietFilter!.toLowerCase(),
       ),
     );
   }

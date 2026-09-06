@@ -24,9 +24,11 @@ export default function SelectField({
 
   return (
     <div
-      className={`rounded-md flex items-stretch shadow-md overflow-hidden ${clearable && isSelected ? "bg-selected" : "bg-card"}`}
+      className={`w-full min-w-0 rounded-md flex items-stretch shadow-md overflow-hidden ${
+        clearable && isSelected ? "bg-selected" : "bg-card"
+      }`}
     >
-      <div className="hover:bg-black/10">
+      <div className="min-w-0 flex-1 hover:bg-black/10">
         <Select
           options={options}
           value={value}
@@ -36,7 +38,9 @@ export default function SelectField({
       </div>
       {clearable && (
         <div
-          className={`relative flex items-stretch overflow-hidden transition-all duration-400 ${isSelected ? "max-w-10" : "max-w-0"}`}
+          className={`relative flex shrink-0 items-stretch overflow-hidden transition-all duration-400 ${
+            isSelected ? "max-w-10" : "max-w-0"
+          }`}
         >
           <button
             type="button"

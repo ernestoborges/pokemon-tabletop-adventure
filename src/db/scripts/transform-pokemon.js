@@ -81,7 +81,7 @@ function normalizePokemon(pokemon) {
     },
 
     habitats: splitList(pokemon["Habitats"]),
-    diet: pokemon["Diet"] || null,
+    diet: splitList(pokemon["Diet"].replaceAll("/", ",")),
     rarity: pokemon["Rarity"] || null,
     rememberedMoves: [
       pokemon["Remembered move 1"],

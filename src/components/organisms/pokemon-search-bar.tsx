@@ -44,6 +44,11 @@ export default function PokemonSearchBar() {
 
   const [isFiltersVisible, setIsFiltersVisible] = useState<boolean>(false);
   const [habitats, setHabitats] = useState<{ name: string }[]>([]);
+  const [eggGroups, setEggGroups] = useState<{ name: string }[]>([]);
+  const [sizes, setSizes] = useState<{ name: string }[]>([]);
+  const [weights, setWeights] = useState<{ name: string }[]>([]);
+  const [proficiencies, setProficiencies] = useState<{ name: string }[]>([]);
+  const [diets, setDiets] = useState<{ name: string }[]>([]);
 
   function fetchHabitats() {
     fetch(`/api/habitats`)
@@ -53,8 +58,41 @@ export default function PokemonSearchBar() {
       });
   }
 
+  function fetchMetadata() {
+    fetch(`/api/pokemon/metadata?field=egg_groups`)
+      .then((res) => res.json())
+      .then((data) => {
+        setEggGroups(data);
+      });
+
+    fetch(`/api/pokemon/metadata?field=sizes`)
+      .then((res) => res.json())
+      .then((data) => {
+        setSizes(data);
+      });
+
+    fetch(`/api/pokemon/metadata?field=weights`)
+      .then((res) => res.json())
+      .then((data) => {
+        setWeights(data);
+      });
+
+    fetch(`/api/pokemon/metadata?field=proficiencies`)
+      .then((res) => res.json())
+      .then((data) => {
+        setProficiencies(data);
+      });
+
+    fetch(`/api/pokemon/metadata?field=diets`)
+      .then((res) => res.json())
+      .then((data) => {
+        setDiets(data);
+      });
+  }
+
   useEffect(() => {
     fetchHabitats();
+    fetchMetadata();
   }, []);
 
   return (
@@ -86,7 +124,7 @@ export default function PokemonSearchBar() {
       <div
         className={`transition-all duration-300 overflow-hidden ${isFiltersVisible ? "max-h-96" : "max-h-0"}`}
       >
-        <div className="flex gap-2 items-center py-2">
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(180px,1fr))] gap-2 py-2">
           <SelectField
             placeholder="Rarity"
             options={RARITY_OPTIONS.map(({ label, value }) => ({
@@ -105,6 +143,56 @@ export default function PokemonSearchBar() {
             }))}
             value={filters.habitat ?? ""}
             onChange={(value) => setFilters({ ...filters, habitat: value })}
+            clearable
+          />
+          <SelectField
+            placeholder="Egg Group"
+            options={eggGroups.map(({ name }) => ({
+              label: name,
+              value: name,
+            }))}
+            value={filters.eggGroup ?? ""}
+            onChange={(value) => setFilters({ ...filters, eggGroup: value })}
+            clearable
+          />
+          <SelectField
+            placeholder="Size"
+            options={sizes.map(({ name }) => ({
+              label: name,
+              value: name,
+            }))}
+            value={filters.size ?? ""}
+            onChange={(value) => setFilters({ ...filters, size: value })}
+            clearable
+          />
+          <SelectField
+            placeholder="Weight"
+            options={weights.map(({ name }) => ({
+              label: name,
+              value: name,
+            }))}
+            value={filters.weight ?? ""}
+            onChange={(value) => setFilters({ ...filters, weight: value })}
+            clearable
+          />
+          <SelectField
+            placeholder="Proficiency"
+            options={proficiencies.map(({ name }) => ({
+              label: name,
+              value: name,
+            }))}
+            value={filters.proficiency ?? ""}
+            onChange={(value) => setFilters({ ...filters, proficiency: value })}
+            clearable
+          />
+          <SelectField
+            placeholder="Diet"
+            options={diets.map(({ name }) => ({
+              label: name,
+              value: name,
+            }))}
+            value={filters.diet ?? ""}
+            onChange={(value) => setFilters({ ...filters, diet: value })}
             clearable
           />
         </div>
