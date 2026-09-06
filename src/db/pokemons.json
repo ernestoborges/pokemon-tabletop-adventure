@@ -148,7 +148,7 @@
       "prevEvolutionIndex": 2,
       "evolutionaryStage": 2,
       "evolvesFrom": "Bulbasaur",
-      "evolvesInto": "Venusaur / Mega Venusaur / Gigantamax Venusaur"
+      "evolvesInto": "Venusaur"
     },
     "page": "22",
     "stage": 2,
@@ -236,7 +236,7 @@
       "prevEvolutionIndex": 3,
       "evolutionaryStage": 3,
       "evolvesFrom": "Ivysaur",
-      "evolvesInto": null
+      "evolvesInto": "G-max Venusaur / Mega Venusaur"
     },
     "page": "23",
     "stage": 3,
@@ -253,7 +253,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10033,
     "name": "Mega Venusaur",
     "dMonst": "1d12",
     "stats": {
@@ -340,8 +340,8 @@
     }
   },
   {
-    "id": null,
-    "name": "Gigantamax Venusaur",
+    "id": 10195,
+    "name": "G-max Venusaur",
     "dMonst": "1d12",
     "stats": {
       "hp": 176,
@@ -809,7 +809,7 @@
       "prevEvolutionIndex": 10,
       "evolutionaryStage": 2,
       "evolvesFrom": "Treecko",
-      "evolvesInto": "Sceptile / Mega Sceptile"
+      "evolvesInto": "Sceptile"
     },
     "page": "26",
     "stage": 2,
@@ -892,7 +892,7 @@
       "prevEvolutionIndex": 11,
       "evolutionaryStage": 3,
       "evolvesFrom": "Grovyle",
-      "evolvesInto": null
+      "evolvesInto": "Mega Sceptile"
     },
     "page": "27",
     "stage": 3,
@@ -909,7 +909,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10065,
     "name": "Mega Sceptile",
     "dMonst": "1d12",
     "stats": {
@@ -1915,7 +1915,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10244,
     "name": "Decidueye (Legend)",
     "dMonst": "1d10",
     "stats": {
@@ -2235,7 +2235,7 @@
       "prevEvolutionIndex": 27,
       "evolutionaryStage": 2,
       "evolvesFrom": "Grookey",
-      "evolvesInto": "Rillaboom / Gigantamax Rillaboom"
+      "evolvesInto": "Rillaboom"
     },
     "page": "36",
     "stage": 2,
@@ -2321,7 +2321,7 @@
       "prevEvolutionIndex": 28,
       "evolutionaryStage": 3,
       "evolvesFrom": "Thwackey",
-      "evolvesInto": null
+      "evolvesInto": "G-max Rillaboom"
     },
     "page": "37",
     "stage": 3,
@@ -2338,8 +2338,8 @@
     }
   },
   {
-    "id": null,
-    "name": "Gigantamax Rillaboom",
+    "id": 10209,
+    "name": "G-max Rillaboom",
     "dMonst": "1d12",
     "stats": {
       "hp": 216,
@@ -2802,7 +2802,7 @@
       "prevEvolutionIndex": 34,
       "evolutionaryStage": 2,
       "evolvesFrom": "Charmander",
-      "evolvesInto": "Charizard / Gigantamax Charizard / Mega Charizard X / Mega Charizard Y"
+      "evolvesInto": "Charizard"
     },
     "page": "40",
     "stage": 2,
@@ -2891,7 +2891,7 @@
       "prevEvolutionIndex": 35,
       "evolutionaryStage": 3,
       "evolvesFrom": "Charmeleon",
-      "evolvesInto": null
+      "evolvesInto": "G-max Charizard / Mega Charizard X / Mega Charizard Y"
     },
     "page": "41",
     "stage": 3,
@@ -2908,8 +2908,8 @@
     }
   },
   {
-    "id": null,
-    "name": "Gigantamax Charizard",
+    "id": 10196,
+    "name": "G-max Charizard",
     "dMonst": "1d12",
     "stats": {
       "hp": 176,
@@ -2993,7 +2993,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10034,
     "name": "Mega Charizard X",
     "dMonst": "1d12",
     "stats": {
@@ -3060,7 +3060,7 @@
       "familyStarter": "Charmander",
       "prevEvolutionIndex": 35,
       "evolutionaryStage": 3,
-      "evolvesFrom": "Charmeleon",
+      "evolvesFrom": "Charizard",
       "evolvesInto": null
     },
     "page": "41",
@@ -3078,7 +3078,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10035,
     "name": "Mega Charizard Y",
     "dMonst": "1d12",
     "stats": {
@@ -3413,7 +3413,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10233,
     "name": "Typhlosion (Legend)",
     "dMonst": "1d10",
     "stats": {
@@ -3640,7 +3640,7 @@
       "prevEvolutionIndex": 44,
       "evolutionaryStage": 2,
       "evolvesFrom": "Torchic",
-      "evolvesInto": "Blaziken / Mega Blaziken"
+      "evolvesInto": "Blaziken"
     },
     "page": "44",
     "stage": 2,
@@ -3724,7 +3724,7 @@
       "prevEvolutionIndex": 45,
       "evolutionaryStage": 3,
       "evolvesFrom": "Combusken",
-      "evolvesInto": null
+      "evolvesInto": "Mega Blaziken"
     },
     "page": "45",
     "stage": 3,
@@ -3741,7 +3741,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10050,
     "name": "Mega Blaziken",
     "dMonst": "1d12",
     "stats": {
@@ -4868,7 +4868,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": "Raboot / Gigantamax Cinderace"
+      "evolvesInto": "Raboot"
     },
     "page": "54",
     "stage": 1,
@@ -5031,7 +5031,7 @@
       "prevEvolutionIndex": 61,
       "evolutionaryStage": 3,
       "evolvesFrom": "Raboot",
-      "evolvesInto": null
+      "evolvesInto": "G-max Cinderace"
     },
     "page": "55",
     "stage": 3,
@@ -5048,8 +5048,8 @@
     }
   },
   {
-    "id": null,
-    "name": "Gigantamax Cinderace",
+    "id": 10210,
+    "name": "G-max Cinderace",
     "dMonst": "1d12",
     "stats": {
       "hp": 176,
@@ -5514,7 +5514,7 @@
       "prevEvolutionIndex": 67,
       "evolutionaryStage": 2,
       "evolvesFrom": "Squirtle",
-      "evolvesInto": "Blastoise / Gigantamax Blastoise / Mega Blastoise"
+      "evolvesInto": "Blastoise"
     },
     "page": "58",
     "stage": 2,
@@ -5601,7 +5601,7 @@
       "prevEvolutionIndex": 68,
       "evolutionaryStage": 3,
       "evolvesFrom": "Wartortle",
-      "evolvesInto": null
+      "evolvesInto": "G-max Blastoise / Mega Blastoise"
     },
     "page": "59",
     "stage": 3,
@@ -5618,8 +5618,8 @@
     }
   },
   {
-    "id": null,
-    "name": "Gigantamax Blastoise",
+    "id": 10197,
+    "name": "G-max Blastoise",
     "dMonst": "1d12",
     "stats": {
       "hp": 176,
@@ -5704,7 +5704,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10036,
     "name": "Mega Blastoise",
     "dMonst": "1d12",
     "stats": {
@@ -6178,7 +6178,7 @@
       "prevEvolutionIndex": 75,
       "evolutionaryStage": 2,
       "evolvesFrom": "Mudkip",
-      "evolvesInto": "Swampert /  Mega Swampert"
+      "evolvesInto": "Swampert"
     },
     "page": "62",
     "stage": 2,
@@ -6267,7 +6267,7 @@
       "prevEvolutionIndex": 76,
       "evolutionaryStage": 3,
       "evolvesFrom": "Marshtomp",
-      "evolvesInto": null
+      "evolvesInto": "Mega Swampert"
     },
     "page": "63",
     "stage": 3,
@@ -6284,7 +6284,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10064,
     "name": "Mega Swampert",
     "dMonst": "1d12",
     "stats": {
@@ -6867,7 +6867,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10236,
     "name": "Samurott (Legend)",
     "dMonst": "1d10",
     "stats": {
@@ -7106,7 +7106,7 @@
       "prevEvolutionIndex": 86,
       "evolutionaryStage": 2,
       "evolvesFrom": "Froakie",
-      "evolvesInto": "Greninja / Mega Greninja"
+      "evolvesInto": "Greninja"
     },
     "page": "68",
     "stage": 2,
@@ -7198,7 +7198,7 @@
       "prevEvolutionIndex": 87,
       "evolutionaryStage": 3,
       "evolvesFrom": "Frogadier",
-      "evolvesInto": null
+      "evolvesInto": "Mega Greninja"
     },
     "page": "69",
     "stage": 3,
@@ -7215,7 +7215,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10294,
     "name": "Mega Greninja",
     "dMonst": "1d12",
     "stats": {
@@ -7700,7 +7700,7 @@
       "prevEvolutionIndex": 93,
       "evolutionaryStage": 2,
       "evolvesFrom": "Sobble",
-      "evolvesInto": "Inteleon / Gigantamax Inteleon"
+      "evolvesInto": "Inteleon"
     },
     "page": "72",
     "stage": 2,
@@ -7789,7 +7789,7 @@
       "prevEvolutionIndex": 94,
       "evolutionaryStage": 3,
       "evolvesFrom": "Drizzile",
-      "evolvesInto": null
+      "evolvesInto": "G-max Inteleon"
     },
     "page": "73",
     "stage": 3,
@@ -7806,8 +7806,8 @@
     }
   },
   {
-    "id": null,
-    "name": "Gigantamax Inteleon",
+    "id": 10211,
+    "name": "G-max Inteleon",
     "dMonst": "1d12",
     "stats": {
       "hp": 156,
@@ -8198,7 +8198,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": "Pikachu / Gigantamax Pikachu"
+      "evolvesInto": "Pikachu"
     },
     "page": "76",
     "stage": 1,
@@ -8282,7 +8282,7 @@
       "prevEvolutionIndex": 100,
       "evolutionaryStage": 2,
       "evolvesFrom": "Pichu",
-      "evolvesInto": "Raichu / Raichu (Island)"
+      "evolvesInto": "Raichu / Raichu (Island) / G-max Pikachu"
     },
     "page": "76",
     "stage": 2,
@@ -8299,8 +8299,8 @@
     }
   },
   {
-    "id": null,
-    "name": "Gigantamax Pikachu",
+    "id": 10199,
+    "name": "G-max Pikachu",
     "dMonst": "1d10",
     "stats": {
       "hp": 96,
@@ -8355,7 +8355,7 @@
     ],
     "rememberedStyle": "Charm",
     "evolution": {
-      "stage": 2,
+      "stage": 3,
       "family": [
         "Pichu",
         "Pikachu",
@@ -8364,8 +8364,8 @@
       ],
       "familyStarter": "Pichu",
       "prevEvolutionIndex": 100,
-      "evolutionaryStage": 2,
-      "evolvesFrom": "Pichu",
+      "evolutionaryStage": 3,
+      "evolvesFrom": "Pikachu",
       "evolvesInto": null
     },
     "page": "76",
@@ -8467,7 +8467,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10100,
     "name": "Raichu (Island)",
     "dMonst": "1d10",
     "stats": {
@@ -8638,8 +8638,8 @@
     }
   },
   {
-    "id": null,
-    "name": "Gigantamax Eevee",
+    "id": 10205,
+    "name": "G-max Eevee",
     "dMonst": "1d12",
     "stats": {
       "hp": 136,
@@ -8688,12 +8688,12 @@
     "evolution": {
       "stage": 1,
       "family": [
-        "#N/A"
+        "Eevee"
       ],
-      "familyStarter": "Gigantamax Eevee",
+      "familyStarter": "Eevee",
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
-      "evolvesFrom": null,
+      "evolvesFrom": "Eevee",
       "evolvesInto": null
     },
     "page": "79",
@@ -9578,7 +9578,7 @@
       "prevEvolutionIndex": 115,
       "evolutionaryStage": 2,
       "evolvesFrom": "Blipbug",
-      "evolvesInto": "Orbeetle / Gigantamax Orbeetle"
+      "evolvesInto": "Orbeetle"
     },
     "page": "86",
     "stage": 2,
@@ -9663,7 +9663,7 @@
       "prevEvolutionIndex": 116,
       "evolutionaryStage": 3,
       "evolvesFrom": "Dottler",
-      "evolvesInto": null
+      "evolvesInto": "G-max Orbeetle"
     },
     "page": "87",
     "stage": 3,
@@ -9680,8 +9680,8 @@
     }
   },
   {
-    "id": null,
-    "name": "Gigantamax Orbeetle",
+    "id": 10213,
+    "name": "G-max Orbeetle",
     "dMonst": "1d12",
     "stats": {
       "hp": 136,
@@ -9900,7 +9900,7 @@
       "prevEvolutionIndex": 119,
       "evolutionaryStage": 2,
       "evolvesFrom": "Caterpie",
-      "evolvesInto": "Butterfree / Gigantamax Butterfree"
+      "evolvesInto": "Butterfree"
     },
     "page": "88",
     "stage": 2,
@@ -9985,7 +9985,7 @@
       "prevEvolutionIndex": 120,
       "evolutionaryStage": 3,
       "evolvesFrom": "Metapod",
-      "evolvesInto": null
+      "evolvesInto": "G-max Butterfree"
     },
     "page": "89",
     "stage": 3,
@@ -10002,8 +10002,8 @@
     }
   },
   {
-    "id": null,
-    "name": "Gigantamax Butterfree",
+    "id": 10198,
+    "name": "G-max Butterfree",
     "dMonst": "1d12",
     "stats": {
       "hp": 136,
@@ -11207,7 +11207,7 @@
       "prevEvolutionIndex": 135,
       "evolutionaryStage": 2,
       "evolvesFrom": "Weedle",
-      "evolvesInto": "Beedrill / Mega Beedrill"
+      "evolvesInto": "Beedrill"
     },
     "page": "98",
     "stage": 2,
@@ -11290,7 +11290,7 @@
       "prevEvolutionIndex": 136,
       "evolutionaryStage": 3,
       "evolvesFrom": "Kakuna",
-      "evolvesInto": null
+      "evolvesInto": "Mega Beedrill"
     },
     "page": "99",
     "stage": 3,
@@ -11307,7 +11307,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10090,
     "name": "Mega Beedrill",
     "dMonst": "1d10",
     "stats": {
@@ -14918,7 +14918,7 @@
     }
   },
   {
-    "id": null,
+    "id": 413,
     "name": "Wormadam (Plant Cloak)",
     "dMonst": "1d8",
     "stats": {
@@ -15005,7 +15005,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10004,
     "name": "Wormadam (Sand Cloak)",
     "dMonst": "1d8",
     "stats": {
@@ -15092,7 +15092,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10005,
     "name": "Wormadam (Trash Cloak)",
     "dMonst": "1d8",
     "stats": {
@@ -15565,7 +15565,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": "Scizor / Mega Scizor / Kleavor"
+      "evolvesInto": "Scizor / Kleavor"
     },
     "page": "136",
     "stage": 1,
@@ -15648,7 +15648,7 @@
       "prevEvolutionIndex": 190,
       "evolutionaryStage": 2,
       "evolvesFrom": "Scyther",
-      "evolvesInto": null
+      "evolvesInto": "Mega Scizor"
     },
     "page": "136",
     "stage": 3,
@@ -15665,7 +15665,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10046,
     "name": "Mega Scizor",
     "dMonst": "1d12",
     "stats": {
@@ -15978,7 +15978,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": null
+      "evolvesInto": "Mega Heracross"
     },
     "page": "139",
     "stage": 3,
@@ -15995,7 +15995,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10047,
     "name": "Mega Heracross",
     "dMonst": "1d12",
     "stats": {
@@ -16049,12 +16049,12 @@
     "evolution": {
       "stage": 1,
       "family": [
-        "#N/A"
+        "Heracross"
       ],
-      "familyStarter": "Mega Heracross",
+      "familyStarter": "Heracross",
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
-      "evolvesFrom": null,
+      "evolvesFrom": "Heracross",
       "evolvesInto": null
     },
     "page": "139",
@@ -16134,7 +16134,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": null
+      "evolvesInto": "Mega Pinsir"
     },
     "page": "139",
     "stage": 3,
@@ -16151,7 +16151,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10040,
     "name": "Mega Pinsir",
     "dMonst": "1d12",
     "stats": {
@@ -16203,9 +16203,9 @@
     "evolution": {
       "stage": 1,
       "family": [
-        "#N/A"
+        "Pinsir"
       ],
-      "familyStarter": "Mega Pinsir",
+      "familyStarter": "Pinsir",
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
@@ -16844,7 +16844,7 @@
       "prevEvolutionIndex": 205,
       "evolutionaryStage": 2,
       "evolvesFrom": "Impidimp",
-      "evolvesInto": "Grimmsnarl / Gigantamax Grimmsnarl"
+      "evolvesInto": "Grimmsnarl"
     },
     "page": "144",
     "stage": 2,
@@ -16931,7 +16931,7 @@
       "prevEvolutionIndex": 206,
       "evolutionaryStage": 3,
       "evolvesFrom": "Morgrem",
-      "evolvesInto": null
+      "evolvesInto": "G-max Grimmsnarl"
     },
     "page": "145",
     "stage": 3,
@@ -16948,8 +16948,8 @@
     }
   },
   {
-    "id": null,
-    "name": "Gigantamax Grimmsnarl",
+    "id": 10222,
+    "name": "G-max Grimmsnarl",
     "dMonst": "1d12",
     "stats": {
       "hp": 216,
@@ -17034,7 +17034,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10174,
     "name": "Zigzagoon (Urban)",
     "dMonst": "1d4",
     "stats": {
@@ -17110,7 +17110,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10175,
     "name": "Linoone (Urban)",
     "dMonst": "1d8",
     "stats": {
@@ -17340,7 +17340,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": "Houndoom / Mega Houndoom"
+      "evolvesInto": "Houndoom"
     },
     "page": "150",
     "stage": 1,
@@ -17425,7 +17425,7 @@
       "prevEvolutionIndex": 212,
       "evolutionaryStage": 2,
       "evolvesFrom": "Houndour",
-      "evolvesInto": null
+      "evolvesInto": "Mega Houndoom"
     },
     "page": "150",
     "stage": 3,
@@ -17442,7 +17442,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10048,
     "name": "Mega Houndoom",
     "dMonst": "1d12",
     "stats": {
@@ -17856,7 +17856,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10107,
     "name": "Meowth (Tropical)",
     "dMonst": "1d6",
     "stats": {
@@ -17932,7 +17932,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10108,
     "name": "Persian (Tropical)",
     "dMonst": "1d10",
     "stats": {
@@ -18891,7 +18891,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10091,
     "name": "Rattata (Island)",
     "dMonst": "1d6",
     "stats": {
@@ -18970,7 +18970,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10092,
     "name": "Raticate (Island)",
     "dMonst": "1d8",
     "stats": {
@@ -19756,7 +19756,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": null
+      "evolvesInto": "Mega Absol"
     },
     "page": "171",
     "stage": 3,
@@ -19773,7 +19773,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10057,
     "name": "Mega Absol",
     "dMonst": "1d12",
     "stats": {
@@ -19826,12 +19826,12 @@
     "evolution": {
       "stage": 1,
       "family": [
-        "#N/A"
+        "Absol"
       ],
-      "familyStarter": "Mega Absol",
+      "familyStarter": "Absol",
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
-      "evolvesFrom": null,
+      "evolvesFrom": "Absol",
       "evolvesInto": null
     },
     "page": "171",
@@ -19909,7 +19909,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": null
+      "evolvesInto": "Mega Sableye"
     },
     "page": "172",
     "stage": 3,
@@ -19926,7 +19926,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10066,
     "name": "Mega Sableye",
     "dMonst": "1d10",
     "stats": {
@@ -19981,12 +19981,12 @@
     "evolution": {
       "stage": 1,
       "family": [
-        "#N/A"
+        "Sableye"
       ],
-      "familyStarter": "Mega Sableye",
+      "familyStarter": "Sableye",
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
-      "evolvesFrom": null,
+      "evolvesFrom": "Sableye",
       "evolvesInto": null
     },
     "page": "172",
@@ -20389,7 +20389,7 @@
       "prevEvolutionIndex": 249,
       "evolutionaryStage": 2,
       "evolvesFrom": "Bagon",
-      "evolvesInto": "Salamence / Mega Salamence"
+      "evolvesInto": "Salamence"
     },
     "page": "176",
     "stage": 2,
@@ -20476,7 +20476,7 @@
       "prevEvolutionIndex": 250,
       "evolutionaryStage": 3,
       "evolvesFrom": "Shelgon",
-      "evolvesInto": null
+      "evolvesInto": "Mega Salamence"
     },
     "page": "177",
     "stage": 3,
@@ -20493,7 +20493,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10089,
     "name": "Mega Salamence",
     "dMonst": "1d12",
     "stats": {
@@ -21486,7 +21486,7 @@
       "prevEvolutionIndex": 262,
       "evolutionaryStage": 2,
       "evolvesFrom": "Gible",
-      "evolvesInto": "Garchomp / Mega Garchomp"
+      "evolvesInto": "Garchomp"
     },
     "page": "184",
     "stage": 2,
@@ -21574,7 +21574,7 @@
       "prevEvolutionIndex": 263,
       "evolutionaryStage": 3,
       "evolvesFrom": "Gabite",
-      "evolvesInto": null
+      "evolvesInto": "Mega Garchomp"
     },
     "page": "185",
     "stage": 3,
@@ -21591,7 +21591,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10058,
     "name": "Mega Garchomp",
     "dMonst": "1d12",
     "stats": {
@@ -21841,7 +21841,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10241,
     "name": "Sliggoo (Iron-rich)",
     "dMonst": "1d8",
     "stats": {
@@ -22014,7 +22014,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10242,
     "name": "Goodra (Iron-rich)",
     "dMonst": "1d12",
     "stats": {
@@ -22401,7 +22401,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": "Altaria / Mega Altaria"
+      "evolvesInto": "Altaria"
     },
     "page": "190",
     "stage": 1,
@@ -22485,7 +22485,7 @@
       "prevEvolutionIndex": 274,
       "evolutionaryStage": 2,
       "evolvesFrom": "Swablu",
-      "evolvesInto": null
+      "evolvesInto": "Mega Altaria"
     },
     "page": "190",
     "stage": 3,
@@ -22502,7 +22502,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10067,
     "name": "Mega Altaria",
     "dMonst": "1d12",
     "stats": {
@@ -22743,7 +22743,7 @@
     }
   },
   {
-    "id": null,
+    "id": 978,
     "name": "Tatsugiri (Curly)",
     "dMonst": "1d10",
     "stats": {
@@ -22821,7 +22821,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10258,
     "name": "Tatsugiri (Droopy)",
     "dMonst": "1d10",
     "stats": {
@@ -22899,7 +22899,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10259,
     "name": "Tatsugiri (Stretchy)",
     "dMonst": "1d10",
     "stats": {
@@ -23617,7 +23617,7 @@
       "prevEvolutionIndex": 288,
       "evolutionaryStage": 2,
       "evolvesFrom": "Mareep",
-      "evolvesInto": "Ampharos / Mega Ampharos"
+      "evolvesInto": "Ampharos"
     },
     "page": "198",
     "stage": 2,
@@ -23700,7 +23700,7 @@
       "prevEvolutionIndex": 289,
       "evolutionaryStage": 3,
       "evolvesFrom": "Flaaffy",
-      "evolvesInto": null
+      "evolvesInto": "Mega Ampharos"
     },
     "page": "199",
     "stage": 3,
@@ -23717,7 +23717,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10045,
     "name": "Mega Ampharos",
     "dMonst": "1d12",
     "stats": {
@@ -24734,7 +24734,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": "Manectric / Mega Manectric"
+      "evolvesInto": "Manectric"
     },
     "page": "208",
     "stage": 1,
@@ -24814,7 +24814,7 @@
       "prevEvolutionIndex": 303,
       "evolutionaryStage": 2,
       "evolvesFrom": "Electrike",
-      "evolvesInto": null
+      "evolvesInto": "Mega Manectric"
     },
     "page": "208",
     "stage": 3,
@@ -24831,7 +24831,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10055,
     "name": "Mega Manectric",
     "dMonst": "1d12",
     "stats": {
@@ -25288,7 +25288,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": "Toxtricity / Gigantamax Toxtricity"
+      "evolvesInto": "Toxtricity"
     },
     "page": "212",
     "stage": 1,
@@ -25305,7 +25305,7 @@
     }
   },
   {
-    "id": null,
+    "id": 849,
     "name": "Toxtricity",
     "dMonst": "1d10",
     "stats": {
@@ -25374,7 +25374,7 @@
       "prevEvolutionIndex": 310,
       "evolutionaryStage": 2,
       "evolvesFrom": "Toxel",
-      "evolvesInto": null
+      "evolvesInto": "G-max Toxtricity"
     },
     "page": "212",
     "stage": 3,
@@ -25391,8 +25391,8 @@
     }
   },
   {
-    "id": null,
-    "name": "Gigantamax Toxtricity",
+    "id": 10219,
+    "name": "G-max Toxtricity",
     "dMonst": "1d12",
     "stats": {
       "hp": 176,
@@ -25629,7 +25629,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10231,
     "name": "Voltorb (Antique)",
     "dMonst": "1d6",
     "stats": {
@@ -25707,7 +25707,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10232,
     "name": "Electrode (Antique)",
     "dMonst": "1d10",
     "stats": {
@@ -26418,7 +26418,7 @@
     }
   },
   {
-    "id": null,
+    "id": 877,
     "name": "Morpeko (Full Belly)",
     "dMonst": "1d8",
     "stats": {
@@ -26494,7 +26494,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10187,
     "name": "Morpeko (Hangry)",
     "dMonst": "1d8",
     "stats": {
@@ -26956,7 +26956,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10011,
     "name": "Rotom (Mechanical Possesstion)",
     "dMonst": "1d10",
     "stats": {
@@ -27373,7 +27373,7 @@
     }
   },
   {
-    "id": null,
+    "id": 669,
     "name": "Flabébé",
     "dMonst": "1d6",
     "stats": {
@@ -28321,7 +28321,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": "Alcremie / Gigantamax Alcremie"
+      "evolvesInto": "Alcremie"
     },
     "page": "240",
     "stage": 1,
@@ -28404,7 +28404,7 @@
       "prevEvolutionIndex": 348,
       "evolutionaryStage": 2,
       "evolvesFrom": "Milcery",
-      "evolvesInto": null
+      "evolvesInto": "G-max Alcremie"
     },
     "page": "240",
     "stage": 3,
@@ -28421,8 +28421,8 @@
     }
   },
   {
-    "id": null,
-    "name": "Gigantamax Alcremie",
+    "id": 10223,
+    "name": "G-max Alcremie",
     "dMonst": "1d12",
     "stats": {
       "hp": 156,
@@ -29208,7 +29208,7 @@
       "prevEvolutionIndex": 358,
       "evolutionaryStage": 2,
       "evolvesFrom": "Machop",
-      "evolvesInto": "Machamp / Gigantamax Machamp"
+      "evolvesInto": "Machamp"
     },
     "page": "246",
     "stage": 2,
@@ -29291,7 +29291,7 @@
       "prevEvolutionIndex": 359,
       "evolutionaryStage": 3,
       "evolvesFrom": "Machoke",
-      "evolvesInto": null
+      "evolvesInto": "G-max Machamp"
     },
     "page": "247",
     "stage": 3,
@@ -29308,8 +29308,8 @@
     }
   },
   {
-    "id": null,
-    "name": "Gigantamax Machamp",
+    "id": 10201,
+    "name": "G-max Machamp",
     "dMonst": "1d12",
     "stats": {
       "hp": 196,
@@ -29956,7 +29956,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10166,
     "name": "Farfetch'd (Massive Leek)",
     "dMonst": "1d8",
     "stats": {
@@ -30031,7 +30031,7 @@
     }
   },
   {
-    "id": null,
+    "id": 865,
     "name": "Sirfetch'd",
     "dMonst": "1d10",
     "stats": {
@@ -30583,7 +30583,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": "Medicham / Mega Medicham"
+      "evolvesInto": "Medicham"
     },
     "page": "258",
     "stage": 1,
@@ -30666,7 +30666,7 @@
       "prevEvolutionIndex": 376,
       "evolutionaryStage": 2,
       "evolvesFrom": "Meditite",
-      "evolvesInto": null
+      "evolvesInto": "Mega Medicham"
     },
     "page": "258",
     "stage": 3,
@@ -30683,7 +30683,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10054,
     "name": "Mega Medicham",
     "dMonst": "1d10",
     "stats": {
@@ -31136,7 +31136,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": "Lucario / Mega Lucario"
+      "evolvesInto": "Lucario"
     },
     "page": "263",
     "stage": 1,
@@ -31225,7 +31225,7 @@
       "prevEvolutionIndex": 383,
       "evolutionaryStage": 2,
       "evolvesFrom": "Riolu",
-      "evolvesInto": null
+      "evolvesInto": "Mega Lucario"
     },
     "page": "263",
     "stage": 3,
@@ -31242,7 +31242,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10059,
     "name": "Mega Lucario",
     "dMonst": "1d12",
     "stats": {
@@ -31328,7 +31328,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10235,
     "name": "Sneasel (Badlands)",
     "dMonst": "1d10",
     "stats": {
@@ -32198,7 +32198,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10252,
     "name": "Tauros (Aqua Breed)",
     "dMonst": "1d10",
     "stats": {
@@ -32274,7 +32274,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10251,
     "name": "Tauros (Blaze Breed)",
     "dMonst": "1d10",
     "stats": {
@@ -32350,7 +32350,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10250,
     "name": "Tauros (Combative)",
     "dMonst": "1d10",
     "stats": {
@@ -32982,7 +32982,7 @@
     }
   },
   {
-    "id": null,
+    "id": 555,
     "name": "Darmanitan",
     "dMonst": "1d10",
     "stats": {
@@ -33066,7 +33066,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10017,
     "name": "Darmanitan (Zen mode)",
     "dMonst": "1d10",
     "stats": {
@@ -33314,7 +33314,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10229,
     "name": "Growlithe (Ancient)",
     "dMonst": "1d8",
     "stats": {
@@ -33392,7 +33392,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10230,
     "name": "Arcanine (Ancient)",
     "dMonst": "1d12",
     "stats": {
@@ -33551,7 +33551,7 @@
     }
   },
   {
-    "id": null,
+    "id": 668,
     "name": "Pyroar",
     "dMonst": "1d10",
     "stats": {
@@ -33687,7 +33687,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": "Camerupt / Mega Camerupt"
+      "evolvesInto": "Camerupt"
     },
     "page": "286",
     "stage": 1,
@@ -33774,7 +33774,7 @@
       "prevEvolutionIndex": 415,
       "evolutionaryStage": 2,
       "evolvesFrom": "Numel",
-      "evolvesInto": null
+      "evolvesInto": "Mega Camerupt"
     },
     "page": "286",
     "stage": 3,
@@ -33791,7 +33791,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10087,
     "name": "Mega Camerupt",
     "dMonst": "1d12",
     "stats": {
@@ -34259,7 +34259,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": "Centiskorch / Gigantamax Centiskorch"
+      "evolvesInto": "Centiskorch"
     },
     "page": "290",
     "stage": 1,
@@ -34346,7 +34346,7 @@
       "prevEvolutionIndex": 422,
       "evolutionaryStage": 2,
       "evolvesFrom": "Sizzlipede",
-      "evolvesInto": null
+      "evolvesInto": "G-max Centiskorch"
     },
     "page": "290",
     "stage": 3,
@@ -34363,8 +34363,8 @@
     }
   },
   {
-    "id": null,
-    "name": "Gigantamax Centiskorch",
+    "id": 10220,
+    "name": "G-max Centiskorch",
     "dMonst": "1d12",
     "stats": {
       "hp": 216,
@@ -35402,7 +35402,7 @@
       "prevEvolutionIndex": 435,
       "evolutionaryStage": 2,
       "evolvesFrom": "Rookidee",
-      "evolvesInto": "Corviknight / Gigantamax Corviknight"
+      "evolvesInto": "Corviknight"
     },
     "page": "300",
     "stage": 2,
@@ -35488,7 +35488,7 @@
       "prevEvolutionIndex": 436,
       "evolutionaryStage": 3,
       "evolvesFrom": "Corvisquire",
-      "evolvesInto": null
+      "evolvesInto": "G-max Corviknight"
     },
     "page": "301",
     "stage": 3,
@@ -35505,8 +35505,8 @@
     }
   },
   {
-    "id": null,
-    "name": "Gigantamax Corviknight",
+    "id": 10212,
+    "name": "G-max Corviknight",
     "dMonst": "1d12",
     "stats": {
       "hp": 216,
@@ -35997,7 +35997,7 @@
     }
   },
   {
-    "id": null,
+    "id": 741,
     "name": "Oricorio (Baile)",
     "dMonst": "1d10",
     "stats": {
@@ -36073,7 +36073,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10124,
     "name": "Oricorio (Pa'u)",
     "dMonst": "1d10",
     "stats": {
@@ -36149,7 +36149,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10123,
     "name": "Oricorio (Pom-Pom)",
     "dMonst": "1d10",
     "stats": {
@@ -36225,7 +36225,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10125,
     "name": "Oricorio (Sensu)",
     "dMonst": "1d10",
     "stats": {
@@ -36707,7 +36707,7 @@
       "prevEvolutionIndex": 451,
       "evolutionaryStage": 2,
       "evolvesFrom": "Gastly",
-      "evolvesInto": "Gengar / Gigantamax Gengar / Mega Gengar"
+      "evolvesInto": "Gengar"
     },
     "page": "308",
     "stage": 2,
@@ -36797,7 +36797,7 @@
       "prevEvolutionIndex": 452,
       "evolutionaryStage": 3,
       "evolvesFrom": "Haunter",
-      "evolvesInto": null
+      "evolvesInto": "G-max Gengar / Mega Gengar"
     },
     "page": "309",
     "stage": 3,
@@ -36814,8 +36814,8 @@
     }
   },
   {
-    "id": null,
-    "name": "Gigantamax Gengar",
+    "id": 10202,
+    "name": "G-max Gengar",
     "dMonst": "1d12",
     "stats": {
       "hp": 136,
@@ -36903,7 +36903,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10038,
     "name": "Mega Gengar",
     "dMonst": "1d12",
     "stats": {
@@ -37243,7 +37243,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10173,
     "name": "Corsola (Dead Seas)",
     "dMonst": "1d8",
     "stats": {
@@ -38089,7 +38089,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10027,
     "name": "Pumpkaboo (Small)",
     "dMonst": "1d6",
     "stats": {
@@ -38169,7 +38169,7 @@
     }
   },
   {
-    "id": null,
+    "id": 710,
     "name": "Pumpkaboo (Medium)",
     "dMonst": "1d6",
     "stats": {
@@ -38249,7 +38249,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10028,
     "name": "Pumpkaboo (Large)",
     "dMonst": "1d6",
     "stats": {
@@ -38329,7 +38329,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10030,
     "name": "Gourgeist (Small)",
     "dMonst": "1d10",
     "stats": {
@@ -38412,7 +38412,7 @@
     }
   },
   {
-    "id": null,
+    "id": 711,
     "name": "Gourgeist (Medium)",
     "dMonst": "1d10",
     "stats": {
@@ -38495,7 +38495,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10031,
     "name": "Gourgeist (Large)",
     "dMonst": "1d10",
     "stats": {
@@ -38802,7 +38802,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": "Banette / Mega Banette"
+      "evolvesInto": "Banette"
     },
     "page": "323",
     "stage": 1,
@@ -38883,7 +38883,7 @@
       "prevEvolutionIndex": 477,
       "evolutionaryStage": 2,
       "evolvesFrom": "Shuppet",
-      "evolvesInto": null
+      "evolvesInto": "Mega Banette"
     },
     "page": "323",
     "stage": 3,
@@ -38900,7 +38900,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10056,
     "name": "Mega Banette",
     "dMonst": "1d10",
     "stats": {
@@ -39388,7 +39388,7 @@
     }
   },
   {
-    "id": null,
+    "id": 778,
     "name": "Mimikyu",
     "dMonst": "1d10",
     "stats": {
@@ -43125,7 +43125,7 @@
     }
   },
   {
-    "id": null,
+    "id": 1012,
     "name": "Poltchageist",
     "dMonst": "1d6",
     "stats": {
@@ -43204,7 +43204,7 @@
     }
   },
   {
-    "id": null,
+    "id": 1013,
     "name": "Sinistcha",
     "dMonst": "1d10",
     "stats": {
@@ -43449,7 +43449,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10237,
     "name": "Lilligant (High Mountain)",
     "dMonst": "1d10",
     "stats": {
@@ -43922,7 +43922,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": "Abomasnow / Mega Abomasnow"
+      "evolvesInto": "Abomasnow"
     },
     "page": "364",
     "stage": 1,
@@ -44010,7 +44010,7 @@
       "prevEvolutionIndex": 540,
       "evolutionaryStage": 2,
       "evolvesFrom": "Snover",
-      "evolvesInto": null
+      "evolvesInto": "Mega Abomasnow"
     },
     "page": "364",
     "stage": 3,
@@ -44027,7 +44027,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10060,
     "name": "Mega Abomasnow",
     "dMonst": "1d12",
     "stats": {
@@ -44504,7 +44504,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": "Flapple / Gigantamax Flapple / Appletun / Gigantamax Appletun / Dipplin"
+      "evolvesInto": "Flapple / Appletun / Dipplin"
     },
     "page": "369",
     "stage": 1,
@@ -44589,7 +44589,7 @@
       "prevEvolutionIndex": 547,
       "evolutionaryStage": 2,
       "evolvesFrom": "Applin",
-      "evolvesInto": null
+      "evolvesInto": "G-max Flapple"
     },
     "page": "369",
     "stage": 3,
@@ -44606,8 +44606,8 @@
     }
   },
   {
-    "id": null,
-    "name": "Gigantamax Flapple",
+    "id": 10216,
+    "name": "G-max Flapple",
     "dMonst": "1d12",
     "stats": {
       "hp": 156,
@@ -44757,7 +44757,7 @@
       "prevEvolutionIndex": 547,
       "evolutionaryStage": 2,
       "evolvesFrom": "Applin",
-      "evolvesInto": null
+      "evolvesInto": "G-max Appletun"
     },
     "page": "370",
     "stage": 3,
@@ -44774,8 +44774,8 @@
     }
   },
   {
-    "id": null,
-    "name": "Gigantamax Appletun",
+    "id": 10217,
+    "name": "G-max Appletun",
     "dMonst": "1d12",
     "stats": {
       "hp": 236,
@@ -44857,7 +44857,7 @@
     }
   },
   {
-    "id": null,
+    "id": 1011,
     "name": "Dipplin",
     "dMonst": "1d10",
     "stats": {
@@ -44940,7 +44940,7 @@
     }
   },
   {
-    "id": null,
+    "id": 1019,
     "name": "Hydrapple",
     "dMonst": "1d10",
     "stats": {
@@ -45186,7 +45186,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10114,
     "name": "Exeggutor (Island)",
     "dMonst": "1d10",
     "stats": {
@@ -46594,7 +46594,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10105,
     "name": "Diglett (Volcanic)",
     "dMonst": "1d6",
     "stats": {
@@ -46674,7 +46674,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10106,
     "name": "Dugtrio (Volcanic)",
     "dMonst": "1d8",
     "stats": {
@@ -47950,7 +47950,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": "Sandaconda / Gigantamax Sandaconda"
+      "evolvesInto": "Sandaconda"
     },
     "page": "403",
     "stage": 1,
@@ -48035,7 +48035,7 @@
       "prevEvolutionIndex": 589,
       "evolutionaryStage": 2,
       "evolvesFrom": "Silicobra",
-      "evolvesInto": null
+      "evolvesInto": "G-max Sandaconda"
     },
     "page": "403",
     "stage": 3,
@@ -48052,8 +48052,8 @@
     }
   },
   {
-    "id": null,
-    "name": "Gigantamax Sandaconda",
+    "id": 10218,
+    "name": "G-max Sandaconda",
     "dMonst": "1d12",
     "stats": {
       "hp": 156,
@@ -48292,7 +48292,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10179,
     "name": "Yamask (Stone Ruins)",
     "dMonst": "1d6",
     "stats": {
@@ -48620,7 +48620,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10115,
     "name": "Marowak (Volcanic)",
     "dMonst": "1d8",
     "stats": {
@@ -48794,7 +48794,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10180,
     "name": "Stunfisk (Iron rich)",
     "dMonst": "1d10",
     "stats": {
@@ -49951,7 +49951,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10243,
     "name": "Avalugg (Mountainous)",
     "dMonst": "1d10",
     "stats": {
@@ -50203,7 +50203,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10176,
     "name": "Darumaka (Icy Mountain)",
     "dMonst": "1d6",
     "stats": {
@@ -50276,7 +50276,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10177,
     "name": "Darmanitan (Icy Mountain)",
     "dMonst": "1d10",
     "stats": {
@@ -50356,7 +50356,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10178,
     "name": "Darmanitan (Icy Mountain Zen Mode)",
     "dMonst": "1d10",
     "stats": {
@@ -50437,7 +50437,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10101,
     "name": "Sandshrew (Icy Mountain)",
     "dMonst": "1d6",
     "stats": {
@@ -50516,7 +50516,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10102,
     "name": "Sandslash (Icy Mountain)",
     "dMonst": "1d10",
     "stats": {
@@ -50925,7 +50925,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10103,
     "name": "Vulpix (Icy Mountain)",
     "dMonst": "1d6",
     "stats": {
@@ -51000,7 +51000,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10104,
     "name": "Ninetales (Icy Mountain)",
     "dMonst": "1d10",
     "stats": {
@@ -51142,7 +51142,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": "Glalie / Mega Glalie / Froslass"
+      "evolvesInto": "Glalie / Froslass"
     },
     "page": "432",
     "stage": 1,
@@ -51228,7 +51228,7 @@
       "prevEvolutionIndex": 628,
       "evolutionaryStage": 2,
       "evolvesFrom": "Snorunt",
-      "evolvesInto": null
+      "evolvesInto": "Mega Glalie"
     },
     "page": "432",
     "stage": 3,
@@ -51245,7 +51245,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10074,
     "name": "Mega Glalie",
     "dMonst": "1d12",
     "stats": {
@@ -51570,7 +51570,7 @@
     }
   },
   {
-    "id": null,
+    "id": 875,
     "name": "Eiscue (Ice Face)",
     "dMonst": "1d10",
     "stats": {
@@ -51647,7 +51647,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10185,
     "name": "Eiscue (No Ice)",
     "dMonst": "1d10",
     "stats": {
@@ -52606,7 +52606,7 @@
       "prevEvolutionIndex": 645,
       "evolutionaryStage": 2,
       "evolvesFrom": "Pidgey",
-      "evolvesInto": "Pidgeot / Mega Pidgeot"
+      "evolvesInto": "Pidgeot"
     },
     "page": "442",
     "stage": 2,
@@ -52691,7 +52691,7 @@
       "prevEvolutionIndex": 646,
       "evolutionaryStage": 3,
       "evolvesFrom": "Pidgeotto",
-      "evolvesInto": null
+      "evolvesInto": "Mega Pidgeot"
     },
     "page": "443",
     "stage": 3,
@@ -52708,7 +52708,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10073,
     "name": "Mega Pidgeot",
     "dMonst": "1d12",
     "stats": {
@@ -54610,7 +54610,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": "Lopunny / Mega Lopunny"
+      "evolvesInto": "Lopunny"
     },
     "page": "459",
     "stage": 1,
@@ -54691,7 +54691,7 @@
       "prevEvolutionIndex": 671,
       "evolutionaryStage": 2,
       "evolvesFrom": "Buneary",
-      "evolvesInto": null
+      "evolvesInto": "Mega Lopunny"
     },
     "page": "459",
     "stage": 3,
@@ -54708,7 +54708,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10088,
     "name": "Mega Lopunny",
     "dMonst": "1d12",
     "stats": {
@@ -55350,7 +55350,7 @@
     }
   },
   {
-    "id": null,
+    "id": 982,
     "name": "Dudunsparce",
     "dMonst": "1d10",
     "stats": {
@@ -55824,7 +55824,7 @@
     }
   },
   {
-    "id": null,
+    "id": 916,
     "name": "Oinkologne (Male)",
     "dMonst": "1d10",
     "stats": {
@@ -55904,7 +55904,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10254,
     "name": "Oinkologne (Female)",
     "dMonst": "1d10",
     "stats": {
@@ -56223,8 +56223,8 @@
     }
   },
   {
-    "id": null,
-    "name": "Gigantamax Meowth",
+    "id": 10200,
+    "name": "G-max Meowth",
     "dMonst": "1d10",
     "stats": {
       "hp": 96,
@@ -56274,12 +56274,12 @@
     "evolution": {
       "stage": 1,
       "family": [
-        "#N/A"
+        "Meowth"
       ],
-      "familyStarter": "Gigantamax Meowth",
+      "familyStarter": "Meowth",
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
-      "evolvesFrom": null,
+      "evolvesFrom": "Meowth",
       "evolvesInto": null
     },
     "page": "474",
@@ -56587,7 +56587,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": "Snorlax / Gigantamax Snorlax"
+      "evolvesInto": "Snorlax"
     },
     "page": "477",
     "stage": 1,
@@ -56666,7 +56666,7 @@
       "prevEvolutionIndex": 696,
       "evolutionaryStage": 2,
       "evolvesFrom": "Munchlax",
-      "evolvesInto": null
+      "evolvesInto": "G-max Snorlax"
     },
     "page": "477",
     "stage": 3,
@@ -56683,8 +56683,8 @@
     }
   },
   {
-    "id": null,
-    "name": "Gigantamax Snorlax",
+    "id": 10206,
+    "name": "G-max Snorlax",
     "dMonst": "1d12",
     "stats": {
       "hp": 336,
@@ -57245,7 +57245,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10240,
     "name": "Braviary (Tundra)",
     "dMonst": "1d10",
     "stats": {
@@ -58345,7 +58345,7 @@
     }
   },
   {
-    "id": null,
+    "id": 925,
     "name": "Maushold",
     "dMonst": "1d10",
     "stats": {
@@ -58674,7 +58674,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10272,
     "name": "Ursaluna (Bloodmoon)",
     "dMonst": "1d10",
     "stats": {
@@ -59217,7 +59217,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10238,
     "name": "Zorua (Icy Mountain)",
     "dMonst": "1d6",
     "stats": {
@@ -59293,7 +59293,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10239,
     "name": "Zoroark (Icy Mountain)",
     "dMonst": "1d10",
     "stats": {
@@ -59431,7 +59431,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": null
+      "evolvesInto": "Mega Audino"
     },
     "page": "502",
     "stage": 3,
@@ -59448,7 +59448,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10069,
     "name": "Mega Audino",
     "dMonst": "1d10",
     "stats": {
@@ -59498,12 +59498,12 @@
     "evolution": {
       "stage": 1,
       "family": [
-        "#N/A"
+        "Audino"
       ],
-      "familyStarter": "Mega Audino",
+      "familyStarter": "Audino",
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
-      "evolvesFrom": null,
+      "evolvesFrom": "Audino",
       "evolvesInto": null
     },
     "page": "502",
@@ -59678,7 +59678,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10013,
     "name": "Castform (Sunny)",
     "dMonst": "1d8",
     "stats": {
@@ -59754,7 +59754,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10014,
     "name": "Castform (Rainy)",
     "dMonst": "1d8",
     "stats": {
@@ -59830,7 +59830,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10015,
     "name": "Castform (Snowy)",
     "dMonst": "1d8",
     "stats": {
@@ -60216,7 +60216,7 @@
     }
   },
   {
-    "id": null,
+    "id": 83,
     "name": "Farfetch'd",
     "dMonst": "1d8",
     "stats": {
@@ -60594,7 +60594,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": null
+      "evolvesInto": "Mega Kangaskhan"
     },
     "page": "508",
     "stage": 3,
@@ -60611,7 +60611,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10039,
     "name": "Mega Kangaskhan",
     "dMonst": "1d12",
     "stats": {
@@ -60663,9 +60663,9 @@
     "evolution": {
       "stage": 1,
       "family": [
-        "#N/A"
+        "Kangaskhan"
       ],
-      "familyStarter": "Mega Kangaskhan",
+      "familyStarter": "Kangaskhan",
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
@@ -61377,7 +61377,7 @@
     }
   },
   {
-    "id": null,
+    "id": 931,
     "name": "Squawkabilly (Green)",
     "dMonst": "1d8",
     "stats": {
@@ -61452,7 +61452,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10260,
     "name": "Squawkabilly (Blue)",
     "dMonst": "1d8",
     "stats": {
@@ -61527,7 +61527,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10261,
     "name": "Squawkabilly (Yellow)",
     "dMonst": "1d8",
     "stats": {
@@ -61602,7 +61602,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10262,
     "name": "Squawkabilly (White)",
     "dMonst": "1d8",
     "stats": {
@@ -61749,7 +61749,7 @@
     }
   },
   {
-    "id": null,
+    "id": 29,
     "name": "Nidoran (Female)",
     "dMonst": "1d6",
     "stats": {
@@ -61991,7 +61991,7 @@
     }
   },
   {
-    "id": null,
+    "id": 32,
     "name": "Nidoran (Male)",
     "dMonst": "1d6",
     "stats": {
@@ -62973,7 +62973,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10112,
     "name": "Grimer (Oil Polluted)",
     "dMonst": "1d6",
     "stats": {
@@ -63050,7 +63050,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10113,
     "name": "Muk (Oil Polluted)",
     "dMonst": "1d10",
     "stats": {
@@ -64330,7 +64330,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": "Garbodor / Gigantamax Garbodor"
+      "evolvesInto": "Garbodor"
     },
     "page": "539",
     "stage": 1,
@@ -64416,7 +64416,7 @@
       "prevEvolutionIndex": 794,
       "evolutionaryStage": 2,
       "evolvesFrom": "Trubbish",
-      "evolvesInto": null
+      "evolvesInto": "G-max Garbodor"
     },
     "page": "539",
     "stage": 3,
@@ -64433,8 +64433,8 @@
     }
   },
   {
-    "id": null,
-    "name": "Gigantamax Garbodor",
+    "id": 10207,
+    "name": "G-max Garbodor",
     "dMonst": "1d12",
     "stats": {
       "hp": 176,
@@ -64518,7 +64518,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10253,
     "name": "Wooper (High Ground)",
     "dMonst": "1d4",
     "stats": {
@@ -64842,7 +64842,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10167,
     "name": "Weezing (Heavy Pollution)",
     "dMonst": "1d10",
     "stats": {
@@ -65162,7 +65162,7 @@
       "prevEvolutionIndex": 803,
       "evolutionaryStage": 2,
       "evolvesFrom": "Abra",
-      "evolvesInto": "Alakazam / Mega Alakazam"
+      "evolvesInto": "Alakazam"
     },
     "page": "548",
     "stage": 2,
@@ -65249,7 +65249,7 @@
       "prevEvolutionIndex": 804,
       "evolutionaryStage": 3,
       "evolvesFrom": "Kadabra",
-      "evolvesInto": null
+      "evolvesInto": "Mega Alakazam"
     },
     "page": "549",
     "stage": 3,
@@ -65266,7 +65266,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10037,
     "name": "Mega Alakazam",
     "dMonst": "1d12",
     "stats": {
@@ -65738,7 +65738,7 @@
       "prevEvolutionIndex": 810,
       "evolutionaryStage": 2,
       "evolvesFrom": "Hatenna",
-      "evolvesInto": "Hatterene / Gigantamax Hatterene"
+      "evolvesInto": "Hatterene"
     },
     "page": "552",
     "stage": 2,
@@ -65822,7 +65822,7 @@
       "prevEvolutionIndex": 811,
       "evolutionaryStage": 3,
       "evolvesFrom": "Hattrem",
-      "evolvesInto": null
+      "evolvesInto": "G-max Hatterene"
     },
     "page": "553",
     "stage": 3,
@@ -65839,8 +65839,8 @@
     }
   },
   {
-    "id": null,
-    "name": "Gigantamax Hatterene",
+    "id": 10221,
+    "name": "G-max Hatterene",
     "dMonst": "1d12",
     "stats": {
       "hp": 136,
@@ -66165,7 +66165,7 @@
     }
   },
   {
-    "id": null,
+    "id": 439,
     "name": "Mime Jr.",
     "dMonst": "1d6",
     "stats": {
@@ -66245,7 +66245,7 @@
     }
   },
   {
-    "id": null,
+    "id": 122,
     "name": "Mr. Mime",
     "dMonst": "1d10",
     "stats": {
@@ -66331,7 +66331,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10168,
     "name": "Mr. Mime (Icy Mountain)",
     "dMonst": "1d10",
     "stats": {
@@ -66417,7 +66417,7 @@
     }
   },
   {
-    "id": null,
+    "id": 866,
     "name": "Mr. Rime",
     "dMonst": "1d10",
     "stats": {
@@ -66645,7 +66645,7 @@
       "prevEvolutionIndex": 821,
       "evolutionaryStage": 2,
       "evolvesFrom": "Ralts",
-      "evolvesInto": "Gardevoir / Mega Gardevoir / Gallade / Mega Gallade"
+      "evolvesInto": "Gardevoir / Gallade"
     },
     "page": "556",
     "stage": 2,
@@ -66731,7 +66731,7 @@
       "prevEvolutionIndex": 822,
       "evolutionaryStage": 3,
       "evolvesFrom": "Kirlia",
-      "evolvesInto": null
+      "evolvesInto": "Mega Gardevoir"
     },
     "page": "557",
     "stage": 3,
@@ -66748,7 +66748,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10051,
     "name": "Mega Gardevoir",
     "dMonst": "1d12",
     "stats": {
@@ -66905,7 +66905,7 @@
       "prevEvolutionIndex": 822,
       "evolutionaryStage": 3,
       "evolvesFrom": "Kirlia",
-      "evolvesInto": null
+      "evolvesInto": "Mega Gallade"
     },
     "page": "557",
     "stage": 3,
@@ -66922,7 +66922,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10068,
     "name": "Mega Gallade",
     "dMonst": "1d12",
     "stats": {
@@ -67978,7 +67978,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10162,
     "name": "Ponyta (Forest Glade)",
     "dMonst": "1d8",
     "stats": {
@@ -68056,7 +68056,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10163,
     "name": "Rapidash (Forest Glade)",
     "dMonst": "1d10",
     "stats": {
@@ -68685,7 +68685,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10025,
     "name": "Meowstic (Female)",
     "dMonst": "1d10",
     "stats": {
@@ -68766,7 +68766,7 @@
     }
   },
   {
-    "id": null,
+    "id": 678,
     "name": "Meowstic (Male)",
     "dMonst": "1d10",
     "stats": {
@@ -68847,7 +68847,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10164,
     "name": "Slowpoke (Spice Diet)",
     "dMonst": "1d6",
     "stats": {
@@ -68927,7 +68927,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10165,
     "name": "Slowbro (Spice Diet)",
     "dMonst": "1d10",
     "stats": {
@@ -69018,7 +69018,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10172,
     "name": "Slowking (Spice Diet)",
     "dMonst": "1d10",
     "stats": {
@@ -69110,7 +69110,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10186,
     "name": "Indeedee (Female)",
     "dMonst": "1d10",
     "stats": {
@@ -69189,7 +69189,7 @@
     }
   },
   {
-    "id": null,
+    "id": 876,
     "name": "Indeedee (Male)",
     "dMonst": "1d10",
     "stats": {
@@ -69674,7 +69674,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10109,
     "name": "Geodude (Iron-rich)",
     "dMonst": "1d6",
     "stats": {
@@ -69755,7 +69755,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10110,
     "name": "Graveler (Iron-rich)",
     "dMonst": "1d8",
     "stats": {
@@ -69841,7 +69841,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10111,
     "name": "Golem (Iron-rich)",
     "dMonst": "1d10",
     "stats": {
@@ -70069,7 +70069,7 @@
       "prevEvolutionIndex": 863,
       "evolutionaryStage": 2,
       "evolvesFrom": "Larvitar",
-      "evolvesInto": "Tyranitar / Mega Tyranitar"
+      "evolvesInto": "Tyranitar"
     },
     "page": "586",
     "stage": 2,
@@ -70155,7 +70155,7 @@
       "prevEvolutionIndex": 864,
       "evolutionaryStage": 3,
       "evolvesFrom": "Pupitar",
-      "evolvesInto": null
+      "evolvesInto": "Mega Tyranitar"
     },
     "page": "587",
     "stage": 3,
@@ -70172,7 +70172,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10049,
     "name": "Mega Tyranitar",
     "dMonst": "1d12",
     "stats": {
@@ -70892,7 +70892,7 @@
       "prevEvolutionIndex": 873,
       "evolutionaryStage": 2,
       "evolvesFrom": "Rolycoly",
-      "evolvesInto": "Coalossal / Gigantamax Coalossal"
+      "evolvesInto": "Coalossal"
     },
     "page": "592",
     "stage": 2,
@@ -70981,7 +70981,7 @@
       "prevEvolutionIndex": 874,
       "evolutionaryStage": 3,
       "evolvesFrom": "Carkol",
-      "evolvesInto": null
+      "evolvesInto": "G-max Coalossal"
     },
     "page": "593",
     "stage": 3,
@@ -70998,8 +70998,8 @@
     }
   },
   {
-    "id": null,
-    "name": "Gigantamax Coalossal",
+    "id": 10215,
+    "name": "G-max Coalossal",
     "dMonst": "1d12",
     "stats": {
       "hp": 236,
@@ -73254,7 +73254,7 @@
     }
   },
   {
-    "id": null,
+    "id": 745,
     "name": "Lycanroc (Day)",
     "dMonst": "1d10",
     "stats": {
@@ -73340,7 +73340,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10126,
     "name": "Lycanroc (Night)",
     "dMonst": "1d10",
     "stats": {
@@ -73426,7 +73426,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10152,
     "name": "Lycanroc (Dusk)",
     "dMonst": "1d10",
     "stats": {
@@ -73572,7 +73572,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": null
+      "evolvesInto": "Mega Aerodactyl"
     },
     "page": "616",
     "stage": 3,
@@ -73589,7 +73589,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10042,
     "name": "Mega Aerodactyl",
     "dMonst": "1d12",
     "stats": {
@@ -73644,12 +73644,12 @@
     "evolution": {
       "stage": 1,
       "family": [
-        "#N/A"
+        "Aerodactyl"
       ],
-      "familyStarter": "Mega Aerodactyl",
-      "prevEvolutionIndex": -1,
+      "familyStarter": "Aerodactyl",
+      "prevEvolutionIndex": 915,
       "evolutionaryStage": 1,
-      "evolvesFrom": null,
+      "evolvesFrom": "Aerodactyl",
       "evolvesInto": null
     },
     "page": "616",
@@ -73982,7 +73982,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10136,
     "name": "Minior",
     "dMonst": "1d8",
     "stats": {
@@ -74059,7 +74059,7 @@
     }
   },
   {
-    "id": null,
+    "id": 774,
     "name": "Minior (Core Revealed)",
     "dMonst": "1d10",
     "stats": {
@@ -74350,7 +74350,7 @@
       "prevEvolutionIndex": 916,
       "evolutionaryStage": 2,
       "evolvesFrom": "Aron",
-      "evolvesInto": "Aggron / Mega Aggron"
+      "evolvesInto": "Aggron"
     },
     "page": "622",
     "stage": 2,
@@ -74434,7 +74434,7 @@
       "prevEvolutionIndex": 917,
       "evolutionaryStage": 3,
       "evolvesFrom": "Lairon",
-      "evolvesInto": null
+      "evolvesInto": "Mega Aggron"
     },
     "page": "623",
     "stage": 3,
@@ -74451,7 +74451,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10053,
     "name": "Mega Aggron",
     "dMonst": "1d12",
     "stats": {
@@ -74680,7 +74680,7 @@
       "prevEvolutionIndex": 920,
       "evolutionaryStage": 2,
       "evolvesFrom": "Beldum",
-      "evolvesInto": "Metagross / Mega Metagross"
+      "evolvesInto": "Metagross"
     },
     "page": "624",
     "stage": 2,
@@ -74766,7 +74766,7 @@
       "prevEvolutionIndex": 921,
       "evolutionaryStage": 3,
       "evolvesFrom": "Metang",
-      "evolvesInto": null
+      "evolvesInto": "Mega Metagross"
     },
     "page": "625",
     "stage": 3,
@@ -74783,7 +74783,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10076,
     "name": "Mega Metagross",
     "dMonst": "1d12",
     "stats": {
@@ -75029,7 +75029,7 @@
     }
   },
   {
-    "id": null,
+    "id": 681,
     "name": "Aegislash (Shield)",
     "dMonst": "1d10",
     "stats": {
@@ -75110,7 +75110,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10026,
     "name": "Aegislash (Sword)",
     "dMonst": "1d10",
     "stats": {
@@ -75664,7 +75664,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": "Copperajah / Gigantamax Copperajah"
+      "evolvesInto": "Copperajah"
     },
     "page": "634",
     "stage": 1,
@@ -75748,7 +75748,7 @@
       "prevEvolutionIndex": 933,
       "evolutionaryStage": 2,
       "evolvesFrom": "Cufant",
-      "evolvesInto": null
+      "evolvesInto": "G-max Copperajah"
     },
     "page": "634",
     "stage": 3,
@@ -75765,8 +75765,8 @@
     }
   },
   {
-    "id": null,
-    "name": "Gigantamax Copperajah",
+    "id": 10224,
+    "name": "G-max Copperajah",
     "dMonst": "1d12",
     "stats": {
       "hp": 256,
@@ -75845,7 +75845,7 @@
     }
   },
   {
-    "id": null,
+    "id": 999,
     "name": "Gimmighoul (Chest)",
     "dMonst": "1d6",
     "stats": {
@@ -75917,7 +75917,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10263,
     "name": "Gimmighoul (Roaming)",
     "dMonst": "1d6",
     "stats": {
@@ -76068,7 +76068,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10107,
     "name": "Meowth (Cold Climate)",
     "dMonst": "1d6",
     "stats": {
@@ -76288,7 +76288,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": "Steelix / Mega Steelix"
+      "evolvesInto": "Steelix"
     },
     "page": "638",
     "stage": 1,
@@ -76375,7 +76375,7 @@
       "prevEvolutionIndex": 941,
       "evolutionaryStage": 2,
       "evolvesFrom": "Onix",
-      "evolvesInto": null
+      "evolvesInto": "Mega Steelix"
     },
     "page": "638",
     "stage": 3,
@@ -76392,7 +76392,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10072,
     "name": "Mega Steelix",
     "dMonst": "1d12",
     "stats": {
@@ -76722,8 +76722,8 @@
     }
   },
   {
-    "id": null,
-    "name": "Gigantamax Duraludon",
+    "id": 10225,
+    "name": "G-max Duraludon",
     "dMonst": "1d12",
     "stats": {
       "hp": 156,
@@ -76777,12 +76777,12 @@
     "evolution": {
       "stage": 1,
       "family": [
-        "#N/A"
+        "Duraludon"
       ],
-      "familyStarter": "Gigantamax Duraludon",
+      "familyStarter": "Duraludon",
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
-      "evolvesFrom": null,
+      "evolvesFrom": "Duraludon",
       "evolvesInto": null
     },
     "page": "637",
@@ -76800,7 +76800,7 @@
     }
   },
   {
-    "id": null,
+    "id": 1018,
     "name": "Archaludon",
     "dMonst": "1d12",
     "stats": {
@@ -77027,7 +77027,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": null
+      "evolvesInto": "Mega Mawile"
     },
     "page": "642",
     "stage": 3,
@@ -77044,7 +77044,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10052,
     "name": "Mega Mawile",
     "dMonst": "1d10",
     "stats": {
@@ -77100,9 +77100,9 @@
     "evolution": {
       "stage": 1,
       "family": [
-        "#N/A"
+        "Mawile"
       ],
-      "familyStarter": "Mega Mawile",
+      "familyStarter": "Mawile",
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
@@ -79172,7 +79172,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": "Sharpedo / Mega Sharpedo"
+      "evolvesInto": "Sharpedo"
     },
     "page": "663",
     "stage": 1,
@@ -79257,7 +79257,7 @@
       "prevEvolutionIndex": 976,
       "evolutionaryStage": 2,
       "evolvesFrom": "Carvanha",
-      "evolvesInto": null
+      "evolvesInto": "Mega Sharpedo"
     },
     "page": "663",
     "stage": 3,
@@ -79274,7 +79274,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10070,
     "name": "Mega Sharpedo",
     "dMonst": "1d12",
     "stats": {
@@ -79419,7 +79419,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": "Drednaw / Gigantamax Drednaw"
+      "evolvesInto": "Drednaw"
     },
     "page": "664",
     "stage": 1,
@@ -79508,7 +79508,7 @@
       "prevEvolutionIndex": 979,
       "evolutionaryStage": 2,
       "evolvesFrom": "Chewtle",
-      "evolvesInto": null
+      "evolvesInto": "G-max Drednaw"
     },
     "page": "664",
     "stage": 3,
@@ -79525,8 +79525,8 @@
     }
   },
   {
-    "id": null,
-    "name": "Gigantamax Drednaw",
+    "id": 10214,
+    "name": "G-max Drednaw",
     "dMonst": "1d12",
     "stats": {
       "hp": 196,
@@ -80702,7 +80702,7 @@
     }
   },
   {
-    "id": null,
+    "id": 964,
     "name": "Palafin (Zero)",
     "dMonst": "1d8",
     "stats": {
@@ -80783,7 +80783,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10256,
     "name": "Palafin (Hero)",
     "dMonst": "1d12",
     "stats": {
@@ -81027,7 +81027,7 @@
     }
   },
   {
-    "id": null,
+    "id": 592,
     "name": "Frillish",
     "dMonst": "1d6",
     "stats": {
@@ -81109,7 +81109,7 @@
     }
   },
   {
-    "id": null,
+    "id": 593,
     "name": "Jellicent",
     "dMonst": "1d10",
     "stats": {
@@ -81430,7 +81430,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": "Kingler / Gigantamax Kingler"
+      "evolvesInto": "Kingler"
     },
     "page": "681",
     "stage": 1,
@@ -81516,7 +81516,7 @@
       "prevEvolutionIndex": 1003,
       "evolutionaryStage": 2,
       "evolvesFrom": "Krabby",
-      "evolvesInto": null
+      "evolvesInto": "G-max Kingler"
     },
     "page": "681",
     "stage": 3,
@@ -81533,8 +81533,8 @@
     }
   },
   {
-    "id": null,
-    "name": "Gigantamax Kingler",
+    "id": 10203,
+    "name": "G-max Kingler",
     "dMonst": "1d12",
     "stats": {
       "hp": 136,
@@ -81679,7 +81679,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": "Gyarados / Mega Gyarados"
+      "evolvesInto": "Gyarados"
     },
     "page": "682",
     "stage": 1,
@@ -81763,10 +81763,10 @@
         "Gyarados"
       ],
       "familyStarter": "Magikarp",
-      "prevEvolutionIndex": 1006,
+      "prevEvolutionIndex": -1,
       "evolutionaryStage": 2,
       "evolvesFrom": "Magikarp",
-      "evolvesInto": null
+      "evolvesInto": "Mega Gyarados"
     },
     "page": "682",
     "stage": 3,
@@ -81783,7 +81783,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10041,
     "name": "Mega Gyarados",
     "dMonst": "1d12",
     "stats": {
@@ -84506,7 +84506,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": "Slowbro / Mega Slowbro / Slowking"
+      "evolvesInto": "Slowbro/ Slowking"
     },
     "page": "708",
     "stage": 1,
@@ -84596,7 +84596,7 @@
       "prevEvolutionIndex": 1040,
       "evolutionaryStage": 2,
       "evolvesFrom": "Slowpoke",
-      "evolvesInto": null
+      "evolvesInto": "Mega Slowbro "
     },
     "page": "708",
     "stage": 3,
@@ -84613,7 +84613,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10071,
     "name": "Mega Slowbro",
     "dMonst": "1d12",
     "stats": {
@@ -85031,7 +85031,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10247,
     "name": "Basculin (White-striped)",
     "dMonst": "1d10",
     "stats": {
@@ -85112,7 +85112,7 @@
     }
   },
   {
-    "id": null,
+    "id": 550,
     "name": "Basculin (Red-striped)",
     "dMonst": "1d10",
     "stats": {
@@ -85191,7 +85191,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10016,
     "name": "Basculin (Blue-striped)",
     "dMonst": "1d10",
     "stats": {
@@ -85270,7 +85270,7 @@
     }
   },
   {
-    "id": null,
+    "id": 902,
     "name": "Basculegion (Male)",
     "dMonst": "1d10",
     "stats": {
@@ -85358,7 +85358,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10248,
     "name": "Basculegion (Female)",
     "dMonst": "1d10",
     "stats": {
@@ -85762,7 +85762,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": null
+      "evolvesInto": "G-max Lapras"
     },
     "page": "715",
     "stage": 3,
@@ -85779,8 +85779,8 @@
     }
   },
   {
-    "id": null,
-    "name": "Gigantamax Lapras",
+    "id": 10204,
+    "name": "G-max Lapras",
     "dMonst": "1d12",
     "stats": {
       "hp": 276,
@@ -85839,12 +85839,12 @@
     "evolution": {
       "stage": 1,
       "family": [
-        "#N/A"
+        "Lapras"
       ],
-      "familyStarter": "Gigantamax Lapras",
+      "familyStarter": "Lapras",
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
-      "evolvesFrom": null,
+      "evolvesFrom": "Lapras",
       "evolvesInto": null
     },
     "page": "715",
@@ -86105,7 +86105,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10234,
     "name": "Qwilfish (Dark Waters)",
     "dMonst": "1d10",
     "stats": {
@@ -86434,7 +86434,7 @@
     }
   },
   {
-    "id": null,
+    "id": 746,
     "name": "Wishiwashi (Solo)",
     "dMonst": "1d4",
     "stats": {
@@ -86511,7 +86511,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10127,
     "name": "Wishiwashi (School)",
     "dMonst": "1d12",
     "stats": {
@@ -86588,7 +86588,7 @@
     }
   },
   {
-    "id": null,
+    "id": 772,
     "name": "Type: Null",
     "dMonst": "1d10",
     "stats": {
@@ -87049,7 +87049,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": null
+      "evolvesInto": "Mega Mewtwo X / Mega Mewtwo Y"
     },
     "page": "GMG 132",
     "stage": 3,
@@ -87075,7 +87075,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10043,
     "name": "Mega Mewtwo X",
     "dMonst": "1d12",
     "stats": {
@@ -87130,12 +87130,12 @@
     "evolution": {
       "stage": 1,
       "family": [
-        "#N/A"
+        "Mewtwo"
       ],
-      "familyStarter": "Mega Mewtwo X",
+      "familyStarter": "Mewtwo",
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
-      "evolvesFrom": null,
+      "evolvesFrom": "Mewtwo",
       "evolvesInto": null
     },
     "page": "GMG 132",
@@ -87163,7 +87163,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10044,
     "name": "Mega Mewtwo Y",
     "dMonst": "1d12",
     "stats": {
@@ -87217,12 +87217,12 @@
     "evolution": {
       "stage": 1,
       "family": [
-        "#N/A"
+        "Mewtwo"
       ],
-      "familyStarter": "Mega Mewtwo Y",
+      "familyStarter": "Mewtwo",
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
-      "evolvesFrom": null,
+      "evolvesFrom": "Mewtwo",
       "evolvesInto": null
     },
     "page": "GMG 133",
@@ -87249,7 +87249,7 @@
     }
   },
   {
-    "id": null,
+    "id": 984,
     "name": "Great Tusk (Donphan)",
     "dMonst": "1d10",
     "stats": {
@@ -87328,7 +87328,7 @@
     }
   },
   {
-    "id": null,
+    "id": 985,
     "name": "Scream Tail (Jigglypuff)",
     "dMonst": "1d12",
     "stats": {
@@ -87406,7 +87406,7 @@
     }
   },
   {
-    "id": null,
+    "id": 986,
     "name": "Brute Bonnet (Amoonguss)",
     "dMonst": "1d12",
     "stats": {
@@ -87483,7 +87483,7 @@
     }
   },
   {
-    "id": null,
+    "id": 987,
     "name": "Flutter Mane (Misdreavus)",
     "dMonst": "1d12",
     "stats": {
@@ -87561,7 +87561,7 @@
     }
   },
   {
-    "id": null,
+    "id": 988,
     "name": "Slither Wing (Volcarona)",
     "dMonst": "1d12",
     "stats": {
@@ -87640,7 +87640,7 @@
     }
   },
   {
-    "id": null,
+    "id": 989,
     "name": "Sandy Shocks (Magneton)",
     "dMonst": "1d10",
     "stats": {
@@ -87719,7 +87719,7 @@
     }
   },
   {
-    "id": null,
+    "id": 1005,
     "name": "Roaring Moon (Salamence)",
     "dMonst": "1d12",
     "stats": {
@@ -87798,7 +87798,7 @@
     }
   },
   {
-    "id": null,
+    "id": 990,
     "name": "Iron Treads  (Donphan)",
     "dMonst": "1d12",
     "stats": {
@@ -87876,7 +87876,7 @@
     }
   },
   {
-    "id": null,
+    "id": 991,
     "name": "Iron Bundle (Delibird)",
     "dMonst": "1d10",
     "stats": {
@@ -87952,7 +87952,7 @@
     }
   },
   {
-    "id": null,
+    "id": 992,
     "name": "Iron Hands (Hariyama)",
     "dMonst": "1d10",
     "stats": {
@@ -88030,7 +88030,7 @@
     }
   },
   {
-    "id": null,
+    "id": 993,
     "name": "Iron Jugulis (Hydreigon)",
     "dMonst": "1d12",
     "stats": {
@@ -88108,7 +88108,7 @@
     }
   },
   {
-    "id": null,
+    "id": 994,
     "name": "Iron Moth (Volcarona)",
     "dMonst": "1d12",
     "stats": {
@@ -88186,7 +88186,7 @@
     }
   },
   {
-    "id": null,
+    "id": 995,
     "name": "Iron Thorns (Tyranitar)",
     "dMonst": "1d10",
     "stats": {
@@ -88265,7 +88265,7 @@
     }
   },
   {
-    "id": null,
+    "id": 1006,
     "name": "Iron Valiant (Gallade)",
     "dMonst": "1d12",
     "stats": {
@@ -89257,7 +89257,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10169,
     "name": "Articuno (Remote Isles)",
     "dMonst": "1d12",
     "stats": {
@@ -89421,7 +89421,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10170,
     "name": "Zapdos (Remote Isles)",
     "dMonst": "1d12",
     "stats": {
@@ -89585,7 +89585,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10171,
     "name": "Moltres (Remote Isles)",
     "dMonst": "1d12",
     "stats": {
@@ -89909,7 +89909,7 @@
     }
   },
   {
-    "id": null,
+    "id": 785,
     "name": "Tapu Koko",
     "dMonst": "1d12",
     "stats": {
@@ -89993,7 +89993,7 @@
     }
   },
   {
-    "id": null,
+    "id": 786,
     "name": "Tapu Lele",
     "dMonst": "1d12",
     "stats": {
@@ -90077,7 +90077,7 @@
     }
   },
   {
-    "id": null,
+    "id": 787,
     "name": "Tapu Bulu",
     "dMonst": "1d12",
     "stats": {
@@ -90161,7 +90161,7 @@
     }
   },
   {
-    "id": null,
+    "id": 788,
     "name": "Tapu Fini",
     "dMonst": "1d12",
     "stats": {
@@ -90247,7 +90247,7 @@
     }
   },
   {
-    "id": null,
+    "id": 1001,
     "name": "Wo-Chien",
     "dMonst": "1d12",
     "stats": {
@@ -90331,7 +90331,7 @@
     }
   },
   {
-    "id": null,
+    "id": 1002,
     "name": "Chien-Pao",
     "dMonst": "1d12",
     "stats": {
@@ -90415,7 +90415,7 @@
     }
   },
   {
-    "id": null,
+    "id": 1003,
     "name": "Ting-Lu",
     "dMonst": "1d12",
     "stats": {
@@ -90499,7 +90499,7 @@
     }
   },
   {
-    "id": null,
+    "id": 1004,
     "name": "Chi-Yu",
     "dMonst": "1d12",
     "stats": {
@@ -90826,7 +90826,7 @@
     }
   },
   {
-    "id": null,
+    "id": 647,
     "name": "Keldeo",
     "dMonst": "1d12",
     "stats": {
@@ -90907,7 +90907,7 @@
     }
   },
   {
-    "id": null,
+    "id": 641,
     "name": "Tornadus (Incarnate)",
     "dMonst": "1d12",
     "stats": {
@@ -90986,7 +90986,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10019,
     "name": "Tornadus (Therian)",
     "dMonst": "1d12",
     "stats": {
@@ -91065,7 +91065,7 @@
     }
   },
   {
-    "id": null,
+    "id": 642,
     "name": "Thundurus (Incarnate)",
     "dMonst": "1d12",
     "stats": {
@@ -91145,7 +91145,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10020,
     "name": "Thundurus (Therian)",
     "dMonst": "1d12",
     "stats": {
@@ -91225,7 +91225,7 @@
     }
   },
   {
-    "id": null,
+    "id": 645,
     "name": "Landorus (Incarnate)",
     "dMonst": "1d12",
     "stats": {
@@ -91305,7 +91305,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10021,
     "name": "Landorus (Therian)",
     "dMonst": "1d12",
     "stats": {
@@ -91385,7 +91385,7 @@
     }
   },
   {
-    "id": null,
+    "id": 905,
     "name": "Enamorus (Incarnate)",
     "dMonst": "1d12",
     "stats": {
@@ -91465,7 +91465,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10249,
     "name": "Enamorus (Therian)",
     "dMonst": "1d12",
     "stats": {
@@ -91608,7 +91608,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": null
+      "evolvesInto": "Mega Latias"
     },
     "page": "GMG 154",
     "stage": 1,
@@ -91631,7 +91631,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10062,
     "name": "Mega Latias",
     "dMonst": "1d12",
     "stats": {
@@ -91688,12 +91688,12 @@
     "evolution": {
       "stage": 1,
       "family": [
-        "#N/A"
+        "Latias"
       ],
-      "familyStarter": "Mega Latias",
+      "familyStarter": "Latias",
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
-      "evolvesFrom": null,
+      "evolvesFrom": "Latias",
       "evolvesInto": null
     },
     "page": "GMG 154",
@@ -91780,7 +91780,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": null
+      "evolvesInto": "Mega Latios"
     },
     "page": "GMG 155",
     "stage": 1,
@@ -91803,7 +91803,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10063,
     "name": "Mega Latios",
     "dMonst": "1d12",
     "stats": {
@@ -91860,12 +91860,12 @@
     "evolution": {
       "stage": 1,
       "family": [
-        "#N/A"
+        "Latios"
       ],
-      "familyStarter": "Mega Latios",
+      "familyStarter": "Latios",
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
-      "evolvesFrom": null,
+      "evolvesFrom": "Latios",
       "evolvesInto": null
     },
     "page": "GMG 155",
@@ -92966,7 +92966,7 @@
     }
   },
   {
-    "id": null,
+    "id": 1014,
     "name": "Okidogi",
     "dMonst": "1d12",
     "stats": {
@@ -93045,7 +93045,7 @@
     }
   },
   {
-    "id": null,
+    "id": 1015,
     "name": "Munkidori",
     "dMonst": "1d12",
     "stats": {
@@ -93123,7 +93123,7 @@
     }
   },
   {
-    "id": null,
+    "id": 1016,
     "name": "Fezandipiti",
     "dMonst": "1d10",
     "stats": {
@@ -93202,7 +93202,7 @@
     }
   },
   {
-    "id": null,
+    "id": 1025,
     "name": "Pecharunt",
     "dMonst": "1d12",
     "stats": {
@@ -93288,7 +93288,7 @@
     }
   },
   {
-    "id": null,
+    "id": 1017,
     "name": "Ogerpon (Teal Mask)",
     "dMonst": "1d10",
     "stats": {
@@ -93374,7 +93374,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10273,
     "name": "Ogerpon (Wellspring Mask)",
     "dMonst": "1d10",
     "stats": {
@@ -93461,7 +93461,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10274,
     "name": "Ogerpon (Hearthflame Mask)",
     "dMonst": "1d10",
     "stats": {
@@ -93548,7 +93548,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10275,
     "name": "Ogerpon (Cornerstone Mask)",
     "dMonst": "1d10",
     "stats": {
@@ -93635,7 +93635,7 @@
     }
   },
   {
-    "id": null,
+    "id": 1024,
     "name": "Terapagos",
     "dMonst": "1d10",
     "stats": {
@@ -93713,7 +93713,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10276,
     "name": "Terapagos (Tera Form)",
     "dMonst": "1d12",
     "stats": {
@@ -93792,7 +93792,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10277,
     "name": "Terapagos (Stellar Form)",
     "dMonst": "1d12",
     "stats": {
@@ -94352,7 +94352,7 @@
     }
   },
   {
-    "id": null,
+    "id": 492,
     "name": "Shaymin (Land)",
     "dMonst": "1d12",
     "stats": {
@@ -94433,7 +94433,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10006,
     "name": "Shaymin (Sky)",
     "dMonst": "1d12",
     "stats": {
@@ -94515,7 +94515,7 @@
     }
   },
   {
-    "id": null,
+    "id": 1009,
     "name": "Walking Wake (Suicune)",
     "dMonst": "1d12",
     "stats": {
@@ -94600,7 +94600,7 @@
     }
   },
   {
-    "id": null,
+    "id": 1020,
     "name": "Gouging Fire (Entei)",
     "dMonst": "1d12",
     "stats": {
@@ -94684,7 +94684,7 @@
     }
   },
   {
-    "id": null,
+    "id": 1021,
     "name": "Raging Bolt (Raikou)",
     "dMonst": "1d12",
     "stats": {
@@ -94767,7 +94767,7 @@
     }
   },
   {
-    "id": null,
+    "id": 1010,
     "name": "Iron Leaves (Virizion)",
     "dMonst": "1d12",
     "stats": {
@@ -94849,7 +94849,7 @@
     }
   },
   {
-    "id": null,
+    "id": 1022,
     "name": "Iron Boulder (Terrakion)",
     "dMonst": "1d12",
     "stats": {
@@ -94931,7 +94931,7 @@
     }
   },
   {
-    "id": null,
+    "id": 1023,
     "name": "Iron Crown (Cobalion)",
     "dMonst": "1d12",
     "stats": {
@@ -95013,7 +95013,7 @@
     }
   },
   {
-    "id": null,
+    "id": 1007,
     "name": "Koraidon (Winged King)",
     "dMonst": "1d12",
     "stats": {
@@ -95100,7 +95100,7 @@
     }
   },
   {
-    "id": null,
+    "id": 1008,
     "name": "Miraidon (Iron Serpent)",
     "dMonst": "1d12",
     "stats": {
@@ -95424,7 +95424,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10193,
     "name": "Calyrex (Ice Rider)",
     "dMonst": "1d12",
     "stats": {
@@ -95509,7 +95509,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10194,
     "name": "Calyrex (Shadow Rider)",
     "dMonst": "1d12",
     "stats": {
@@ -95596,7 +95596,7 @@
     }
   },
   {
-    "id": null,
+    "id": 648,
     "name": "Meloetta (Aria)",
     "dMonst": "1d12",
     "stats": {
@@ -95672,7 +95672,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10018,
     "name": "Meloetta (Pirouette)",
     "dMonst": "1d12",
     "stats": {
@@ -95810,7 +95810,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": null
+      "evolvesInto": "Mega Diancie"
     },
     "page": "GMG 174",
     "stage": 1,
@@ -95829,7 +95829,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10075,
     "name": "Mega Diancie",
     "dMonst": "1d12",
     "stats": {
@@ -95885,12 +95885,12 @@
     "evolution": {
       "stage": 1,
       "family": [
-        "#N/A"
+        "Diancie"
       ],
-      "familyStarter": "Mega Diancie",
+      "familyStarter": "Diancie",
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
-      "evolvesFrom": null,
+      "evolvesFrom": "Diancie",
       "evolvesInto": null
     },
     "page": "GMG 175",
@@ -96123,14 +96123,14 @@
         "Kubfu",
         "Urshifu (Single Strike)",
         "Urshifu (Rapid Strike)",
-        "Gigantamax Urshifu (Single Strike)",
+        "G-max Urshifu (Single Strike)",
         "Gigantamax Urshifu (Rapid Strike)"
       ],
       "familyStarter": "Kubfu",
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": "Urshifu (Single Strike) / Urshifu (Rapid Strike) / Gigantamax Urshifu (Single Strike) / Gigantamax Urshifu (Rapid Strike)"
+      "evolvesInto": "Urshifu (Single Strike) / Urshifu (Rapid Strike)"
     },
     "page": "GMG 176",
     "stage": 1,
@@ -96147,7 +96147,7 @@
     }
   },
   {
-    "id": null,
+    "id": 892,
     "name": "Urshifu (Single Strike)",
     "dMonst": "1d10",
     "stats": {
@@ -96204,14 +96204,14 @@
         "Kubfu",
         "Urshifu (Single Strike)",
         "Urshifu (Rapid Strike)",
-        "Gigantamax Urshifu (Single Strike)",
+        "G-max Urshifu (Single Strike)",
         "Gigantamax Urshifu (Rapid Strike)"
       ],
       "familyStarter": "Kubfu",
       "prevEvolutionIndex": 1183,
       "evolutionaryStage": 2,
       "evolvesFrom": "Kubfu",
-      "evolvesInto": null
+      "evolvesInto": "G-max Urshifu (Single Strike)"
     },
     "page": "GMG 176",
     "stage": 2,
@@ -96234,7 +96234,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10191,
     "name": "Urshifu (Rapid Strike)",
     "dMonst": "1d10",
     "stats": {
@@ -96291,14 +96291,14 @@
         "Kubfu",
         "Urshifu (Single Strike)",
         "Urshifu (Rapid Strike)",
-        "Gigantamax Urshifu (Single Strike)",
+        "G-max Urshifu (Single Strike)",
         "Gigantamax Urshifu (Rapid Strike)"
       ],
       "familyStarter": "Kubfu",
       "prevEvolutionIndex": 1183,
       "evolutionaryStage": 2,
       "evolvesFrom": "Kubfu",
-      "evolvesInto": null
+      "evolvesInto": "G-max Urshifu (Rapid Strike)"
     },
     "page": "GMG 177",
     "stage": 2,
@@ -96321,8 +96321,8 @@
     }
   },
   {
-    "id": null,
-    "name": "Gigantamax Urshifu (Single Strike)",
+    "id": 10226,
+    "name": "G-max Urshifu (Single Strike)",
     "dMonst": "1d12",
     "stats": {
       "hp": 416,
@@ -96378,7 +96378,7 @@
         "Kubfu",
         "Urshifu (Single Strike)",
         "Urshifu (Rapid Strike)",
-        "Gigantamax Urshifu (Single Strike)",
+        "G-max Urshifu (Single Strike)",
         "Gigantamax Urshifu (Rapid Strike)"
       ],
       "familyStarter": "Kubfu",
@@ -96406,8 +96406,8 @@
     }
   },
   {
-    "id": null,
-    "name": "Gigantamax Urshifu (Rapid Strike)",
+    "id": 10227,
+    "name": "G-max Urshifu (Rapid Strike)",
     "dMonst": "1d12",
     "stats": {
       "hp": 416,
@@ -96463,7 +96463,7 @@
         "Kubfu",
         "Urshifu (Single Strike)",
         "Urshifu (Rapid Strike)",
-        "Gigantamax Urshifu (Single Strike)",
+        "G-max Urshifu (Single Strike)",
         "Gigantamax Urshifu (Rapid Strike)"
       ],
       "familyStarter": "Kubfu",
@@ -96546,7 +96546,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": "Melmetal / Gigantamax Melmetal"
+      "evolvesInto": "Melmetal"
     },
     "page": "GMG 178",
     "stage": 1,
@@ -96626,7 +96626,7 @@
       "prevEvolutionIndex": 1188,
       "evolutionaryStage": 2,
       "evolvesFrom": "Meltan",
-      "evolvesInto": null
+      "evolvesInto": "G-max Melmetal"
     },
     "page": "GMG 178",
     "stage": 2,
@@ -96649,8 +96649,8 @@
     }
   },
   {
-    "id": null,
-    "name": "Gigantamax Melmetal",
+    "id": 10208,
+    "name": "G-max Melmetal",
     "dMonst": "1d12",
     "stats": {
       "hp": 576,
@@ -96816,7 +96816,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10086,
     "name": "Hoopa (Unbound)",
     "dMonst": "1d12",
     "stats": {
@@ -96902,7 +96902,7 @@
     }
   },
   {
-    "id": null,
+    "id": 386,
     "name": "Deoxys (Balance)",
     "dMonst": "1d12",
     "stats": {
@@ -96980,7 +96980,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10001,
     "name": "Deoxys (Attack)",
     "dMonst": "1d12",
     "stats": {
@@ -97062,7 +97062,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10002,
     "name": "Deoxys (Defense)",
     "dMonst": "1d12",
     "stats": {
@@ -97144,7 +97144,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10003,
     "name": "Deoxys (Speed)",
     "dMonst": "1d12",
     "stats": {
@@ -97470,7 +97470,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10188,
     "name": "Zacian (Crowned Sword)",
     "dMonst": "1d12",
     "stats": {
@@ -97632,7 +97632,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10189,
     "name": "Zamazenta (Crowned Shield)",
     "dMonst": "1d12",
     "stats": {
@@ -98133,7 +98133,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10155,
     "name": "Necrozma (Dusk Mane)",
     "dMonst": "1d12",
     "stats": {
@@ -98220,7 +98220,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10156,
     "name": "Necrozma (Dawn Wings)",
     "dMonst": "1d12",
     "stats": {
@@ -98307,7 +98307,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10157,
     "name": "Necrozma (Ultra Mantle)",
     "dMonst": "1d12",
     "stats": {
@@ -98477,7 +98477,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10077,
     "name": "Kyogre (Primal Reversion)",
     "dMonst": "1d12",
     "stats": {
@@ -98643,7 +98643,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10078,
     "name": "Groudon (Primal Reversion)",
     "dMonst": "1d12",
     "stats": {
@@ -98790,7 +98790,7 @@
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
       "evolvesFrom": null,
-      "evolvesInto": null
+      "evolvesInto": "Mega Rayquaza"
     },
     "page": "GMG 192",
     "stage": 1,
@@ -98812,7 +98812,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10079,
     "name": "Mega Rayquaza",
     "dMonst": "1d12",
     "stats": {
@@ -98868,12 +98868,12 @@
     "evolution": {
       "stage": 1,
       "family": [
-        "#N/A"
+        "Rayquaza"
       ],
-      "familyStarter": "Mega Rayquaza",
+      "familyStarter": "Rayquaza",
       "prevEvolutionIndex": -1,
       "evolutionaryStage": 1,
-      "evolvesFrom": null,
+      "evolvesFrom": "Rayquaza",
       "evolvesInto": null
     },
     "page": "GMG 193",
@@ -99152,7 +99152,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10022,
     "name": "Kyurem (Black Fusion)",
     "dMonst": "1d12",
     "stats": {
@@ -99238,7 +99238,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10023,
     "name": "Kyurem (White Fusion)",
     "dMonst": "1d12",
     "stats": {
@@ -99488,7 +99488,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10181,
     "name": "Zygarde (10%)",
     "dMonst": "1d10",
     "stats": {
@@ -99577,7 +99577,7 @@
     }
   },
   {
-    "id": null,
+    "id": 718,
     "name": "Zygarde (50%)",
     "dMonst": "1d12",
     "stats": {
@@ -99668,7 +99668,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10120,
     "name": "Zygarde (Complete)",
     "dMonst": "1d12",
     "stats": {
@@ -99761,7 +99761,7 @@
     }
   },
   {
-    "id": null,
+    "id": 483,
     "name": "Dialga (Altered Form)",
     "dMonst": "1d12",
     "stats": {
@@ -99852,7 +99852,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10245,
     "name": "Dialga (Origin Form)",
     "dMonst": "1d12",
     "stats": {
@@ -99943,7 +99943,7 @@
     }
   },
   {
-    "id": null,
+    "id": 484,
     "name": "Palkia (Altered Form)",
     "dMonst": "1d12",
     "stats": {
@@ -100034,7 +100034,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10246,
     "name": "Palkia (Origin Form)",
     "dMonst": "1d12",
     "stats": {
@@ -100125,7 +100125,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10007,
     "name": "Giratina (Origin Form)",
     "dMonst": "1d12",
     "stats": {
@@ -100221,7 +100221,7 @@
     }
   },
   {
-    "id": null,
+    "id": 487,
     "name": "Giratina (Altered Form)",
     "dMonst": "1d12",
     "stats": {
@@ -100407,7 +100407,7 @@
     }
   },
   {
-    "id": null,
+    "id": 10190,
     "name": "Eternatus (Eternamax)",
     "dMonst": "1d12",
     "stats": {

@@ -65,9 +65,9 @@ function Button({
   const selected = selectedPokemon.toLocaleLowerCase() === name.toLowerCase();
   return (
     <button onClick={() => selectPokemon(id, name)}>
-      <div>
+      <div className="flex flex-col">
         <div
-          className={`rounded-md cursor-pointer transition-colors ${selected ? "bg-blue-400" : "bg-background hover:bg-background-hover"}`}
+          className={`flex justify-center rounded-md cursor-pointer transition-colors ${selected ? "bg-blue-400" : "bg-background hover:bg-background-hover"}`}
         >
           {id ? (
             <Image

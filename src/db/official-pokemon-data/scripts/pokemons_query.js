@@ -3,11 +3,11 @@ import fs from "fs/promises";
 const API_URL = "https://pokeapi.co/api/v2/pokemon";
 const OUTPUT_FILE = "./pokemon.json";
 
-async function fetchPokemon(id) {
-  const response = await fetch(`${API_URL}/${id}`);
+async function fetchPokemon(url) {
+  const response = await fetch(url);
 
   if (!response.ok) {
-    throw new Error(`Erro ao buscar Pokémon ${id}: ${response.status}`);
+    throw new Error(`Erro ao buscar Pokémon ${url}: ${response.status}`);
   }
 
   const pokemon = await response.json();
@@ -34,34 +34,48 @@ async function fetchPokemon(id) {
   };
 }
 
-async function main() {
-  const response = await fetch(`${API_URL}?limit=1`);
+async function fetchPage(url) {
+  const response = await fetch(url);
 
   if (!response.ok) {
-    throw new Error("Não foi possível acessar a PokéAPI");
+    throw new Error(`Erro ao buscar página: ${response.status}`);
   }
 
   const data = await response.json();
-  const total = data.count;
 
+  return {
+    count: data.count,
+    results: data.results,
+    next: data.next,
+  };
+}
+
+async function main() {
+  const { count, results, next } = await fetchPage(`${API_URL}?limit=100`);
+  const total = count;
   console.log(`Encontrados ${total} Pokémon.`);
-  console.log("Baixando dados...");
 
-  const pokemon = [];
+  const pokemons = [];
 
-  for (let id = 1; id <= 1000; id++) {
-    try {
-      const data = await fetchPokemon(id);
-
-      pokemon.push(data);
-
-      console.log(`[${id}/${total}] ${data.name}`);
-    } catch (error) {
-      console.error(`Erro no Pokémon ${id}:`, error.message);
-    }
+  for (const pokemon of results) {
+    console.log(`Buscando dados de ${pokemon.url}`);
+    const pokemonData = await fetchPokemon(pokemon.url);
+    pokemons.push(pokemonData);
   }
 
-  await fs.writeFile(OUTPUT_FILE, JSON.stringify(pokemon, null, 2), "utf-8");
+  let nextPage = next;
+  while (nextPage) {
+    console.log(`Buscando próxima página: ${nextPage}`);
+    const { results: nextResults, next: newNext } = await fetchPage(nextPage);
+    for (const pokemon of nextResults) {
+      console.log(`Buscando dados de ${pokemon.url}`);
+      const pokemonData = await fetchPokemon(pokemon.url);
+      pokemons.push(pokemonData);
+    }
+    nextPage = newNext;
+  }
+
+  await fs.writeFile(OUTPUT_FILE, JSON.stringify(pokemons, null, 2), "utf-8");
 
   console.log(`\nConcluído!`);
   console.log(`Arquivo salvo em: ${OUTPUT_FILE}`);

@@ -1,7 +1,7 @@
 import fs from "fs/promises";
 
-const LIST_1 = "../pokemons.json";
-const LIST_2 = "./pokemons.json";
+const LIST_1 = "../../pokemons.json";
+const LIST_2 = "../pokemons.json";
 const OUTPUT = "./unmatched.json";
 
 function normalizeName(name) {
@@ -19,9 +19,9 @@ async function main() {
 
   const unmatched = list1
     .filter((pokemon) => {
-      return !officialNames.has(normalizeName(pokemon.Pokemon));
+      return !officialNames.has(normalizeName(pokemon.name));
     })
-    .map((pokemon) => pokemon.Pokemon);
+    .map((pokemon) => pokemon.name);
 
   await fs.writeFile(OUTPUT, JSON.stringify(unmatched, null, 2), "utf-8");
 

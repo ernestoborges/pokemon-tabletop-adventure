@@ -1,12 +1,14 @@
 import fs from "fs/promises";
 
 const INPUT = "src/db/pta-pokemon-data/pokemons.json";
-const OUTPUT = "src/db/scripts/output/pokemon.json";
+const OUTPUT = "src/db/scripts/output/pokemons.json";
 
 const OFFICIAL_POKEMON_DATA = "src/db/official-pokemon-data/pokemons.json";
 const officialPokemonData = JSON.parse(
   await fs.readFile(OFFICIAL_POKEMON_DATA, "utf8"),
 );
+const FIX_NAMES_MAP = "src/db/pta-pokemon-data/fix-names-map.json";
+const fixNamesMap = JSON.parse(await fs.readFile(FIX_NAMES_MAP, "utf8"));
 
 function splitList(value) {
   if (!value || typeof value !== "string") {
@@ -31,10 +33,10 @@ function parseNumber(value) {
 
 function normalizePokemon(pokemon) {
   const id =
-    officialPokemonData.find(
-      (officialPokemon) =>
-        officialPokemon.name.toLowerCase() === pokemon["Pokemon"].toLowerCase(),
-    )?.id || null;
+    officialPokemonData.find((officialPokemon) => {
+      const fixedName = fixNamesMap[pokemon["Pokemon"]] || pokemon["Pokemon"];
+      return officialPokemon.name.toLowerCase() === fixedName.toLowerCase();
+    })?.id || null;
 
   const types = [
     pokemon["Type1"] || "Typeless",
@@ -53,7 +55,7 @@ function normalizePokemon(pokemon) {
 
   return {
     id: id,
-    name: pokemon["Pokemon"],
+    name: pokemon["Pokemon"].replace("Gigantamax", "G-max"),
     dMonst: pokemon["dMonst"] || null,
     stats: {
       hp: parseNumber(pokemon["HP"]),
@@ -91,12 +93,17 @@ function normalizePokemon(pokemon) {
 
     evolution: {
       stage: parseNumber(pokemon["Evolutionary Stage"]),
-      family: splitList(pokemon["Family"].replaceAll(" / ", ",")),
-      familyStarter: pokemon["Family starter"] || null,
+      family: splitList(
+        pokemon["Family"].replace("Gigantamax", "G-max").replaceAll(" / ", ","),
+      ),
+      familyStarter:
+        pokemon["Family starter"].replace("Gigantamax", "G-max") || null,
       prevEvolutionIndex: parseNumber(pokemon["Prev evo index:"]),
       evolutionaryStage: parseNumber(pokemon["Evolutionary Stage"]),
-      evolvesFrom: pokemon["Evolves From"] || null,
-      evolvesInto: pokemon["Evolves Into:"] || null,
+      evolvesFrom:
+        pokemon["Evolves From"].replace("Gigantamax", "G-max") || null,
+      evolvesInto:
+        pokemon["Evolves Into:"].replace("Gigantamax", "G-max") || null,
     },
 
     page: pokemon["Page #"],
