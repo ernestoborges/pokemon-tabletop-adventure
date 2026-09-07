@@ -3,6 +3,7 @@ import { usePokemon } from "@/contexts/PokemonContext";
 import SelectField from "./field-select";
 import SortIcon from "../atoms/sort-icon";
 import { usePokemonList } from "@/contexts/PokemonListContext";
+import Pagination from "@/components/molecules/pagination";
 
 const ORDER_BY_OPTIONS = [
   { label: "ID", value: "id" },
@@ -17,7 +18,7 @@ const ORDER_BY_OPTIONS = [
 
 export default function PokemonList() {
   const { selectedPokemon, selectPokemon } = usePokemon();
-  const { pokemonList, filters, setFilters } = usePokemonList();
+  const { pokemonList, filters, setFilters, pagination } = usePokemonList();
 
   function handleSelectPokemon(id: number | null, name: string) {
     selectPokemon(id, name);
@@ -27,7 +28,7 @@ export default function PokemonList() {
     !!selectedPokemon && selectedPokemon.name === name;
 
   return (
-    <div className="flex flex-col gap-2 bg-card p-4 rounded-lg shadow-md min-w-64 sm:min-w-80 overflow-y-auto">
+    <div className="flex flex-col gap-2 bg-card p-4 rounded-lg shadow-md w-64 sm:w-80 overflow-y-auto">
       <div className="flex gap-2">
         <SelectField
           options={ORDER_BY_OPTIONS}
@@ -48,7 +49,7 @@ export default function PokemonList() {
           <SortIcon direction={filters.orderDirection} />
         </div>
       </div>
-      <div className="flex flex-col gap-2 overflow-y-auto">
+      <div className="flex-1 flex flex-col gap-2 overflow-y-auto">
         {pokemonList.map((pokemon) => (
           <PokemonTag
             key={pokemon.name}
@@ -59,6 +60,16 @@ export default function PokemonList() {
           />
         ))}
       </div>
+      <Pagination
+        page={pagination.page}
+        totalPages={pagination.totalPages}
+        totalItems={pagination.total}
+        itemsPerPage={pagination.perPage}
+        onPageChange={(page) => setFilters({ ...filters, page })}
+        onItemsPerPageChange={(itemsPerPage) =>
+          setFilters({ ...filters, perPage: itemsPerPage })
+        }
+      />
     </div>
   );
 }

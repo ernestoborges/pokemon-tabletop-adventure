@@ -19,7 +19,8 @@ interface PokemonSearchFilters {
   weight: string;
   proficiency: string;
   diet: string;
-  limit: number;
+  perPage: number;
+  page: number;
   orderBy: string;
   orderDirection: "asc" | "desc";
 }
@@ -29,12 +30,24 @@ interface PokemonListContextValue {
   setSearchQuery: (name: string) => void;
   filters: PokemonSearchFilters;
   setFilters: (filters: PokemonSearchFilters) => void;
+  pagination: {
+    page: number;
+    perPage: number;
+    total: number;
+    totalPages: number;
+  };
 }
 
 const PokemonListContext = createContext<PokemonListContextValue | null>(null);
 
 export function PokemonListProvider({ children }: { children: ReactNode }) {
   const [pokemonList, setPokemonList] = useState<PokemonSearchData[]>([]);
+  const [pagination, setPagination] = useState({
+    page: 1,
+    perPage: 10,
+    total: 0,
+    totalPages: 0,
+  });
   const [searchQuery, setSearchQuery] = useState("");
   const [filters, setFilters] = useState<PokemonSearchFilters>({
     typeFilter: "any",
@@ -46,14 +59,15 @@ export function PokemonListProvider({ children }: { children: ReactNode }) {
     weight: "",
     proficiency: "",
     diet: "",
-    limit: 100,
+    perPage: 10,
+    page: 1,
     orderBy: "id",
     orderDirection: "asc",
   });
 
   function searchPokemons() {
     const {
-      limit,
+      perPage,
       typeFilter,
       types,
       rarity,
@@ -70,11 +84,13 @@ export function PokemonListProvider({ children }: { children: ReactNode }) {
     const _types = types.join(",");
 
     fetch(
-      `/api/pokemon/search?q=${searchQuery}&limit=${limit}&types=${_types}&typeFilter=${typeFilter}&rarityFilter=${rarity}&habitatFilter=${habitat}&eggGroupFilter=${eggGroup}&sizeFilter=${size}&weightFilter=${weight}&proficiencyFilter=${proficiency}&dietFilter=${diet}&orderBy=${orderBy}&orderDirection=${orderDirection}`,
+      `/api/pokemon/search?q=${searchQuery}&page=${filters.page}&perPage=${perPage}&types=${_types}&typeFilter=${typeFilter}&rarityFilter=${rarity}&habitatFilter=${habitat}&eggGroupFilter=${eggGroup}&sizeFilter=${size}&weightFilter=${weight}&proficiencyFilter=${proficiency}&dietFilter=${diet}&orderBy=${orderBy}&orderDirection=${orderDirection}`,
     )
       .then((res) => res.json())
       .then((data) => {
-        setPokemonList(data);
+        const { pagination, data: responseList } = data;
+        setPokemonList(responseList);
+        setPagination(pagination);
       });
   }
 
@@ -90,6 +106,7 @@ export function PokemonListProvider({ children }: { children: ReactNode }) {
         setSearchQuery,
         filters,
         setFilters,
+        pagination,
       }}
     >
       {children}

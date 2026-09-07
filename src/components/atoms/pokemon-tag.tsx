@@ -17,26 +17,32 @@ export default function PokemonTag({
       className={`flex flex-col gap-2 p-2 rounded-lg shadow-xs border bg-background hover:bg-background-hover cursor-pointer ${
         selected ? "border-primary" : "border-transparent"
       }`}
+      title={name}
     >
-      <div className="flex gap-1 items-center" onClick={onClick}>
-        <div>
+      <div className="flex items-center gap-1 min-w-0" onClick={onClick}>
+        <div className="flex-none w-16 h-16 min-w-16 min-h-16 max-w-16 max-h-16">
           {id ? (
             <Image
               src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`}
               alt={name}
               width={64}
               height={64}
-              className="rounded-lg scale-x-[-1]"
+              className="block w-16 h-16 max-w-none rounded-lg scale-x-[-1]"
             />
           ) : (
             <PokeballDefaultToken />
           )}
         </div>
-        <span className="text-muted mr-2">
-          #{id ? id.toString().padStart(3, "0") : "???"}
-        </span>
 
-        {name}
+        <div className="flex-1 min-w-0">
+          <div className="flex flex-col">
+            <span className="text-muted">
+              #{id ? id.toString().padStart(3, "0") : "???"}
+            </span>
+
+            <span className="truncate">{name}</span>
+          </div>
+        </div>
       </div>
     </div>
   );

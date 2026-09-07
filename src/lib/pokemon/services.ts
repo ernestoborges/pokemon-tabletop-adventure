@@ -165,7 +165,8 @@ export function getPokemonList(options?: {
   query?: string;
   orderBy?: "id" | "name";
   orderDirection?: "asc" | "desc";
-  limit?: number;
+  page: number;
+  perPage?: number;
   types?: string[];
   typeFilter?: "any" | "all";
   rarityFilter?: string;
@@ -175,7 +176,18 @@ export function getPokemonList(options?: {
   weightFilter?: string;
   proficiencyFilter?: string;
   dietFilter?: string;
-}) {
+}): {
+  pagination: {
+    page: number;
+    perPage: number;
+    total: number;
+    totalPages: number;
+  };
+  data: {
+    id: number | null;
+    name: string;
+  }[];
+} {
   let results: Pokemon[] = pokemons;
 
   if (options?.query)
@@ -274,10 +286,25 @@ export function getPokemonList(options?: {
         });
     }
   }
-  if (options?.limit) results = results.slice(0, options.limit);
 
-  return results.map((pokemon) => ({
-    id: pokemon.id,
-    name: pokemon.name,
-  }));
+  const total = results.length;
+
+  if (options?.page) {
+    const start = (options.page - 1) * (options.perPage ?? results.length);
+    const end = start + (options.perPage ?? results.length);
+    results = results.slice(start, end);
+  }
+
+  return {
+    pagination: {
+      page: options?.page ?? 1,
+      perPage: options?.perPage ?? results.length,
+      total: total,
+      totalPages: Math.ceil(total / (options?.perPage ?? results.length)),
+    },
+    data: results.map((pokemon) => ({
+      id: pokemon.id,
+      name: pokemon.name,
+    })),
+  };
 }

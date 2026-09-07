@@ -5,7 +5,8 @@ export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
 
   const query = searchParams.get("q")?.toLowerCase() ?? "";
-  const limit = Number(searchParams.get("limit") ?? 10);
+  const page = Number(searchParams.get("page") ?? 1);
+  const perPage = Number(searchParams.get("perPage") ?? 10);
   let orderBy = searchParams.get("orderBy")?.toLowerCase() as
     | "id"
     | "name"
@@ -44,7 +45,8 @@ export async function GET(request: Request) {
 
   const results = getPokemonList({
     query,
-    limit,
+    perPage,
+    page,
     orderBy,
     orderDirection,
     types,
