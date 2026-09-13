@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <PokemonListProvider>
       <PokemonProvider>
-        <PokedexMain />;
+        <PokedexMain />
       </PokemonProvider>
     </PokemonListProvider>
   );

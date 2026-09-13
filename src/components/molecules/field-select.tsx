@@ -25,7 +25,9 @@ export default function SelectField({
   return (
     <div
       className={`w-full min-w-0 rounded-md flex items-stretch shadow-md overflow-hidden ${
-        clearable && isSelected ? "bg-selected" : "bg-card"
+        clearable && isSelected
+          ? "bg-selected text-secondary"
+          : "bg-card text-primary"
       }`}
     >
       <div className="min-w-0 flex-1 hover:bg-black/10">

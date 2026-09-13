@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import SelectField from "../molecules/field-select";
 import { usePokemonList } from "@/contexts/PokemonListContext";
+import ButtonSelect from "../atoms/button-select";
 
 const RARITY_OPTIONS = [
   { label: "Common", value: "common" },
@@ -111,14 +112,15 @@ export default function PokemonSearchBar() {
           />
         </div>
         <div className="flex gap-2 items-center">
-          <button
-            className={`bg-card rounded-md p-2 cursor-pointer transition-colors shadow-md ${isFiltersVisible ? "bg-primary text-white" : "hover:bg-background-hover"}`}
+          <ButtonSelect
+            selected={isFiltersVisible}
+            color="blue"
             onClick={() => {
               setIsFiltersVisible(!isFiltersVisible);
             }}
           >
             Filters
-          </button>
+          </ButtonSelect>
         </div>
       </div>
       <div
@@ -198,29 +200,36 @@ export default function PokemonSearchBar() {
         </div>
       </div>
       <div className="flex gap-2 mt-2 items-center">
-        <button
-          className={`bg-card w-12 h-8 rounded-md p-2 cursor-pointer transition-colors shadow-md ${filters.typeFilter === "any" ? "bg-primary text-white" : "hover:bg-background-hover"}`}
+        <ButtonSelect
+          shape="pill"
+          color="blue"
+          selected={filters.typeFilter === "any"}
           onClick={() => {
             setFilters({ ...filters, typeFilter: "any" });
           }}
         >
           Any
-        </button>
-        <button
-          className={`bg-card w-12 h-8 rounded-md p-2 cursor-pointer transition-colors shadow-md ${filters.typeFilter === "all" ? "bg-primary text-white" : "hover:bg-background-hover"}`}
+        </ButtonSelect>
+        <ButtonSelect
+          shape="pill"
+          color="blue"
+          selected={filters.typeFilter === "all"}
           onClick={() => {
             setFilters({ ...filters, typeFilter: "all" });
           }}
         >
           All
-        </button>
+        </ButtonSelect>
         <div className="flex gap-2 flex-wrap">
           {TYPE_OPTIONS.map(({ value: type }) => {
             const isSelected = filters.types.includes(type);
             return (
-              <button
+              <ButtonSelect
                 key={type}
-                className={`bg-card rounded-md p-2 cursor-pointer transition-colors shadow-md ${isSelected ? "bg-primary text-white" : "hover:bg-background-hover"}`}
+                shape="square"
+                color="blue"
+                selected={isSelected}
+                className="px-2"
                 onClick={() => {
                   setFilters({
                     ...filters,
@@ -238,7 +247,7 @@ export default function PokemonSearchBar() {
                   title={`${type} type`}
                   unoptimized
                 />
-              </button>
+              </ButtonSelect>
             );
           })}
         </div>

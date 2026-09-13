@@ -38,7 +38,7 @@ export default function PokemonList() {
           }
         />
         <div
-          className="cursor-pointer bg-card rounded-md shadow-md"
+          className="cursor-pointer bg-card rounded-md shadow-md hover:bg-background-hover"
           onClick={() =>
             setFilters({
               ...filters,

@@ -1,3 +1,5 @@
+import ButtonSelect from "../atoms/button-select";
+
 export default function Tabs({
   selectedTab,
   tabs,
@@ -11,17 +13,15 @@ export default function Tabs({
     <div className="flex flex-col gap-4">
       <div className="flex gap-2">
         {tabs.map((tab, index) => (
-          <button
+          <ButtonSelect
             key={tab.key}
-            className={`px-4 py-2 rounded-lg shadow-md cursor-pointer ${
-              selectedTab === index
-                ? "bg-primary text-white"
-                : "bg-card hover:bg-background-hover"
-            }`}
+            shape="square"
+            color="blue"
+            selected={selectedTab === index}
             onClick={() => onSelectTab(index)}
           >
             {tab.name}
-          </button>
+          </ButtonSelect>
         ))}
       </div>
     </div>

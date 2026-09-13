@@ -9,6 +9,7 @@
   --card: #ffffff;
   --card-foreground: #171717;
   --primary: #171717;
+  --primary-hover: #454545;
   --primary-foreground: #ffffff;
   --secondary: #f3f4f6;
   --secondary-foreground: #171717;
@@ -16,7 +17,9 @@
   --muted-foreground: #171717;
   --border: #e5e5e5;
 
-  --blue: #3b82f6;
+  --blue: #1165ec;
+  --blue-hover: #4084ef;
+  /* --blue-hover: #2874ed; */
 }
 
 @theme inline {
@@ -28,6 +31,7 @@
   --color-card-foreground: var(--card-foreground);
 
   --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
   --color-primary-foreground: var(--primary-foreground);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
@@ -36,6 +40,9 @@
   --color-border: var(--border);
 
   --color-selected: var(--blue);
+
+  --color-blue: var(--blue);
+  --color-blue-hover: var(--blue-hover);
 }
 
 @media (prefers-color-scheme: light) {
@@ -58,5 +65,6 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "League Spartan", sans-serif;
+  font-family: "Josefin Sans", "League Spartan", "Inter", sans-serif;
+  /* font-family: sans-serif; */
 }

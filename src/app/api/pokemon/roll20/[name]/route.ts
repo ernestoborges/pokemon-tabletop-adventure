@@ -8,8 +8,6 @@ export async function GET(
 ) {
   const { name } = await params;
 
-  console.log("Fetching Pokémon:", name);
-
   const pokemon = getPokemonByName(name);
   if (!pokemon) {
     return NextResponse.json({ error: "Pokémon not found" }, { status: 404 });
