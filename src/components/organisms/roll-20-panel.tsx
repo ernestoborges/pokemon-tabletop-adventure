@@ -62,7 +62,7 @@ export default function Roll20Panel() {
           )}
         </div>
       </div>
-      <pre className="flex-1 w-full bg-gray-100 p-4 rounded-lg overflow-x-auto wrap whitespace-pre-wrap text-sm">
+      <pre className="flex-1 w-full bg-background p-4 rounded-lg overflow-x-auto wrap whitespace-pre-wrap text-sm">
         {isLoading ? "Loading..." : roll20Export}
       </pre>
     </div>

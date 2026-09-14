@@ -22,6 +22,30 @@
   /* --blue-hover: #2874ed; */
 }
 
+.dark {
+  --background: #0a0a0a;
+  --background-hover: #313131;
+  --foreground: #000000;
+
+  --card: #171717;
+  --card-foreground: #fafafa;
+
+  --primary: #f3f4f6;
+  --primary-hover: #454545;
+  --primary-foreground: #171717;
+
+  --secondary: #171717;
+  --secondary-foreground: #ffffff;
+
+  --muted: #9c9c9c;
+  --muted-foreground: #a3a3a3;
+
+  --border: #404040;
+
+  --blue: #1165ec;
+  --blue-hover: #4084ef;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-background-hover: var(--background-hover);
@@ -45,11 +69,15 @@
   --color-blue-hover: var(--blue-hover);
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+} */
+
+option {
+  color: #171717;
 }
 
 ::-webkit-scrollbar {
